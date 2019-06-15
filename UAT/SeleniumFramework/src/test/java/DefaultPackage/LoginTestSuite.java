@@ -32,7 +32,7 @@ public class LoginTestSuite {
 		driver = new FirefoxDriver();
 	}
 
-	@Test
+	@Test(priority = 1)
 	public void InvalidUsernameAndValidPassword() {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://qt-v5.qa.interswitchng.com/");
@@ -48,9 +48,10 @@ public class LoginTestSuite {
 		LoginScreenObjects.ClickOnLoginButton();
 		LoginScreenObjects.VerifyInvalidEmailOrMobileNo_ErrMsg2Displays();
 		System.out.println("Test Passed");
+		
 	}
 
-	@Test
+	@Test(priority = 2)
 	public void validEmailAndInvalidPassword() {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://qt-v5.qa.interswitchng.com/");
@@ -60,16 +61,16 @@ public class LoginTestSuite {
 		HomeScreenObjects.clickOnLoginButton();
 
 		QtLoginPage2 LoginScreenObjects = new QtLoginPage2(driver);
-
 		LoginScreenObjects.EnterUserNameInUserNameField("dadubiaro@interswitch.com");
 		LoginScreenObjects.EnterPasswordInUserPasswordField("passwrd");
 		LoginScreenObjects.ClickOnLoginButton();
 		LoginScreenObjects.VerifyInvalidPassword_ErrMsg2Displays();
 		System.out.println("Test Passed");
+		
 	}
 
-	@Test
-	public static void validEmailAndPassword() {
+	@Test(priority = 3)
+	public static void successfulLogin() {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://qt-v5.qa.interswitchng.com/");
 		driver.manage().window().maximize();

@@ -3,7 +3,7 @@
 <suite name="Suite">
 	<test name="Test">
 		<classes>
-			<class name="DefaultPackage.TestNG_TestQ" />
+			<class name="DefaultPackage.LoginTestSuite" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

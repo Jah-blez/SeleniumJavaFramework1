@@ -9,6 +9,7 @@ DefaultPackage\testQt.class
 Pages\RecuringTransactionFlow.class
 Pages\QtLoginPage2.class
 Pages\ProfilePage.class
+DefaultPackage\ProfilePageTestSuite.class
 Pages\QtLoginPage.class
 Pages\QtHomePageScreen.class
 Pages\Dashboard.class

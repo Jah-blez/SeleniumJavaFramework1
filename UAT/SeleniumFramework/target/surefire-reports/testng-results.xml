@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="45036" started-at="2019-06-15T16:59:52Z" finished-at="2019-06-15T17:00:37Z">
+  <suite name="Suite" duration-ms="66780" started-at="2019-06-15T19:15:47Z" finished-at="2019-06-15T19:16:54Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="45036" started-at="2019-06-15T16:59:52Z" finished-at="2019-06-15T17:00:37Z">
-      <class name="DefaultPackage.TestNG_TestQ">
-        <test-method status="PASS" signature="startUp()[pri:0, instance:DefaultPackage.TestNG_TestQ@1e67b872]" name="startUp" is-config="true" duration-ms="36346" started-at="2019-06-15T17:59:52Z" finished-at="2019-06-15T18:00:29Z">
+    <test name="Test" duration-ms="66780" started-at="2019-06-15T19:15:47Z" finished-at="2019-06-15T19:16:54Z">
+      <class name="DefaultPackage.LoginTestSuite">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:DefaultPackage.LoginTestSuite@1e67b872]" name="startUp" is-config="true" duration-ms="31586" started-at="2019-06-15T20:15:47Z" finished-at="2019-06-15T20:16:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="testingQt2()[pri:0, instance:DefaultPackage.TestNG_TestQ@1e67b872]" name="testingQt2" duration-ms="5193" started-at="2019-06-15T18:00:29Z" finished-at="2019-06-15T18:00:34Z">
+        <test-method status="PASS" signature="InvalidUsernameAndValidPassword()[pri:1, instance:DefaultPackage.LoginTestSuite@1e67b872]" name="InvalidUsernameAndValidPassword" duration-ms="16085" started-at="2019-06-15T20:16:19Z" finished-at="2019-06-15T20:16:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testingQt2 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:DefaultPackage.TestNG_TestQ@1e67b872]" name="tearDown" is-config="true" duration-ms="3470" started-at="2019-06-15T18:00:34Z" finished-at="2019-06-15T18:00:37Z">
+        </test-method> <!-- InvalidUsernameAndValidPassword -->
+        <test-method status="PASS" signature="validEmailAndInvalidPassword()[pri:2, instance:DefaultPackage.LoginTestSuite@1e67b872]" name="validEmailAndInvalidPassword" duration-ms="12130" started-at="2019-06-15T20:16:35Z" finished-at="2019-06-15T20:16:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validEmailAndInvalidPassword -->
+        <test-method status="PASS" signature="successfulLogin()[pri:3, instance:DefaultPackage.LoginTestSuite@1e67b872]" name="successfulLogin" duration-ms="2862" started-at="2019-06-15T20:16:47Z" finished-at="2019-06-15T20:16:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:DefaultPackage.LoginTestSuite@1e67b872]" name="tearDown" is-config="true" duration-ms="4091" started-at="2019-06-15T20:16:50Z" finished-at="2019-06-15T20:16:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- DefaultPackage.TestNG_TestQ -->
+      </class> <!-- DefaultPackage.LoginTestSuite -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
