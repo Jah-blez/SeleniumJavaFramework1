@@ -37,7 +37,7 @@ public class ProfilePage {
 	public ProfilePage(WebDriver driver) {
 		this.driver = driver;
 	}
-	public void VerifyErrToastMsgInvalidCurrentPasswordSupplied() {
+	public void VerifyErrToastMsgInvalidCurrentPasswordSuppliedIsDisplayed() {
 		if (driver.findElement(errToastMsgInvalidCurrentPasswordSupplied).isDisplayed()) {
 			System.out.println("errToastMsgInvalidCurrentPasswordSupplied is Present");
 		} else {

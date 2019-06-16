@@ -10,7 +10,7 @@ public class QTHomePageScreen2 {
 	By loginButton = By.xpath("//button[@class='btn btn__login']");
 	By DashBoardIcon = By.xpath("//span[@class='sidebar__icons home__icon']//*[@id='Capa_1']");
 	By Send_ReceiveMoneyIcon = By.xpath("//span[contains(text(),'Send/Receive Money')]");
-	By buyAirtimeIcon = By.xpath("//span[@class='sidebar__label'][contains(text(),'Buy Airtime')]");
+	By buyAirtimeIcon = By.xpath("//span[contains(text(),'Buy Airtime')]");
 	By payBillsIcon = By.xpath("//span[@class='sidebar__label'][contains(text(),'Buy Airtime')]");
 	By MoreIcon = By.xpath("//span[@class='sidebar__icons']//*[@id='Capa_1']");
 	By ReferalDropDownIcon = By.xpath("//span[@id='ReferralDropDown']//*[@id='Capa_1']");
@@ -31,6 +31,11 @@ public class QTHomePageScreen2 {
 
 	public void clickOnLoginButton(){
 		driver.findElement(loginButton).click();
+		System.out.println("loginButton ClickOn Successfully");
+	}
+	public void clickOnBuyAirtimeIcon(){
+		driver.findElement(buyAirtimeIcon).click();
+		System.out.println("buyAirtimeIcon ClickOn Successfully");
 	}
 	public void VerifyLoginButtonIsPresent(){
 		if( driver.findElement(loginButton).isDisplayed())
@@ -64,10 +69,7 @@ public class QTHomePageScreen2 {
 		driver.findElement(Send_ReceiveMoneyIcon).click();
 		System.out.println("Send_ReceiveMoneyIcon Click Successfully");
 	}
-	public void buyAirtimeIcon(){
-		driver.findElement(buyAirtimeIcon).click();
-		System.out.println("DashboardIcon Click Successfully");
-	}
+	
 	public void VerifyBuyAirtimeIconIsPresent(){
 		if( driver.findElement(buyAirtimeIcon).isDisplayed())
 		{

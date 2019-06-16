@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="DefaultPackage.TestNG_TestQ">
+      <class name="Actions.BuyAirtimeTestSuite">
         <methods>
-          <include name="tearDown"/>
-          <include name="testingQt2"/>
           <include name="startUp"/>
+          <include name="tearDown"/>
+          <include name="buyAirtimeFlow"/>
         </methods>
-      </class> <!-- DefaultPackage.TestNG_TestQ -->
+      </class> <!-- Actions.BuyAirtimeTestSuite -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
