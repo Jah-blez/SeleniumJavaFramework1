@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="78820" started-at="2019-06-18T15:39:18Z" finished-at="2019-06-18T15:40:37Z">
+  <suite name="Suite" duration-ms="82752" started-at="2019-06-18T16:58:33Z" finished-at="2019-06-18T16:59:56Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="78820" started-at="2019-06-18T15:39:18Z" finished-at="2019-06-18T15:40:37Z">
+    <test name="Test" duration-ms="82752" started-at="2019-06-18T16:58:33Z" finished-at="2019-06-18T16:59:56Z">
       <class name="actions.LoginTestSuite">
-        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.LoginTestSuite@1e67b872]" name="startUp" is-config="true" duration-ms="35658" started-at="2019-06-18T16:39:18Z" finished-at="2019-06-18T16:39:54Z">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.LoginTestSuite@1e67b872]" name="startUp" is-config="true" duration-ms="47021" started-at="2019-06-18T17:58:33Z" finished-at="2019-06-18T17:59:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="InvalidUsernameAndValidPassword()[pri:1, instance:actions.LoginTestSuite@1e67b872]" name="InvalidUsernameAndValidPassword" duration-ms="22326" started-at="2019-06-18T16:39:54Z" finished-at="2019-06-18T16:40:16Z">
+        <test-method status="PASS" signature="InvalidUsernameAndValidPassword()[pri:1, instance:actions.LoginTestSuite@1e67b872]" name="InvalidUsernameAndValidPassword" duration-ms="16575" started-at="2019-06-18T17:59:20Z" finished-at="2019-06-18T17:59:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvalidUsernameAndValidPassword -->
-        <test-method status="PASS" signature="validEmailAndInvalidPassword()[pri:2, instance:actions.LoginTestSuite@1e67b872]" name="validEmailAndInvalidPassword" duration-ms="12259" started-at="2019-06-18T16:40:16Z" finished-at="2019-06-18T16:40:29Z">
+        <test-method status="PASS" signature="validEmailAndInvalidPassword()[pri:2, instance:actions.LoginTestSuite@1e67b872]" name="validEmailAndInvalidPassword" duration-ms="12029" started-at="2019-06-18T17:59:37Z" finished-at="2019-06-18T17:59:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validEmailAndInvalidPassword -->
-        <test-method status="PASS" signature="successfulLogin()[pri:3, instance:actions.LoginTestSuite@1e67b872]" name="successfulLogin" duration-ms="3811" started-at="2019-06-18T16:40:29Z" finished-at="2019-06-18T16:40:32Z">
+        <test-method status="PASS" signature="successfulLogin()[pri:3, instance:actions.LoginTestSuite@1e67b872]" name="successfulLogin" duration-ms="3238" started-at="2019-06-18T17:59:49Z" finished-at="2019-06-18T17:59:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successfulLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.LoginTestSuite@1e67b872]" name="tearDown" is-config="true" duration-ms="4745" started-at="2019-06-18T16:40:32Z" finished-at="2019-06-18T16:40:37Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.LoginTestSuite@1e67b872]" name="tearDown" is-config="true" duration-ms="3864" started-at="2019-06-18T17:59:52Z" finished-at="2019-06-18T17:59:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
