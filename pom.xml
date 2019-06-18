@@ -55,7 +55,7 @@
 
 	<build>
 		<plugins>
-		<plugin>
+		<!-- <plugin>
 		<groupId>org.apache.maven.plugins</groupId>
 		<artifactId>maven-assembly-plugin</artifactId>
 		<executions>
@@ -73,7 +73,7 @@
 				<descriptor>src/main/assembly/bin.xml</descriptor>
 			</descriptors>
 		</configuration>
-		</plugin>
+		</plugin> -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -84,7 +84,7 @@
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
-		<plugin>
+	<!-- 	<plugin>
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-compiler-plugin</artifactId>
 			<version>3.6.1</version>
@@ -96,7 +96,7 @@
 					<executable>C:\Program Files\Java\jre1.8.0_171\bin\javac.exe</executable> 
 				
 			</configuration>
-		</plugin>
+		</plugin> -->
 		</plugins>
 	</build>
 </project>
