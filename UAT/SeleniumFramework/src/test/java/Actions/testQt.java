@@ -1,4 +1,4 @@
-package Actions;
+package actions;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -9,13 +9,13 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.aventstack.extentreports.ReportConfigurator;
 
-import Pages.QTHomePageScreen2;
-import Pages.QtHomePageScreen;
-import Pages.QtLoginPage;
-import Pages.QtLoginPage2;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import Pages.RecuringTransactionFlow;
 import log4j.log4jLogging;
+import pages.QTHomePageScreen2;
+import pages.QtHomePageScreen;
+import pages.QtLoginPage;
+import pages.QtLoginPage2;
+import pages.RecuringTransactionFlow;
 
 public class testQt {
 

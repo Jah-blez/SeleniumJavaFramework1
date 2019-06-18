@@ -1,4 +1,4 @@
-package Actions;
+package actions;
 
 import org.testng.annotations.Test;
 
@@ -13,14 +13,14 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import Pages.QTHomePageScreen2;
-import Pages.QtHomePageScreen;
-import Pages.QtLoginPage;
-import Pages.QtLoginPage2;
-import Pages.BuyAirtimePage;
-import Pages.Dashboard;
-import Pages.PayPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pages.BuyAirtimePage;
+import pages.Dashboard;
+import pages.PayPage;
+import pages.QTHomePageScreen2;
+import pages.QtHomePageScreen;
+import pages.QtLoginPage;
+import pages.QtLoginPage2;
 
 public class BuyAirtimeTestSuite {
 	static WebDriver driver = null;

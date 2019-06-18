@@ -1,4 +1,4 @@
-package Actions;
+package actions;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -15,10 +15,10 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
-import Pages.QTHomePageScreen2;
-import Pages.QtHomePageScreen;
-import Pages.QtLoginPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pages.QTHomePageScreen2;
+import pages.QtHomePageScreen;
+import pages.QtLoginPage;
 
 public class TestNG_TestQT {
 	static WebDriver driver = null;

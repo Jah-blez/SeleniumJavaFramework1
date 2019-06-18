@@ -1,4 +1,4 @@
-package Actions;
+package actions;
 
 import org.testng.annotations.Test;
 
@@ -13,12 +13,12 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import Pages.QTHomePageScreen2;
-import Pages.QtHomePageScreen;
-import Pages.QtLoginPage;
-import Pages.QtLoginPage2;
-import Pages.Dashboard;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pages.Dashboard;
+import pages.QTHomePageScreen2;
+import pages.QtHomePageScreen;
+import pages.QtLoginPage;
+import pages.QtLoginPage2;
 
 public class LoginTestSuite {
 	static WebDriver driver = null;
