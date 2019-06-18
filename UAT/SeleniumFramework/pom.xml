@@ -83,8 +83,20 @@
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
-				
 			</plugin>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.6.1</version>
+			<configuration>
+				<fork>true</fork>
+				<source>1.7</source>
+				<target>1.7</target>
+				<!--
+					<executable>C:\Program Files\Java\jre1.8.0_111\bin\javac.exe</executable> 
+				-->
+			</configuration>
+		</plugin>
 		</plugins>
 	</build>
 </project>
