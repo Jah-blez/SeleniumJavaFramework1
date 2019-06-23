@@ -1,14 +1,10 @@
 package actions;
 
 import org.testng.annotations.Test;
-
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
@@ -23,8 +19,9 @@ import pages.QTHomePageScreen2;
 import pages.QtHomePageScreen;
 import pages.QtLoginPage;
 import pages.QtLoginPage2;
+import pages.RecuringPageFlow;
 
-public class BuyAirtimeTestSuite {
+public class RecurringTransactionFlow {
 	static WebDriver driver = null;
 
 	@BeforeTest
@@ -41,7 +38,6 @@ public class BuyAirtimeTestSuite {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://qt-v5.qa.interswitchng.com/");
 		driver.manage().window().maximize();
-		JavascriptExecutor js = (JavascriptExecutor) driver;
 
 		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
 		HomeScreenObjects.clickOnLoginButton();
@@ -56,55 +52,26 @@ public class BuyAirtimeTestSuite {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		HomeScreenObjects.clickOnBuyAirtimeIcon();
-		
-		BuyAirtimePage BuyAirtimePageObjects = new BuyAirtimePage(driver);
-	/*	BuyAirtimePageObjects.clickOnArrowNetworkFieldDropDownSelfRecharge();
-		try {
+		Dashboard DashboardObjects = new Dashboard(driver);
+		DashboardObjects.ClickOnRecurringAirtimeIcon();
+				try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		BuyAirtimePageObjects.selectAirtelRechargePinOptionFromDropDown();*/
-		BuyAirtimePageObjects.clickOnArrowToTopUpOthersDropDown();
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		BuyAirtimePageObjects.EnterMobileNumberInFieldInTopOtherNumbersSection("08038710144");
-		BuyAirtimePageObjects.EnterAmountInRechargeOthersField("100");
-		BuyAirtimePageObjects.clickOnContinueButtonRechargeOthersSection();
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		PayPage PayPageObjects = new PayPage(driver);
-		PayPageObjects.EnterCardNumberInTextField("5060990580000217499");
-		PayPageObjects.EnterExpiryDate("0");
-		PayPageObjects.EnterExpiryDate("3");
-		PayPageObjects.EnterExpiryDate("5");
-		PayPageObjects.EnterExpiryDate("0");
-		PayPageObjects.EnterCvv("111");
-		
+		RecuringPageFlow RecurringPageObjects = new RecuringPageFlow(driver);
+		RecurringPageObjects.clickOnFirstRecurringRechargeItemOnTheListAirtimeOnTheListAirtime();
+		RecurringPageObjects.clickOnArrowDropdownOfFirstRecurringRechargeItemOnTheListAirtime();
+		RecurringPageObjects.clickOnFirstRecurringRechargeItemOnTheListAirtimeOnTheListAirtime();
+		RecurringPageObjects.clickOndeleteOptionAirtimePage();
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		PayPageObjects.clickOnPinNumber1();
-		PayPageObjects.clickOnPinNumber1();
-		PayPageObjects.clickOnPinNumber1();
-		PayPageObjects.clickOnPinNumber1();
 		
-		WebElement payButton = driver.findElement(By.xpath("//button[@id='webpayPay']"));
-		js.executeScript("arguments[0].scrollIntoView();", payButton);
-		PayPageObjects.VerifyPayButtonIsPresent();
 		System.out.println("Test Passed");
 		}
 
