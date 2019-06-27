@@ -1,33 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="91437" started-at="2019-06-23T20:40:16Z" finished-at="2019-06-23T20:41:48Z">
+  <suite name="Suite" duration-ms="186413" started-at="2019-06-27T16:33:01Z" finished-at="2019-06-27T16:36:08Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="91437" started-at="2019-06-23T20:40:16Z" finished-at="2019-06-23T20:41:48Z">
+    <test name="Test" duration-ms="186413" started-at="2019-06-27T16:33:01Z" finished-at="2019-06-27T16:36:08Z">
       <class name="actions.LoginTestSuite">
-        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.LoginTestSuite@1e67b872]" name="startUp" is-config="true" duration-ms="12785" started-at="2019-06-23T21:40:16Z" finished-at="2019-06-23T21:40:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="InvalidUsernameAndValidPassword()[pri:1, instance:actions.LoginTestSuite@1e67b872]" name="InvalidUsernameAndValidPassword" duration-ms="56077" started-at="2019-06-23T21:40:29Z" finished-at="2019-06-23T21:41:25Z">
+        <test-method status="PASS" signature="InvalidUsernameAndValidPassword()[pri:1, instance:actions.LoginTestSuite@60addb54]" name="InvalidUsernameAndValidPassword" duration-ms="23740" started-at="2019-06-27T17:34:47Z" finished-at="2019-06-27T17:35:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvalidUsernameAndValidPassword -->
-        <test-method status="PASS" signature="validEmailAndInvalidPassword()[pri:2, instance:actions.LoginTestSuite@1e67b872]" name="validEmailAndInvalidPassword" duration-ms="12328" started-at="2019-06-23T21:41:25Z" finished-at="2019-06-23T21:41:37Z">
+        <test-method status="PASS" signature="validEmailAndInvalidPassword()[pri:2, instance:actions.LoginTestSuite@60addb54]" name="validEmailAndInvalidPassword" duration-ms="12059" started-at="2019-06-27T17:35:45Z" finished-at="2019-06-27T17:35:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validEmailAndInvalidPassword -->
-        <test-method status="PASS" signature="successfulLogin()[pri:3, instance:actions.LoginTestSuite@1e67b872]" name="successfulLogin" duration-ms="4965" started-at="2019-06-23T21:41:37Z" finished-at="2019-06-23T21:41:42Z">
+        <test-method status="PASS" signature="successfulLogin()[pri:3, instance:actions.LoginTestSuite@60addb54]" name="successfulLogin" duration-ms="3163" started-at="2019-06-27T17:35:57Z" finished-at="2019-06-27T17:36:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successfulLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.LoginTestSuite@1e67b872]" name="tearDown" is-config="true" duration-ms="5267" started-at="2019-06-23T21:41:42Z" finished-at="2019-06-23T21:41:48Z">
+      </class> <!-- actions.LoginTestSuite -->
+      <class name="actions.BuyAirtimeTestSuite">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.BuyAirtimeTestSuite@3f2a3a5]" name="startUp" is-config="true" duration-ms="49344" started-at="2019-06-27T17:33:01Z" finished-at="2019-06-27T17:33:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.LoginTestSuite@60addb54]" name="startUp" is-config="true" duration-ms="55993" started-at="2019-06-27T17:33:50Z" finished-at="2019-06-27T17:34:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="buyAirtimeFlow()[pri:1, instance:actions.BuyAirtimeTestSuite@3f2a3a5]" name="buyAirtimeFlow" duration-ms="34712" started-at="2019-06-27T17:35:10Z" finished-at="2019-06-27T17:35:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyAirtimeFlow -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.BuyAirtimeTestSuite@3f2a3a5]" name="tearDown" is-config="true" duration-ms="3364" started-at="2019-06-27T17:36:00Z" finished-at="2019-06-27T17:36:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- actions.LoginTestSuite -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.LoginTestSuite@60addb54]" name="tearDown" is-config="true" duration-ms="4008" started-at="2019-06-27T17:36:04Z" finished-at="2019-06-27T17:36:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- actions.BuyAirtimeTestSuite -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -40,10 +40,19 @@ public class PayPage {
 	By errMsgCardExpired = By.xpath("//li[contains(@class,'parsley-isExpiredCard')]");
 	By cancelIconOnWalletCardsToVerifyPreviousCardIsDefaulted = By.xpath("//section[@id='walletCards']//span[contains(@class,'Select-clear')][contains(text(),'×')]");
 	By cancelIconOnAccountTypeToVerifyNotSureIsDefaulted = By.xpath("//section[@id='walletCards']//span[contains(@class,'Select-clear')][contains(text(),'×')]");
+	By otpTextField = By.xpath("//input[@id='otp']");
 
 	public PayPage(WebDriver driver) {
 		
 		this.driver  = driver;
+	}
+	
+	public void VerifyOtpTextFieldIsPresent() {
+		if (driver.findElement(otpTextField).isDisplayed()) {
+			System.out.println("otpTextField is Present");
+		} else {
+			System.out.println("otpTextField is Absent");
+		}
 	}
 	public void VerifyCancelIconOnAccountTypeToVerifyNotSureIsDefaulted() {
 		if (driver.findElement(cancelIconOnAccountTypeToVerifyNotSureIsDefaulted).isDisplayed()) {
@@ -225,6 +234,6 @@ public class PayPage {
 		driver.findElement(cvv).sendKeys(text);
 		System.out.println("cvv Successfully Entered");
 	}
-
+	
 }
 

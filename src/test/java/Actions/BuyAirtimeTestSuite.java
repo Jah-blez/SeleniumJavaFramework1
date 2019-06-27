@@ -74,8 +74,8 @@ public class BuyAirtimeTestSuite {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		BuyAirtimePageObjects.EnterMobileNumberInFieldInTopOtherNumbersSection("08038710144");
-		BuyAirtimePageObjects.EnterAmountInRechargeOthersField("100");
+		BuyAirtimePageObjects.EnterMobileNumberInFieldInTopOtherNumbersSection("08124888436");
+		BuyAirtimePageObjects.EnterAmountInRechargeOthersField("500");
 		BuyAirtimePageObjects.clickOnContinueButtonRechargeOthersSection();
 		try {
 			Thread.sleep(1000);
@@ -97,6 +97,8 @@ public class BuyAirtimeTestSuite {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		WebElement pinPad = driver.findElement(By.xpath("//div[contains(@class,'open__pinpad')]"));
+		js.executeScript("arguments[0].scrollIntoView();", pinPad);
 		PayPageObjects.clickOnPinNumber1();
 		PayPageObjects.clickOnPinNumber1();
 		PayPageObjects.clickOnPinNumber1();
@@ -105,6 +107,14 @@ public class BuyAirtimeTestSuite {
 		WebElement payButton = driver.findElement(By.xpath("//button[@id='webpayPay']"));
 		js.executeScript("arguments[0].scrollIntoView();", payButton);
 		PayPageObjects.VerifyPayButtonIsPresent();
+		PayPageObjects.clickOnPayButton();
+		PayPageObjects.VerifyOtpTextFieldIsPresent();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		System.out.println("Test Passed");
 		}
 

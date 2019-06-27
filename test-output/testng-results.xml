@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="84674" started-at="2019-06-23T20:32:51Z" finished-at="2019-06-23T20:34:16Z">
+  <suite name="Default suite" duration-ms="94032" started-at="2019-06-27T16:25:51Z" finished-at="2019-06-27T16:27:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="84674" started-at="2019-06-23T20:32:51Z" finished-at="2019-06-23T20:34:16Z">
+    <test name="Default test" duration-ms="94032" started-at="2019-06-27T16:25:51Z" finished-at="2019-06-27T16:27:25Z">
       <class name="actions.BuyAirtimeTestSuite">
-        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.BuyAirtimeTestSuite@8bd1b6a]" name="startUp" is-config="true" duration-ms="10792" started-at="2019-06-23T21:32:51Z" finished-at="2019-06-23T21:33:02Z">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.BuyAirtimeTestSuite@8bd1b6a]" name="startUp" is-config="true" duration-ms="68060" started-at="2019-06-27T17:25:51Z" finished-at="2019-06-27T17:26:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="buyAirtimeFlow()[pri:1, instance:actions.BuyAirtimeTestSuite@8bd1b6a]" name="buyAirtimeFlow" duration-ms="71091" started-at="2019-06-23T21:33:02Z" finished-at="2019-06-23T21:34:13Z">
+        <test-method status="PASS" signature="buyAirtimeFlow()[pri:1, instance:actions.BuyAirtimeTestSuite@8bd1b6a]" name="buyAirtimeFlow" duration-ms="23090" started-at="2019-06-27T17:26:59Z" finished-at="2019-06-27T17:27:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- buyAirtimeFlow -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.BuyAirtimeTestSuite@8bd1b6a]" name="tearDown" is-config="true" duration-ms="2763" started-at="2019-06-23T21:34:13Z" finished-at="2019-06-23T21:34:16Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.BuyAirtimeTestSuite@8bd1b6a]" name="tearDown" is-config="true" duration-ms="2862" started-at="2019-06-27T17:27:22Z" finished-at="2019-06-27T17:27:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -4,6 +4,7 @@
 	<test name="Test">
 		<classes>
 			<class name="actions.LoginTestSuite" />
+			<class name="actions.BuyAirtimeTestSuite" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
