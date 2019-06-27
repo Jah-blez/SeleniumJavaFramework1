@@ -34,7 +34,7 @@ public class RecurringTransactionFlow {
 	}
 
 	@Test(priority = 1)
-	public void buyAirtimeFlow() {
+	public void verifyRecurringElements() {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://qt-v5.qa.interswitchng.com/");
 		driver.manage().window().maximize();
@@ -63,8 +63,59 @@ public class RecurringTransactionFlow {
 		RecuringPageFlow RecurringPageObjects = new RecuringPageFlow(driver);
 		RecurringPageObjects.clickOnFirstRecurringRechargeItemOnTheListAirtimeOnTheListAirtime();
 		RecurringPageObjects.clickOnArrowDropdownOfFirstRecurringRechargeItemOnTheListAirtime();
-		RecurringPageObjects.clickOnFirstRecurringRechargeItemOnTheListAirtimeOnTheListAirtime();
-		RecurringPageObjects.clickOndeleteOptionAirtimePage();
+		RecurringPageObjects.VerifydeleteOptionIsPresent();
+		RecurringPageObjects.VerifyViewOptionIsPresent();
+		RecurringPageObjects.VerifyResumeOptionIsPresent();
+		RecurringPageObjects.VerifyPauseOptionIsPresent();
+		RecurringPageObjects.clickOnViewOptionAirtimePage();
+		RecurringPageObjects.VerifyScheduleReference1stElementIsPresent();
+		RecurringPageObjects.VerifyStartDate1stElementIsPresent();
+		RecurringPageObjects.VerifyEndDate1stElementIsPresent();
+		RecurringPageObjects.VerifyNextBillingDate1stElementIsPresent();
+		RecurringPageObjects.VerifyLastScheduledDate1stElementIsPresent();
+		RecurringPageObjects.clickOnCloseButton();
+		
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		System.out.println("Test Passed");
+		}
+	
+	@Test(priority = 1)
+	public void addASchedule() {
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.get("https://qt-v5.qa.interswitchng.com/");
+		driver.manage().window().maximize();
+
+		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
+		HomeScreenObjects.clickOnLoginButton();
+
+		QtLoginPage2 LoginScreenObjects = new QtLoginPage2(driver);
+		LoginScreenObjects.EnterUserNameInUserNameField("dadubiaro@interswitch.com");
+		LoginScreenObjects.EnterPasswordInUserPasswordField("password");
+		LoginScreenObjects.ClickOnLoginButton();
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		Dashboard DashboardObjects = new Dashboard(driver);
+		DashboardObjects.ClickOnRecurringAirtimeIcon();
+				try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		RecuringPageFlow RecurringPageObjects = new RecuringPageFlow(driver);
+		RecurringPageObjects.clickOnAddButtonRecurring();
+		
+		
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
