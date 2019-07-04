@@ -36,7 +36,12 @@ public class RecuringPageFlow {
 	By noNetworkErrMsgRecurring = By.xpath("//li[contains(text(),'Please select a network')]");
 	By noMobileNumberErrMsg = By.xpath("//li[contains(text(),'Please enter a mobile number')]");
 	By noDescriptionErrMsg = By.xpath("//li[contains(text(),'Please enter a description')]");
-		
+	By frequencyArrowDropdownOnSetUpScheduleForm = By.xpath("//form[@id='setupScheduleForm']//span[@class='Select-arrow']");
+	By dailyFrequency = By.xpath("//*[contains(@class, 'Select-menu-outer')]//*[contains(@class, 'Select-menu')//*[contains(@class, 'Select-option') and contains(@title, 'Daily')]");
+	By weeklyFrequency = By.xpath("//*[contains(@class, 'Select-menu-outer')]//*[contains(@class, 'Select-menu')//*[contains(@class, 'Select-option') and contains(@title, 'Weekly')]");
+	By monthlyFrequency = By.xpath("//*[contains(@class, 'Select-menu-outer')]//*[contains(@class, 'Select-menu')//*[contains(@class, 'Select-option') and contains(@title, 'Monthly')]");
+	
+
 	
 	//Elements on Recurring Bills Page
 	public void clickOnCloseButton(){

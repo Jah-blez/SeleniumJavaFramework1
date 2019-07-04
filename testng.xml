@@ -1,10 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-	<test name="Test">
+<suite thread-count="1" name="Suite" parallel="false"
+	preserve-order="true">
+	 <test name="Test1">
 		<classes>
-			<class name="actions.LoginTestSuite" />
 			<class name="actions.BuyAirtimeTestSuite" />
 		</classes>
-	</test> <!-- Test -->
+	</test>
+	<test name="Test2">
+		<classes>
+			<class name="actions.LoginTestSuite" />
+		</classes>
+	</test>
+	<test name="Test3">
+		<classes>
+			<class name="actions.HomeScreenTestSuite" />
+		</classes>
+	</test> 
+<!-- 	<test name="Test4">
+		<classes>
+			<class name="actions.RecurringTransactionFlow" />
+		</classes>
+	</test> -->
+	<test name="Test5">
+		<classes>
+			<class name="actions.SavedPaymentSuite" />
+		</classes>
+	</test> 
 </suite> <!-- Suite -->
+<!-- <class name="actions.LoginTestSuite" /> <class name="actions.BuyAirtimeTestSuite" 
+	/> <class name="actions.SavedPaymentSuite" /> <class name="actions.HomeScreenTestSuite" 
+	/> <class name="actions.RecurringTransactionFlow" /> -->

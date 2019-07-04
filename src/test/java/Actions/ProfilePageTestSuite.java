@@ -43,7 +43,7 @@ public class ProfilePageTestSuite {
 		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
 		HomeScreenObjects.clickOnLoginButton();
 		QtLoginPage2 LoginScreenObjects = new QtLoginPage2(driver);
-		LoginScreenObjects.EnterUserNameInUserNameField("abc@test.com");
+		LoginScreenObjects.EnterUserNameInUserNameField("for@gh.com");
 		LoginScreenObjects.EnterPasswordInUserPasswordField("password");
 		LoginScreenObjects.ClickOnLoginButton();
 		TopBarHeader TopBarHeaderObjects = new TopBarHeader(driver);
@@ -68,7 +68,7 @@ public class ProfilePageTestSuite {
 		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
 		HomeScreenObjects.clickOnLoginButton();
 		QtLoginPage2 LoginScreenObjects = new QtLoginPage2(driver);
-		LoginScreenObjects.EnterUserNameInUserNameField("abc@test.com");
+		LoginScreenObjects.EnterUserNameInUserNameField("for@gh.com");
 		LoginScreenObjects.EnterPasswordInUserPasswordField("password");
 		LoginScreenObjects.ClickOnLoginButton();
 		TopBarHeader TopBarHeaderObjects = new TopBarHeader(driver);
@@ -94,7 +94,7 @@ public class ProfilePageTestSuite {
 		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
 		HomeScreenObjects.clickOnLoginButton();
 		QtLoginPage2 LoginScreenObjects = new QtLoginPage2(driver);
-		LoginScreenObjects.EnterUserNameInUserNameField("abc@test.com");
+		LoginScreenObjects.EnterUserNameInUserNameField("for@gh.com");
 		LoginScreenObjects.EnterPasswordInUserPasswordField("password");
 		LoginScreenObjects.ClickOnLoginButton();
 		TopBarHeader TopBarHeaderObjects = new TopBarHeader(driver);
@@ -118,7 +118,7 @@ public class ProfilePageTestSuite {
 		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
 		HomeScreenObjects.clickOnLoginButton();
 		QtLoginPage2 LoginScreenObjects = new QtLoginPage2(driver);
-		LoginScreenObjects.EnterUserNameInUserNameField("abc@test.com");
+		LoginScreenObjects.EnterUserNameInUserNameField("for@gh.com");
 		LoginScreenObjects.EnterPasswordInUserPasswordField("password");
 		LoginScreenObjects.ClickOnLoginButton();
 		TopBarHeader TopBarHeaderObjects = new TopBarHeader(driver);
@@ -143,7 +143,7 @@ public class ProfilePageTestSuite {
 		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
 		HomeScreenObjects.clickOnLoginButton();
 		QtLoginPage2 LoginScreenObjects = new QtLoginPage2(driver);
-		LoginScreenObjects.EnterUserNameInUserNameField("abc@test.com");
+		LoginScreenObjects.EnterUserNameInUserNameField("for@gh.com");
 		LoginScreenObjects.EnterPasswordInUserPasswordField("password");
 		LoginScreenObjects.ClickOnLoginButton();
 		TopBarHeader TopBarHeaderObjects = new TopBarHeader(driver);

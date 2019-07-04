@@ -6,12 +6,16 @@
       <class name="actions.LoginTestSuite">
         <methods>
           <include name="startUp"/>
-          <include name="InvalidUsernameAndValidPassword"/>
-          <include name="successfulLogin"/>
           <include name="tearDown"/>
-          <include name="validEmailAndInvalidPassword"/>
         </methods>
       </class> <!-- actions.LoginTestSuite -->
+      <class name="actions.BuyAirtimeTestSuite">
+        <methods>
+          <include name="startUp"/>
+          <include name="tearDown"/>
+          <include name="buyAirtimeFlow"/>
+        </methods>
+      </class> <!-- actions.BuyAirtimeTestSuite -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

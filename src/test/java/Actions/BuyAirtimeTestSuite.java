@@ -11,6 +11,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -50,12 +52,11 @@ public class BuyAirtimeTestSuite {
 		LoginScreenObjects.EnterUserNameInUserNameField("dadubiaro@interswitch.com");
 		LoginScreenObjects.EnterPasswordInUserPasswordField("password");
 		LoginScreenObjects.ClickOnLoginButton();
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
+		WebDriverWait wait = new WebDriverWait(driver, 60);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Buy Airtime')]")));
+		Dashboard DashboardObjects = new Dashboard(driver);
+		DashboardObjects.VerifyRecurringAirtimeIconIsPresent();
 		HomeScreenObjects.clickOnBuyAirtimeIcon();
 		
 		BuyAirtimePage BuyAirtimePageObjects = new BuyAirtimePage(driver);
@@ -108,13 +109,19 @@ public class BuyAirtimeTestSuite {
 		js.executeScript("arguments[0].scrollIntoView();", payButton);
 		PayPageObjects.VerifyPayButtonIsPresent();
 		PayPageObjects.clickOnPayButton();
-		PayPageObjects.VerifyOtpTextFieldIsPresent();
-		try {
-			Thread.sleep(5000);
+		/*try {
+			Thread.sleep(1000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		PayPageObjects.VerifyOtpTextFieldIsPresent();
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}*/
 		System.out.println("Test Passed");
 		}
 

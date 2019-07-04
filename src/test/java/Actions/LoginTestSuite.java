@@ -19,6 +19,7 @@ import pages.QTHomePageScreen2;
 import pages.QtHomePageScreen;
 import pages.QtLoginPage;
 import pages.QtLoginPage2;
+import pages.TopBarHeader;
 
 public class LoginTestSuite {
 	static WebDriver driver = null;
@@ -43,12 +44,13 @@ public class LoginTestSuite {
 
 		QtLoginPage2 LoginScreenObjects = new QtLoginPage2(driver);
 
-		LoginScreenObjects.EnterUserNameInUserNameField("dadubiaro@interswitch.cm");
+		LoginScreenObjects.EnterUserNameInUserNameField("fg@th.colllllm");
 		LoginScreenObjects.EnterPasswordInUserPasswordField("password");
 		LoginScreenObjects.ClickOnLoginButton();
 		LoginScreenObjects.VerifyInvalidEmailOrMobileNo_ErrMsg2Displays();
+				
 		System.out.println("Test Passed");
-		
+	
 	}
 
 	@Test(priority = 2)
@@ -61,12 +63,13 @@ public class LoginTestSuite {
 		HomeScreenObjects.clickOnLoginButton();
 
 		QtLoginPage2 LoginScreenObjects = new QtLoginPage2(driver);
-		LoginScreenObjects.EnterUserNameInUserNameField("dadubiaro@interswitch.com");
-		LoginScreenObjects.EnterPasswordInUserPasswordField("passwrd");
+		LoginScreenObjects.EnterUserNameInUserNameField("fg@th.com");
+		LoginScreenObjects.EnterPasswordInUserPasswordField("passwrpppd");
 		LoginScreenObjects.ClickOnLoginButton();
 		LoginScreenObjects.VerifyInvalidPassword_ErrMsg2Displays();
-		System.out.println("Test Passed");
 		
+		System.out.println("Test Passed");
+	
 	}
 
 	@Test(priority = 3)
@@ -77,13 +80,12 @@ public class LoginTestSuite {
 		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
 		HomeScreenObjects.clickOnLoginButton();
 		QtLoginPage2 LoginScreenObjects = new QtLoginPage2(driver);
-		LoginScreenObjects.EnterUserNameInUserNameField("dadubiaro@interswitch.com");
+		LoginScreenObjects.EnterUserNameInUserNameField("fg@th.com");
 		LoginScreenObjects.EnterPasswordInUserPasswordField("password");
 		LoginScreenObjects.ClickOnLoginButton();
 		Dashboard DashboardObjects = new Dashboard(driver);
 		DashboardObjects.VerifyRecurringAirtimeIconIsPresent();
-
-		// driver.close();
+		
 		System.out.println("Test Passed");
 	}
 

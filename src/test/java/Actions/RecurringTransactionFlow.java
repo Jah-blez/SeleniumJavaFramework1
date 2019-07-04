@@ -85,7 +85,7 @@ public class RecurringTransactionFlow {
 		System.out.println("Test Passed");
 		}
 	
-	@Test(priority = 1)
+	/*@Test(priority = 1)
 	public void addASchedule() {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://qt-v5.qa.interswitchng.com/");
@@ -124,7 +124,7 @@ public class RecurringTransactionFlow {
 		}
 		
 		System.out.println("Test Passed");
-		}
+		}*/
 
 	@AfterTest
 	public void tearDown() {
