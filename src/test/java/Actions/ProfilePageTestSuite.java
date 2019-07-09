@@ -34,7 +34,7 @@ public class ProfilePageTestSuite {
 		WebDriverManager.firefoxdriver().setup();
 		driver = new FirefoxDriver();
 	}
-/*
+
 	@Test(priority = 1)
 	public static void changeFirstLastNameSuccessfully() {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -133,19 +133,14 @@ public class ProfilePageTestSuite {
 		ProfilePageObjects.errMsgPleaseEnterYourPasswordConfirmationIsPresent();
 					
 		System.out.println("Test Passed");
-	}*/
+	}
 	
 	@Test(priority = 5)
 	public static void changePasswordSuccessfully() {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("https://qt-v5.qa.interswitchng.com/");
+		driver.get("https://quicktellerrecurring-uat.k8.isw.la/");
 		driver.manage().window().maximize();
-		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
-		HomeScreenObjects.clickOnLoginButton();
-		QtLoginPage2 LoginScreenObjects = new QtLoginPage2(driver);
-		LoginScreenObjects.EnterUserNameInUserNameField("for@gh.com");
-		LoginScreenObjects.EnterPasswordInUserPasswordField("password");
-		LoginScreenObjects.ClickOnLoginButton();
+		
 		TopBarHeader TopBarHeaderObjects = new TopBarHeader(driver);
 		TopBarHeaderObjects.clickOnProfileIcon();
 		TopBarHeaderObjects.clickOnInnerProfileIcon();

@@ -17,11 +17,11 @@
 			<class name="actions.HomeScreenTestSuite" />
 		</classes>
 	</test> 
-<!-- 	<test name="Test4">
+	<test name="Test4">
 		<classes>
-			<class name="actions.RecurringTransactionFlow" />
+			<class name="actions.ProfilePageTestSuite" />
 		</classes>
-	</test> -->
+	</test> 
 	<test name="Test5">
 		<classes>
 			<class name="actions.SavedPaymentSuite" />
