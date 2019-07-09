@@ -1,33 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="39013" started-at="2019-06-30T11:31:05Z" finished-at="2019-06-30T11:31:44Z">
+  <suite name="Default suite" duration-ms="68547" started-at="2019-07-09T10:06:43Z" finished-at="2019-07-09T10:07:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="39013" started-at="2019-06-30T11:31:05Z" finished-at="2019-06-30T11:31:44Z">
-      <class name="actions.SavedPaymentSuite">
-        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.SavedPaymentSuite@8bd1b6a]" name="startUp" is-config="true" duration-ms="13320" started-at="2019-06-30T12:31:05Z" finished-at="2019-06-30T12:31:18Z">
+    <test name="Default test" duration-ms="68547" started-at="2019-07-09T10:06:43Z" finished-at="2019-07-09T10:07:52Z">
+      <class name="actions.ProfilePageTestSuite">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.ProfilePageTestSuite@8bd1b6a]" name="startUp" is-config="true" duration-ms="56910" started-at="2019-07-09T11:06:43Z" finished-at="2019-07-09T11:07:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="verifyQROptionIsPresentWhenPayingFromSavedPaymentAirtime()[pri:1, instance:actions.SavedPaymentSuite@8bd1b6a]" name="verifyQROptionIsPresentWhenPayingFromSavedPaymentAirtime" duration-ms="12865" started-at="2019-06-30T12:31:18Z" finished-at="2019-06-30T12:31:31Z">
+        <test-method status="PASS" signature="changePasswordSuccessfully()[pri:5, instance:actions.ProfilePageTestSuite@8bd1b6a]" name="changePasswordSuccessfully" duration-ms="8584" started-at="2019-07-09T11:07:40Z" finished-at="2019-07-09T11:07:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyQROptionIsPresentWhenPayingFromSavedPaymentAirtime -->
-        <test-method status="PASS" signature="verifyQROptionIsPresentWhenPayingFromSavedPaymentForBills()[pri:2, instance:actions.SavedPaymentSuite@8bd1b6a]" name="verifyQROptionIsPresentWhenPayingFromSavedPaymentForBills" duration-ms="4726" started-at="2019-06-30T12:31:31Z" finished-at="2019-06-30T12:31:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyQROptionIsPresentWhenPayingFromSavedPaymentForBills -->
-        <test-method status="PASS" signature="verifyQROptionIsPresentWhenPayingFromSavedPaymentForTransfer()[pri:3, instance:actions.SavedPaymentSuite@8bd1b6a]" name="verifyQROptionIsPresentWhenPayingFromSavedPaymentForTransfer" duration-ms="4665" started-at="2019-06-30T12:31:36Z" finished-at="2019-06-30T12:31:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyQROptionIsPresentWhenPayingFromSavedPaymentForTransfer -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.SavedPaymentSuite@8bd1b6a]" name="tearDown" is-config="true" duration-ms="3413" started-at="2019-06-30T12:31:40Z" finished-at="2019-06-30T12:31:44Z">
+        </test-method> <!-- changePasswordSuccessfully -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.ProfilePageTestSuite@8bd1b6a]" name="tearDown" is-config="true" duration-ms="2923" started-at="2019-07-09T11:07:49Z" finished-at="2019-07-09T11:07:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- actions.SavedPaymentSuite -->
+      </class> <!-- actions.ProfilePageTestSuite -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

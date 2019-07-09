@@ -34,7 +34,7 @@ public class ProfilePageTestSuite {
 		WebDriverManager.firefoxdriver().setup();
 		driver = new FirefoxDriver();
 	}
-
+/*
 	@Test(priority = 1)
 	public static void changeFirstLastNameSuccessfully() {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -77,9 +77,9 @@ public class ProfilePageTestSuite {
 		
 		ProfilePage ProfilePageObjects = new ProfilePage(driver);
 		ProfilePageObjects.clickOnChangePwdButton();
-		ProfilePageObjects.EnterOldPassword("");
-		ProfilePageObjects.EnternewPassword("");
-		ProfilePageObjects.reTypePwdField("");
+		ProfilePageObjects.EnterOldPassword("passwooord");
+		ProfilePageObjects.EnternewPassword("pass@123*");
+		ProfilePageObjects.reTypePwdField("pass@123*");
 		ProfilePageObjects.clickOnInnerChangePwdButton();
 		ProfilePageObjects.VerifyErrToastMsgInvalidCurrentPasswordSuppliedIsDisplayed();
 	
@@ -127,13 +127,13 @@ public class ProfilePageTestSuite {
 		
 		ProfilePage ProfilePageObjects = new ProfilePage(driver);
 		ProfilePageObjects.clickOnChangePwdButton();
-		ProfilePageObjects.EnterOldPassword("");
+		ProfilePageObjects.EnterOldPassword("password");
 		ProfilePageObjects.clickOnInnerChangePwdButton();
 		ProfilePageObjects.errMsgPleaseEnterYourNewPasswordIsPresent();
 		ProfilePageObjects.errMsgPleaseEnterYourPasswordConfirmationIsPresent();
 					
 		System.out.println("Test Passed");
-	}
+	}*/
 	
 	@Test(priority = 5)
 	public static void changePasswordSuccessfully() {
@@ -152,9 +152,9 @@ public class ProfilePageTestSuite {
 		
 		ProfilePage ProfilePageObjects = new ProfilePage(driver);
 		ProfilePageObjects.clickOnChangePwdButton();
-		ProfilePageObjects.EnterOldPassword("");
-		ProfilePageObjects.EnternewPassword("");
-		ProfilePageObjects.reTypePwdField("");
+		ProfilePageObjects.EnterOldPassword("password");
+		ProfilePageObjects.EnternewPassword("Password12");
+		ProfilePageObjects.reTypePwdField("Password12");
 		ProfilePageObjects.clickOnInnerChangePwdButton();
 		ProfilePageObjects.verifySuccessfulChangePwdMsgIsDisplayed();
 					
