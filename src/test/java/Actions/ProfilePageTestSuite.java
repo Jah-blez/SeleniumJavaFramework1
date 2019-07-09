@@ -65,12 +65,12 @@ public class ProfilePageTestSuite {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://qt-v5.qa.interswitchng.com/");
 		driver.manage().window().maximize();
-		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
+	/*	QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
 		HomeScreenObjects.clickOnLoginButton();
 		QtLoginPage2 LoginScreenObjects = new QtLoginPage2(driver);
 		LoginScreenObjects.EnterUserNameInUserNameField("for@gh.com");
 		LoginScreenObjects.EnterPasswordInUserPasswordField("password");
-		LoginScreenObjects.ClickOnLoginButton();
+		LoginScreenObjects.ClickOnLoginButton();*/
 		TopBarHeader TopBarHeaderObjects = new TopBarHeader(driver);
 		TopBarHeaderObjects.clickOnProfileIcon();
 		TopBarHeaderObjects.clickOnInnerProfileIcon();
@@ -93,10 +93,10 @@ public class ProfilePageTestSuite {
 		driver.manage().window().maximize();
 		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
 		HomeScreenObjects.clickOnLoginButton();
-		QtLoginPage2 LoginScreenObjects = new QtLoginPage2(driver);
+		/*QtLoginPage2 LoginScreenObjects = new QtLoginPage2(driver);
 		LoginScreenObjects.EnterUserNameInUserNameField("for@gh.com");
 		LoginScreenObjects.EnterPasswordInUserPasswordField("password");
-		LoginScreenObjects.ClickOnLoginButton();
+		LoginScreenObjects.ClickOnLoginButton();*/
 		TopBarHeader TopBarHeaderObjects = new TopBarHeader(driver);
 		TopBarHeaderObjects.clickOnProfileIcon();
 		TopBarHeaderObjects.clickOnInnerProfileIcon();
@@ -116,11 +116,11 @@ public class ProfilePageTestSuite {
 		driver.get("https://qt-v5.qa.interswitchng.com/");
 		driver.manage().window().maximize();
 		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
-		HomeScreenObjects.clickOnLoginButton();
+		/*HomeScreenObjects.clickOnLoginButton();
 		QtLoginPage2 LoginScreenObjects = new QtLoginPage2(driver);
 		LoginScreenObjects.EnterUserNameInUserNameField("for@gh.com");
 		LoginScreenObjects.EnterPasswordInUserPasswordField("password");
-		LoginScreenObjects.ClickOnLoginButton();
+		LoginScreenObjects.ClickOnLoginButton();*/
 		TopBarHeader TopBarHeaderObjects = new TopBarHeader(driver);
 		TopBarHeaderObjects.clickOnProfileIcon();
 		TopBarHeaderObjects.clickOnInnerProfileIcon();
