@@ -10,7 +10,8 @@ public class ProfilePage {
 		By LastNameField = By.cssSelector("#editProfileFormLastname");
 		By emailField = By.cssSelector("#editProfileFormEmail");
 		By phoneNumberField = By.cssSelector("#editProfileFormMobilenumber");
-		By saveChangesButton = By.cssSelector("#editProfileFormButton");
+		//By saveChangesButton = By.cssSelector("#editProfileFormButton");
+		By saveChangesButton = By.xpath("//button[@id='editProfileFormButton']//span[@class='ladda-label'][contains(text(),'Save Changes')]");
 		By changePwdButton = By.xpath("//button[contains(text(),'Change Your Password')]");
 		By stateField = By.cssSelector("#editProfileFormState");
 		By cityField = By.cssSelector("#editProfileFormCity");
@@ -86,12 +87,18 @@ public class ProfilePage {
 			System.out.println("errPleaseEnterYourNewPassword is Absent");
 		}
 	}
-	
+	public void clearFirstNameField() {
+		driver.findElement(firstNameField).clear();
+		System.out.println("firstNameField Successfully Cleared");
+	}
 	public void EnterFirstNameInFirstNameField(String text) {
 		driver.findElement(firstNameField).sendKeys(text);
-		System.out.println("firstName Successfully Entered");
+		System.out.println("firstNameField Successfully Entered");
 	}
-
+	public void clearLastNameField() {
+		driver.findElement(LastNameField).clear();
+		System.out.println("LastNameField Successfully Cleared");
+	}
 	public void EnterLastNameInLastNameField(String text) {
 		driver.findElement(LastNameField).sendKeys(text);
 		System.out.println("LastName Successfully Entered");
@@ -99,6 +106,7 @@ public class ProfilePage {
 
 	public void clickOnSaveChangesButton() {
 		driver.findElement(saveChangesButton).click();
+		System.out.println("saveChangesButton Successfully Clicked");
 	}
 
 	public void clickOnChangePwdButton() {

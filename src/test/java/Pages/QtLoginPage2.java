@@ -25,7 +25,10 @@ public class QtLoginPage2 {
 		this.driver = driver;
 
 	}
-
+	public void ClearUserNameInUserNameField(){
+		driver.findElement(usenameField2).clear(); 
+		System.out.println("UserName Text Field Successfully Cleared");
+	}
 	public void EnterUserNameInUserNameField(String text){
 		driver.findElement(usenameField2).sendKeys(text); 
 		System.out.println("UserName Successfully Entered");

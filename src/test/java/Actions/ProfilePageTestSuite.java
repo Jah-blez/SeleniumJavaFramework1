@@ -50,8 +50,11 @@ public class ProfilePageTestSuite {
 		TopBarHeaderObjects.clickOnProfileIcon();
 		TopBarHeaderObjects.clickOnInnerProfileIcon();
 		ProfilePage ProfilePageObjects = new ProfilePage(driver);
+		ProfilePageObjects.clearFirstNameField();
 		ProfilePageObjects.EnterFirstNameInFirstNameField("testing1");
+		ProfilePageObjects.clearLastNameField();
 		ProfilePageObjects.EnterLastNameInLastNameField("LastName");
+	
 		ProfilePageObjects.clickOnSaveChangesButton();
 		ProfilePageObjects.verifySuccessfulProfileUpdatedMsgIsDisplayed();
 		
@@ -65,12 +68,7 @@ public class ProfilePageTestSuite {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://qt-v5.qa.interswitchng.com/");
 		driver.manage().window().maximize();
-	/*	QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
-		HomeScreenObjects.clickOnLoginButton();
-		QtLoginPage2 LoginScreenObjects = new QtLoginPage2(driver);
-		LoginScreenObjects.EnterUserNameInUserNameField("for@gh.com");
-		LoginScreenObjects.EnterPasswordInUserPasswordField("password");
-		LoginScreenObjects.ClickOnLoginButton();*/
+	
 		TopBarHeader TopBarHeaderObjects = new TopBarHeader(driver);
 		TopBarHeaderObjects.clickOnProfileIcon();
 		TopBarHeaderObjects.clickOnInnerProfileIcon();
@@ -91,12 +89,7 @@ public class ProfilePageTestSuite {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://qt-v5.qa.interswitchng.com/");
 		driver.manage().window().maximize();
-		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
-		HomeScreenObjects.clickOnLoginButton();
-		/*QtLoginPage2 LoginScreenObjects = new QtLoginPage2(driver);
-		LoginScreenObjects.EnterUserNameInUserNameField("for@gh.com");
-		LoginScreenObjects.EnterPasswordInUserPasswordField("password");
-		LoginScreenObjects.ClickOnLoginButton();*/
+				
 		TopBarHeader TopBarHeaderObjects = new TopBarHeader(driver);
 		TopBarHeaderObjects.clickOnProfileIcon();
 		TopBarHeaderObjects.clickOnInnerProfileIcon();
@@ -115,12 +108,7 @@ public class ProfilePageTestSuite {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://qt-v5.qa.interswitchng.com/");
 		driver.manage().window().maximize();
-		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
-		/*HomeScreenObjects.clickOnLoginButton();
-		QtLoginPage2 LoginScreenObjects = new QtLoginPage2(driver);
-		LoginScreenObjects.EnterUserNameInUserNameField("for@gh.com");
-		LoginScreenObjects.EnterPasswordInUserPasswordField("password");
-		LoginScreenObjects.ClickOnLoginButton();*/
+		
 		TopBarHeader TopBarHeaderObjects = new TopBarHeader(driver);
 		TopBarHeaderObjects.clickOnProfileIcon();
 		TopBarHeaderObjects.clickOnInnerProfileIcon();
@@ -138,7 +126,7 @@ public class ProfilePageTestSuite {
 	@Test(priority = 5)
 	public static void changePasswordSuccessfully() {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("https://quicktellerrecurring-uat.k8.isw.la/");
+		driver.get("https://qt-v5.qa.interswitchng.com/");
 		driver.manage().window().maximize();
 		
 		TopBarHeader TopBarHeaderObjects = new TopBarHeader(driver);
