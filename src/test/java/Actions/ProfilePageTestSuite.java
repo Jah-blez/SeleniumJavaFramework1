@@ -5,8 +5,10 @@ import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
@@ -68,6 +70,7 @@ public class ProfilePageTestSuite {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://qt-v5.qa.interswitchng.com/");
 		driver.manage().window().maximize();
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 	
 		TopBarHeader TopBarHeaderObjects = new TopBarHeader(driver);
 		TopBarHeaderObjects.clickOnProfileIcon();
@@ -78,6 +81,8 @@ public class ProfilePageTestSuite {
 		ProfilePageObjects.EnterOldPassword("passwooord");
 		ProfilePageObjects.EnternewPassword("pass@123*");
 		ProfilePageObjects.reTypePwdField("pass@123*");
+		WebElement InnerChangePwdButton = driver.findElement(By.cssSelector("#changePasswordFormButton"));
+		js.executeScript("arguments[0].scrollIntoView();", InnerChangePwdButton);
 		ProfilePageObjects.clickOnInnerChangePwdButton();
 		ProfilePageObjects.VerifyErrToastMsgInvalidCurrentPasswordSuppliedIsDisplayed();
 	
@@ -89,6 +94,7 @@ public class ProfilePageTestSuite {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://qt-v5.qa.interswitchng.com/");
 		driver.manage().window().maximize();
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 				
 		TopBarHeader TopBarHeaderObjects = new TopBarHeader(driver);
 		TopBarHeaderObjects.clickOnProfileIcon();
@@ -96,6 +102,8 @@ public class ProfilePageTestSuite {
 		
 		ProfilePage ProfilePageObjects = new ProfilePage(driver);
 		ProfilePageObjects.clickOnChangePwdButton();
+		WebElement InnerChangePwdButton = driver.findElement(By.cssSelector("#changePasswordFormButton"));
+		js.executeScript("arguments[0].scrollIntoView();", InnerChangePwdButton);
 		ProfilePageObjects.clickOnInnerChangePwdButton();
 		ProfilePageObjects.errMsgPleaseEnterYourNewPasswordIsPresent();
 		ProfilePageObjects.errMsgPleaseEnterYourPasswordConfirmationIsPresent();
@@ -108,6 +116,7 @@ public class ProfilePageTestSuite {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://qt-v5.qa.interswitchng.com/");
 		driver.manage().window().maximize();
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 		
 		TopBarHeader TopBarHeaderObjects = new TopBarHeader(driver);
 		TopBarHeaderObjects.clickOnProfileIcon();
@@ -116,6 +125,8 @@ public class ProfilePageTestSuite {
 		ProfilePage ProfilePageObjects = new ProfilePage(driver);
 		ProfilePageObjects.clickOnChangePwdButton();
 		ProfilePageObjects.EnterOldPassword("password");
+		WebElement InnerChangePwdButton = driver.findElement(By.cssSelector("#changePasswordFormButton"));
+		js.executeScript("arguments[0].scrollIntoView();", InnerChangePwdButton);
 		ProfilePageObjects.clickOnInnerChangePwdButton();
 		ProfilePageObjects.errMsgPleaseEnterYourNewPasswordIsPresent();
 		ProfilePageObjects.errMsgPleaseEnterYourPasswordConfirmationIsPresent();
@@ -128,6 +139,7 @@ public class ProfilePageTestSuite {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://qt-v5.qa.interswitchng.com/");
 		driver.manage().window().maximize();
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 		
 		TopBarHeader TopBarHeaderObjects = new TopBarHeader(driver);
 		TopBarHeaderObjects.clickOnProfileIcon();
@@ -138,6 +150,9 @@ public class ProfilePageTestSuite {
 		ProfilePageObjects.EnterOldPassword("password");
 		ProfilePageObjects.EnternewPassword("Password12");
 		ProfilePageObjects.reTypePwdField("Password12");
+		
+		WebElement InnerChangePwdButton = driver.findElement(By.cssSelector("#changePasswordFormButton"));
+		js.executeScript("arguments[0].scrollIntoView();", InnerChangePwdButton);
 		ProfilePageObjects.clickOnInnerChangePwdButton();
 		ProfilePageObjects.verifySuccessfulChangePwdMsgIsDisplayed();
 					
