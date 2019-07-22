@@ -20,9 +20,11 @@ import pages.QtHomePageScreen;
 import pages.QtLoginPage;
 import pages.QtLoginPage2;
 import pages.TopBarHeader;
+import pages.URL;
 
 public class LoginTestSuite {
 	static WebDriver driver = null;
+	URL baseUrl = new URL();
 
 	@BeforeTest
 	public void startUp() {
@@ -36,7 +38,7 @@ public class LoginTestSuite {
 	@Test(priority = 1)
 	public void InvalidUsernameAndValidPassword() {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("https://qt-v5.qa.interswitchng.com/");
+		driver.get(baseUrl.qTBaseUrlUAT);
 		driver.manage().window().maximize();
 
 		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
@@ -56,7 +58,7 @@ public class LoginTestSuite {
 	@Test(priority = 2)
 	public void validEmailAndInvalidPassword() {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("https://qt-v5.qa.interswitchng.com/");
+		driver.get(baseUrl.qTBaseUrlUAT);
 		driver.manage().window().maximize();
 
 		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
@@ -75,7 +77,8 @@ public class LoginTestSuite {
 	@Test(priority = 3)
 	public static void successfulLogin() {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("https://qt-v5.qa.interswitchng.com/");
+		URL baseUrl = new URL();
+		driver.get(baseUrl.qTBaseUrlUAT);
 		driver.manage().window().maximize();
 		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
 		HomeScreenObjects.clickOnLoginButton();

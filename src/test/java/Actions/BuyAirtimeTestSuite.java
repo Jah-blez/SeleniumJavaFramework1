@@ -25,6 +25,7 @@ import pages.QTHomePageScreen2;
 import pages.QtHomePageScreen;
 import pages.QtLoginPage;
 import pages.QtLoginPage2;
+import pages.URL;
 
 public class BuyAirtimeTestSuite {
 	static WebDriver driver = null;
@@ -40,8 +41,9 @@ public class BuyAirtimeTestSuite {
 
 	@Test(priority = 1)
 	public void buyAirtimeFlow() {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("https://qt-v5.qa.interswitchng.com/");
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		URL baseUrl = new URL();
+		driver.get(baseUrl.qTBaseUrlUAT);
 		driver.manage().window().maximize();
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 

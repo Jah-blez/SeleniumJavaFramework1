@@ -24,10 +24,11 @@ import pages.QtHomePageScreen;
 import pages.QtLoginPage;
 import pages.QtLoginPage2;
 import pages.SavedPaymentPage;
+import pages.URL;
 
 public class SavedPaymentSuite {
 	static WebDriver driver = null;
-
+	URL baseUrl = new URL();
 	@BeforeTest
 	public void startUp() {
 		/*

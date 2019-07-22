@@ -1,41 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="84861" started-at="2019-07-10T08:44:39Z" finished-at="2019-07-10T08:46:03Z">
+  <suite name="Default suite" duration-ms="65014" started-at="2019-07-22T18:03:10Z" finished-at="2019-07-22T18:04:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="84861" started-at="2019-07-10T08:44:39Z" finished-at="2019-07-10T08:46:03Z">
-      <class name="actions.ProfilePageTestSuite">
-        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.ProfilePageTestSuite@8bd1b6a]" name="startUp" is-config="true" duration-ms="55322" started-at="2019-07-10T09:44:39Z" finished-at="2019-07-10T09:45:34Z">
+    <test name="Default test" duration-ms="65014" started-at="2019-07-22T18:03:10Z" finished-at="2019-07-22T18:04:15Z">
+      <class name="actions.BuyAirtimeTestSuite">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.BuyAirtimeTestSuite@8bd1b6a]" name="startUp" is-config="true" duration-ms="31378" started-at="2019-07-22T19:03:10Z" finished-at="2019-07-22T19:03:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="changeFirstLastNameSuccessfully()[pri:1, instance:actions.ProfilePageTestSuite@8bd1b6a]" name="changeFirstLastNameSuccessfully" duration-ms="14692" started-at="2019-07-10T09:45:34Z" finished-at="2019-07-10T09:45:49Z">
+        <test-method status="PASS" signature="buyAirtimeFlow()[pri:1, instance:actions.BuyAirtimeTestSuite@8bd1b6a]" name="buyAirtimeFlow" duration-ms="26487" started-at="2019-07-22T19:03:42Z" finished-at="2019-07-22T19:04:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- changeFirstLastNameSuccessfully -->
-        <test-method status="PASS" signature="changePasswordInvalidOldPassword()[pri:2, instance:actions.ProfilePageTestSuite@8bd1b6a]" name="changePasswordInvalidOldPassword" duration-ms="3041" started-at="2019-07-10T09:45:49Z" finished-at="2019-07-10T09:45:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- changePasswordInvalidOldPassword -->
-        <test-method status="PASS" signature="changePasswordAllFieldsEmpty()[pri:3, instance:actions.ProfilePageTestSuite@8bd1b6a]" name="changePasswordAllFieldsEmpty" duration-ms="2912" started-at="2019-07-10T09:45:52Z" finished-at="2019-07-10T09:45:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- changePasswordAllFieldsEmpty -->
-        <test-method status="PASS" signature="changePasswordNewPasswordAndReTypePasswordFieldsAreEmpty()[pri:4, instance:actions.ProfilePageTestSuite@8bd1b6a]" name="changePasswordNewPasswordAndReTypePasswordFieldsAreEmpty" duration-ms="3003" started-at="2019-07-10T09:45:55Z" finished-at="2019-07-10T09:45:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- changePasswordNewPasswordAndReTypePasswordFieldsAreEmpty -->
-        <test-method status="PASS" signature="changePasswordSuccessfully()[pri:5, instance:actions.ProfilePageTestSuite@8bd1b6a]" name="changePasswordSuccessfully" duration-ms="2846" started-at="2019-07-10T09:45:58Z" finished-at="2019-07-10T09:46:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- changePasswordSuccessfully -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.ProfilePageTestSuite@8bd1b6a]" name="tearDown" is-config="true" duration-ms="3020" started-at="2019-07-10T09:46:00Z" finished-at="2019-07-10T09:46:03Z">
+        </test-method> <!-- buyAirtimeFlow -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.BuyAirtimeTestSuite@8bd1b6a]" name="tearDown" is-config="true" duration-ms="7126" started-at="2019-07-22T19:04:08Z" finished-at="2019-07-22T19:04:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- actions.ProfilePageTestSuite -->
+      </class> <!-- actions.BuyAirtimeTestSuite -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

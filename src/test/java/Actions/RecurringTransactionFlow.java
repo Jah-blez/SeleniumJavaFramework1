@@ -20,9 +20,11 @@ import pages.QtHomePageScreen;
 import pages.QtLoginPage;
 import pages.QtLoginPage2;
 import pages.RecuringPageFlow;
+import pages.URL;
 
 public class RecurringTransactionFlow {
 	static WebDriver driver = null;
+	URL baseUrl = new URL();
 
 	@BeforeTest
 	public void startUp() {
@@ -36,7 +38,7 @@ public class RecurringTransactionFlow {
 	@Test(priority = 1)
 	public void verifyRecurringElements() {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("https://qt-v5.qa.interswitchng.com/");
+		driver.get(baseUrl.qTBaseUrlUAT);
 		driver.manage().window().maximize();
 
 		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
@@ -88,7 +90,7 @@ public class RecurringTransactionFlow {
 	/*@Test(priority = 1)
 	public void addASchedule() {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("https://qt-v5.qa.interswitchng.com/");
+		driver.get(baseUrl.qTBaseUrlUAT);
 		driver.manage().window().maximize();
 
 		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);

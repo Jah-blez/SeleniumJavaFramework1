@@ -23,10 +23,12 @@ import pages.QtHomePageScreen;
 import pages.QtLoginPage;
 import pages.QtLoginPage2;
 import pages.TopBarHeader;
+import pages.URL;
 
 public class ProfilePageTestSuite {
 	
 	static WebDriver driver = null;
+	URL baseUrl = new URL();
 
 	@BeforeTest
 	public void startUp() {
@@ -39,8 +41,9 @@ public class ProfilePageTestSuite {
 
 	@Test(priority = 1)
 	public static void changeFirstLastNameSuccessfully() {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("https://qt-v5.qa.interswitchng.com/");
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		URL baseUrl = new URL();
+		driver.get(baseUrl.qTBaseUrlUAT);
 		driver.manage().window().maximize();
 		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
 		HomeScreenObjects.clickOnLoginButton();
@@ -67,8 +70,9 @@ public class ProfilePageTestSuite {
 	
 	@Test(priority = 2)
 	public static void changePasswordInvalidOldPassword() {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("https://qt-v5.qa.interswitchng.com/");
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		URL baseUrl = new URL();
+		driver.get(baseUrl.qTBaseUrlUAT);
 		driver.manage().window().maximize();
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 	
@@ -91,8 +95,9 @@ public class ProfilePageTestSuite {
 
 	@Test(priority = 3)
 	public static void changePasswordAllFieldsEmpty() {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("https://qt-v5.qa.interswitchng.com/");
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		URL baseUrl = new URL();
+		driver.get(baseUrl.qTBaseUrlUAT);
 		driver.manage().window().maximize();
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 				
@@ -113,8 +118,9 @@ public class ProfilePageTestSuite {
 	}
 	@Test(priority = 4)
 	public static void changePasswordNewPasswordAndReTypePasswordFieldsAreEmpty() {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("https://qt-v5.qa.interswitchng.com/");
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		URL baseUrl = new URL();
+		driver.get(baseUrl.qTBaseUrlUAT);
 		driver.manage().window().maximize();
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		
@@ -136,8 +142,9 @@ public class ProfilePageTestSuite {
 	
 	@Test(priority = 5)
 	public static void changePasswordSuccessfully() {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("https://qt-v5.qa.interswitchng.com/");
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		URL baseUrl = new URL();
+		driver.get(baseUrl.qTBaseUrlUAT);
 		driver.manage().window().maximize();
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		
