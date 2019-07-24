@@ -38,6 +38,7 @@ public class LoginTestSuite {
 	@Test(priority = 1)
 	public void InvalidUsernameAndValidPassword() {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		URL baseUrl = new URL();
 		driver.get(baseUrl.qTBaseUrlUAT);
 		driver.manage().window().maximize();
 
@@ -58,6 +59,7 @@ public class LoginTestSuite {
 	@Test(priority = 2)
 	public void validEmailAndInvalidPassword() {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		URL baseUrl = new URL();
 		driver.get(baseUrl.qTBaseUrlUAT);
 		driver.manage().window().maximize();
 

@@ -79,6 +79,7 @@ public class BuyAirtimeTestSuite {
 		}
 		BuyAirtimePageObjects.EnterMobileNumberInFieldInTopOtherNumbersSection("08124888436");
 		BuyAirtimePageObjects.EnterAmountInRechargeOthersField("500");
+		
 		BuyAirtimePageObjects.clickOnContinueButtonRechargeOthersSection();
 		try {
 			Thread.sleep(1000);

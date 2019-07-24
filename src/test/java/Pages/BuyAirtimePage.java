@@ -29,6 +29,7 @@ public class BuyAirtimePage {
 	By continueButtonRechargeOthers = By.xpath("//span[contains(text(),'Continue')]");
 	By errMsgPleaseEnterAValidAmountRechargeOthersSection = By.xpath("//li[contains(@class,'parsley-minVal')]");
 	By errMsgPleaseSelectANetworkRechargeOthersSection = By.xpath("//li[contains(text(),'Please enter an amount')]");
+	By toggleButton = By.xpath("//div[@class='react-switch-handle']");
 	//By payButtonOnPayPage = By.xpath("//button[@id='webpayPay']");
 	
 	public BuyAirtimePage(WebDriver driver) {
@@ -36,6 +37,10 @@ public class BuyAirtimePage {
 		this.driver  = driver;
 	}
 	
+	public void clickOnToggleButton() {
+		driver.findElement(toggleButton).click();
+		System.out.println("toggleButton clickOn successfully");
+	}
 	public void SelectGloQuickChargeOptionFromDropdown() {
 		driver.findElement(etisalatRechargeTopUpOption).click();
 		System.out.println("etisalatRechargeTopUpOption clickOn successfully");

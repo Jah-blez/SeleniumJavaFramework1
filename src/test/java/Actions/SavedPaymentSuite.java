@@ -41,7 +41,7 @@ public class SavedPaymentSuite {
 	@Test(priority = 1)
 	public void verifyQROptionIsPresentWhenPayingFromSavedPaymentAirtime() {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("https://qt-v5.qa.interswitchng.com/");
+		driver.get(baseUrl.qTBaseUrlUAT);
 		driver.manage().window().maximize();
 		//JavascriptExecutor js = (JavascriptExecutor) driver;
 
@@ -76,7 +76,7 @@ public class SavedPaymentSuite {
 	@Test(priority = 2)
 	public void verifyQROptionIsPresentWhenPayingFromSavedPaymentForBills() {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("https://qt-v5.qa.interswitchng.com/");
+		driver.get(baseUrl.qTBaseUrlUAT);
 		driver.manage().window().maximize();
 		//JavascriptExecutor js = (JavascriptExecutor) driver;
 
@@ -101,7 +101,7 @@ public class SavedPaymentSuite {
 	@Test(priority = 3)
 	public void verifyQROptionIsPresentWhenPayingFromSavedPaymentForTransfer() {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("https://qt-v5.qa.interswitchng.com/");
+		driver.get(baseUrl.qTBaseUrlUAT);
 		driver.manage().window().maximize();
 		//JavascriptExecutor js = (JavascriptExecutor) driver;
 

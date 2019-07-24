@@ -5,12 +5,8 @@
     <classes>
       <class name="actions.ProfilePageTestSuite">
         <methods>
-          <include name="changePasswordNewPasswordAndReTypePasswordFieldsAreEmpty"/>
-          <include name="changeFirstLastNameSuccessfully"/>
-          <include name="changePasswordAllFieldsEmpty"/>
           <include name="changePasswordSuccessfully"/>
           <include name="startUp"/>
-          <include name="changePasswordInvalidOldPassword"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- actions.ProfilePageTestSuite -->

@@ -7,6 +7,7 @@ pages\RecuringPageFlow.class
 pages\QtLoginPage2.class
 pages\QtLoginPage.class
 pages\ProfilePage.class
+pages\URL.class
 pages\PayBillsPage.class
 pages\TopBarHeader.class
 pages\SavedPaymentPage.class

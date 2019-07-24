@@ -17,9 +17,11 @@ import pages.QTHomePageScreen2;
 import pages.QtHomePageScreen;
 import pages.QtLoginPage;
 import pages.QtLoginPage2;
+import pages.URL;
 
 public class HomeScreenTestSuite {
 		static WebDriver driver = null;
+		URL baseUrl = new URL();
 
 		@BeforeTest
 		public void startUp() {
@@ -33,7 +35,7 @@ public class HomeScreenTestSuite {
 		@Test
 		public void verifyHomeScreenElementsPresent() {
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-			driver.get("https://qt-v5.qa.interswitchng.com/");
+			driver.get(baseUrl.qTBaseUrlUAT);
 			driver.manage().window().maximize();
 
 			QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
