@@ -18,6 +18,7 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.BuyAirtimePage;
 import pages.Dashboard;
+import pages.NavigateToURL;
 import pages.PayPage;
 import pages.QTHomePageScreen2;
 import pages.QtHomePageScreen;
@@ -40,9 +41,8 @@ public class SavedPaymentSuite {
 
 	@Test(priority = 1)
 	public void verifyQROptionIsPresentWhenPayingFromSavedPaymentAirtime() {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get(baseUrl.qTBaseUrlUAT);
-		driver.manage().window().maximize();
+		NavigateToURL startWebsite = new NavigateToURL(driver);
+		startWebsite.launchURL();
 		//JavascriptExecutor js = (JavascriptExecutor) driver;
 
 		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);

@@ -17,6 +17,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.Dashboard;
+import pages.NavigateToURL;
 import pages.ProfilePage;
 import pages.QTHomePageScreen2;
 import pages.QtHomePageScreen;
@@ -41,10 +42,9 @@ public class ProfilePageTestSuite {
 
 	@Test(priority = 1)
 	public static void changeFirstLastNameSuccessfully() {
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		URL baseUrl = new URL();
-		driver.get(baseUrl.qTBaseUrlUAT);
-		driver.manage().window().maximize();
+		NavigateToURL startWebsite = new NavigateToURL(driver);
+		startWebsite.launchURL();
+		
 		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
 		HomeScreenObjects.clickOnLoginButton();
 		QtLoginPage2 LoginScreenObjects = new QtLoginPage2(driver);
@@ -73,7 +73,9 @@ public class ProfilePageTestSuite {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		URL baseUrl = new URL();
 		driver.get(baseUrl.qTBaseUrlUAT);
-		driver.manage().window().maximize();
+		NavigateToURL startWebsite = new NavigateToURL(driver);
+		startWebsite.launchURL();
+		
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 	
 		TopBarHeader TopBarHeaderObjects = new TopBarHeader(driver);
@@ -95,10 +97,9 @@ public class ProfilePageTestSuite {
 
 	@Test(priority = 3)
 	public static void changePasswordAllFieldsEmpty() {
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		URL baseUrl = new URL();
-		driver.get(baseUrl.qTBaseUrlUAT);
-		driver.manage().window().maximize();
+		NavigateToURL startWebsite = new NavigateToURL(driver);
+		startWebsite.launchURL();
+		
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 				
 		TopBarHeader TopBarHeaderObjects = new TopBarHeader(driver);
@@ -118,10 +119,9 @@ public class ProfilePageTestSuite {
 	}
 	@Test(priority = 4)
 	public static void changePasswordNewPasswordAndReTypePasswordFieldsAreEmpty() {
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		URL baseUrl = new URL();
-		driver.get(baseUrl.qTBaseUrlUAT);
-		driver.manage().window().maximize();
+		NavigateToURL startWebsite = new NavigateToURL(driver);
+		startWebsite.launchURL();
+		
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		
 		TopBarHeader TopBarHeaderObjects = new TopBarHeader(driver);
@@ -142,10 +142,9 @@ public class ProfilePageTestSuite {
 	
 	@Test(priority = 5)
 	public static void changePasswordSuccessfully() {
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		URL baseUrl = new URL();
-		driver.get(baseUrl.qTBaseUrlUAT);
-		driver.manage().window().maximize();
+		NavigateToURL startWebsite = new NavigateToURL(driver);
+		startWebsite.launchURL();
+		
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		
 		TopBarHeader TopBarHeaderObjects = new TopBarHeader(driver);

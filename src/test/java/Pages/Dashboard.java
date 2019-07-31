@@ -19,11 +19,17 @@ public class Dashboard {
 	By recurringAirtimeIcon = By.xpath("//body/section[@id='root']/div[@id='wrapper']/section/section/header[@id='topBarHeader']/section[@id='topBarHeaderAccount']/section[@id='account']/section[@id='dashboardContainer']/section[contains(@class,'')]/section[6]/section[1]/section[1]/section[2]/section[1]/section[1]");
 	By recurringBillIcon = By.xpath("//body/section[@id='root']/div[@id='wrapper']/section/section/header[@id='topBarHeader']/section[@id='topBarHeaderAccount']/section[@id='account']/section[@id='dashboardContainer']/section[contains(@class,'')]/section[contains(@class,'col-md-6 col-sm-12 col-lg-6 col-xl-4 col-xs-12 card__section')]/section[contains(@class,'dashboard__card')]/section[contains(@class,'card__box')]/section[contains(@class,'clearfix card__group')]/section[contains(@class,'col-md-6 col-sm-6 col-xs-6')]/section[contains(@class,'sub__box__mini action__group')]/span[contains(@class,'dashboard__transfer')]/*[1]");
 	By recurringTransferIcon = By.xpath("//body/section[@id='root']/div[@id='wrapper']/section/section/header[@id='topBarHeader']/section[@id='topBarHeaderAccount']/section[@id='account']/section[@id='dashboardContainer']/section[contains(@class,'')]/section[6]/section[1]/section[1]/section[2]/section[2]/section[1]/span[1]/*[1]");
-
+	By DashboardSearchField = By.cssSelector("#homeSearchBox");
+	By PHEDCPostPaidBiller = By.xpath("//*[@class='dashboard__search__contents hidden-md-down']//*[@class='biller__card__desc']//span[contains(text(),'PHEDC Postpaid')]");
+	
 	public Dashboard(WebDriver driver){
 		this.driver  = driver;
 	}
 
+	public void EnterTextInDashboardSearchField(String text) {
+		driver.findElement(DashboardSearchField).sendKeys(text);
+		System.out.println("DashboardSearchField Successfully Entered");
+	}
 	public void clickOnSavedPaymentsAirtimeIcon(){
 		driver.findElement(savedPaymentsAirtimeIcon).click();
 	}

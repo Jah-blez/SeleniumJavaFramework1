@@ -15,6 +15,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.Dashboard;
+import pages.NavigateToURL;
 import pages.QTHomePageScreen2;
 import pages.QtHomePageScreen;
 import pages.QtLoginPage;
@@ -37,10 +38,8 @@ public class LoginTestSuite {
 
 	@Test(priority = 1)
 	public void InvalidUsernameAndValidPassword() {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		URL baseUrl = new URL();
-		driver.get(baseUrl.qTBaseUrlUAT);
-		driver.manage().window().maximize();
+		NavigateToURL startWebsite = new NavigateToURL(driver);
+		startWebsite.launchURL();
 
 		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
 		HomeScreenObjects.clickOnLoginButton();
@@ -58,10 +57,8 @@ public class LoginTestSuite {
 
 	@Test(priority = 2)
 	public void validEmailAndInvalidPassword() {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		URL baseUrl = new URL();
-		driver.get(baseUrl.qTBaseUrlUAT);
-		driver.manage().window().maximize();
+		NavigateToURL startWebsite = new NavigateToURL(driver);
+		startWebsite.launchURL();
 
 		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
 		HomeScreenObjects.clickOnLoginButton();
@@ -77,11 +74,10 @@ public class LoginTestSuite {
 	}
 
 	@Test(priority = 3)
-	public static void successfulLogin() {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		URL baseUrl = new URL();
-		driver.get(baseUrl.qTBaseUrlUAT);
-		driver.manage().window().maximize();
+	public void successfulLogin() {
+		NavigateToURL startWebsite = new NavigateToURL(driver);
+		startWebsite.launchURL();
+		
 		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
 		HomeScreenObjects.clickOnLoginButton();
 		QtLoginPage2 LoginScreenObjects = new QtLoginPage2(driver);

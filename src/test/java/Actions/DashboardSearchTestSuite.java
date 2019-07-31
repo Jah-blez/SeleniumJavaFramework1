@@ -20,7 +20,7 @@ import pages.QtLoginPage;
 import pages.QtLoginPage2;
 import pages.URL;
 
-public class HomeScreenTestSuite {
+public class DashboardSearchTestSuite {
 		static WebDriver driver = null;
 		URL baseUrl = new URL();
 

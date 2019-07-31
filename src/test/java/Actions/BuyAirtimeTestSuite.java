@@ -20,15 +20,17 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.BuyAirtimePage;
 import pages.Dashboard;
+import pages.NavigateToURL;
 import pages.PayPage;
 import pages.QTHomePageScreen2;
 import pages.QtHomePageScreen;
 import pages.QtLoginPage;
 import pages.QtLoginPage2;
+import pages.Toggle;
 import pages.URL;
 
 public class BuyAirtimeTestSuite {
-	static WebDriver driver = null;
+	WebDriver driver = null;
 
 	@BeforeTest
 	public void startUp() {
@@ -39,12 +41,15 @@ public class BuyAirtimeTestSuite {
 		driver = new FirefoxDriver();
 	}
 
+	public BuyAirtimeTestSuite(WebDriver driver){
+		this.driver = driver;
+	}
+	
 	@Test(priority = 1)
 	public void buyAirtimeFlow() {
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		URL baseUrl = new URL();
-		driver.get(baseUrl.qTBaseUrlUAT);
-		driver.manage().window().maximize();
+		NavigateToURL startWebsite = new NavigateToURL(driver);
+		startWebsite.launchURL();
+		
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 
 		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
@@ -79,7 +84,8 @@ public class BuyAirtimeTestSuite {
 		}
 		BuyAirtimePageObjects.EnterMobileNumberInFieldInTopOtherNumbersSection("08124888436");
 		BuyAirtimePageObjects.EnterAmountInRechargeOthersField("500");
-		
+		Toggle clickOnToggle = new Toggle(driver);
+		clickOnToggle.clickOntoggleBackward();
 		BuyAirtimePageObjects.clickOnContinueButtonRechargeOthersSection();
 		try {
 			Thread.sleep(1000);

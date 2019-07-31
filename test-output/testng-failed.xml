@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="actions.ProfilePageTestSuite">
+      <class name="actions.BuyAirtimeTestSuite">
         <methods>
-          <include name="changePasswordSuccessfully"/>
           <include name="startUp"/>
           <include name="tearDown"/>
+          <include name="buyAirtimeFlow"/>
         </methods>
-      </class> <!-- actions.ProfilePageTestSuite -->
+      </class> <!-- actions.BuyAirtimeTestSuite -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

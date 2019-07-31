@@ -1,4 +1,64 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 324.458 s - in TestSuite
+Tests run: 12, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 309.166 s <<< FAILURE! - in TestSuite
+changeFirstLastNameSuccessfully(actions.ProfilePageTestSuite)  Time elapsed: 13.562 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //span[@id='ProfileDropDown']//*[@id='Capa_1']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'ISW-GSIG-UO1', ip: '172.16.5.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 43652, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
+*** Element info: {Using=xpath, value=//span[@id='ProfileDropDown']//*[@id='Capa_1']}
+	at actions.ProfilePageTestSuite.changeFirstLastNameSuccessfully(ProfilePageTestSuite.java:55)
+
+changePasswordInvalidOldPassword(actions.ProfilePageTestSuite)  Time elapsed: 11.813 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //span[@id='ProfileDropDown']//*[@id='Capa_1']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'ISW-GSIG-UO1', ip: '172.16.5.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 43652, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
+*** Element info: {Using=xpath, value=//span[@id='ProfileDropDown']//*[@id='Capa_1']}
+	at actions.ProfilePageTestSuite.changePasswordInvalidOldPassword(ProfilePageTestSuite.java:82)
+
+changePasswordAllFieldsEmpty(actions.ProfilePageTestSuite)  Time elapsed: 11.254 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //span[@id='ProfileDropDown']//*[@id='Capa_1']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'ISW-GSIG-UO1', ip: '172.16.5.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 43652, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
+*** Element info: {Using=xpath, value=//span[@id='ProfileDropDown']//*[@id='Capa_1']}
+	at actions.ProfilePageTestSuite.changePasswordAllFieldsEmpty(ProfilePageTestSuite.java:106)
+
+changePasswordNewPasswordAndReTypePasswordFieldsAreEmpty(actions.ProfilePageTestSuite)  Time elapsed: 10.782 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //span[@id='ProfileDropDown']//*[@id='Capa_1']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'ISW-GSIG-UO1', ip: '172.16.5.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 43652, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
+*** Element info: {Using=xpath, value=//span[@id='ProfileDropDown']//*[@id='Capa_1']}
+	at actions.ProfilePageTestSuite.changePasswordNewPasswordAndReTypePasswordFieldsAreEmpty(ProfilePageTestSuite.java:128)
+
+changePasswordSuccessfully(actions.ProfilePageTestSuite)  Time elapsed: 10.714 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //span[@id='ProfileDropDown']//*[@id='Capa_1']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'ISW-GSIG-UO1', ip: '172.16.5.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 43652, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
+*** Element info: {Using=xpath, value=//span[@id='ProfileDropDown']//*[@id='Capa_1']}
+	at actions.ProfilePageTestSuite.changePasswordSuccessfully(ProfilePageTestSuite.java:151)
+
