@@ -9,6 +9,18 @@
           <include name="startUp"/>
         </methods>
       </class> <!-- actions.SavedPaymentSuite -->
+      <class name="actions.SearchFieldTestSuite">
+        <methods>
+          <include name="startUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- actions.SearchFieldTestSuite -->
+      <class name="actions.OTPTestSuite">
+        <methods>
+          <include name="tearDown"/>
+          <include name="startUp"/>
+        </methods>
+      </class> <!-- actions.OTPTestSuite -->
       <class name="actions.ProfilePageTestSuite">
         <methods>
           <include name="changePasswordNewPasswordAndReTypePasswordFieldsAreEmpty"/>

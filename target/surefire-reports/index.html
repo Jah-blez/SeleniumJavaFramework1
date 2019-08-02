@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">5 tests</span>
+                    <span class="test-stats">7 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">12 methods, 5 failed,   7 passed</span>
+                    <span class="method-stats">19 methods, 5 failed,   14 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -136,7 +136,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="actions.OTPTestSuite" hash-for-method="InvalidOTPTest">InvalidOTPTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="actions.LoginTestSuite" hash-for-method="InvalidUsernameAndValidPassword">InvalidUsernameAndValidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="actions.OTPTestSuite" hash-for-method="NoOTPTest">NoOTPTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="actions.OTPTestSuite" hash-for-method="ResendOtp">ResendOtp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -156,6 +171,11 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="actions.OTPTestSuite" hash-for-method="verifyOTPScreenDisplays">verifyOTPScreenDisplays</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="actions.SavedPaymentSuite" hash-for-method="verifyQROptionIsPresentWhenPayingFromSavedPaymentAirtime">verifyQROptionIsPresentWhenPayingFromSavedPaymentAirtime</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -167,6 +187,21 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="actions.SavedPaymentSuite" hash-for-method="verifyQROptionIsPresentWhenPayingFromSavedPaymentForTransfer">verifyQROptionIsPresentWhenPayingFromSavedPaymentForTransfer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="actions.SearchFieldTestSuite" hash-for-method="verifySearchFieldReturnsBillerListAfterSavedPaymentOptionsAreExausted">verifySearchFieldReturnsBillerListAfterSavedPaymentOptionsAreExausted</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="actions.SearchFieldTestSuite" hash-for-method="verifySearchFieldReturnsSavedPaymentItemsFirst">verifySearchFieldReturnsSavedPaymentItemsFirst</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="actions.SearchFieldTestSuite" hash-for-method="verifyUserReturnstoDashBoardScreenWhenSearchCriteiraIsRemovedFromSearchField">verifyUserReturnstoDashBoardScreenWhenSearchCriteiraIsRemovedFromSearchField</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -195,10 +230,10 @@
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[@id=&apos;ProfileDropDown&apos;]//*[@id=&apos;Capa_1&apos;]
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
-System info: host: &apos;ISW-GSIG-UO1&apos;, ip: &apos;172.16.5.91&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+System info: host: &apos;ISW-GSIG-UO1&apos;, ip: &apos;172.23.23.109&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 43652, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 17640, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a9326f39-28ef-455c-bc02-08f78856cc78
 *** Element info: {Using=xpath, value=//span[@id=&apos;ProfileDropDown&apos;]//*[@id=&apos;Capa_1&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -224,10 +259,10 @@ Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[@id=&apos;ProfileDropDown&apos;]//*[@id=&apos;Capa_1&apos;]
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
-System info: host: &apos;ISW-GSIG-UO1&apos;, ip: &apos;172.16.5.91&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+System info: host: &apos;ISW-GSIG-UO1&apos;, ip: &apos;172.23.23.109&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 43652, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 17640, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a9326f39-28ef-455c-bc02-08f78856cc78
 *** Element info: {Using=xpath, value=//span[@id=&apos;ProfileDropDown&apos;]//*[@id=&apos;Capa_1&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -253,10 +288,10 @@ Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[@id=&apos;ProfileDropDown&apos;]//*[@id=&apos;Capa_1&apos;]
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
-System info: host: &apos;ISW-GSIG-UO1&apos;, ip: &apos;172.16.5.91&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+System info: host: &apos;ISW-GSIG-UO1&apos;, ip: &apos;172.23.23.109&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 43652, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 17640, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a9326f39-28ef-455c-bc02-08f78856cc78
 *** Element info: {Using=xpath, value=//span[@id=&apos;ProfileDropDown&apos;]//*[@id=&apos;Capa_1&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -282,10 +317,10 @@ Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[@id=&apos;ProfileDropDown&apos;]//*[@id=&apos;Capa_1&apos;]
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
-System info: host: &apos;ISW-GSIG-UO1&apos;, ip: &apos;172.16.5.91&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+System info: host: &apos;ISW-GSIG-UO1&apos;, ip: &apos;172.23.23.109&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 43652, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 17640, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a9326f39-28ef-455c-bc02-08f78856cc78
 *** Element info: {Using=xpath, value=//span[@id=&apos;ProfileDropDown&apos;]//*[@id=&apos;Capa_1&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -311,10 +346,10 @@ Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[@id=&apos;ProfileDropDown&apos;]//*[@id=&apos;Capa_1&apos;]
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
-System info: host: &apos;ISW-GSIG-UO1&apos;, ip: &apos;172.16.5.91&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+System info: host: &apos;ISW-GSIG-UO1&apos;, ip: &apos;172.23.23.109&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 43652, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 17640, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a9326f39-28ef-455c-bc02-08f78856cc78
 *** Element info: {Using=xpath, value=//span[@id=&apos;ProfileDropDown&apos;]//*[@id=&apos;Capa_1&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -359,6 +394,71 @@ Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
                   <a name="verifyQROptionIsPresentWhenPayingFromSavedPaymentForTransfer">
                   </a> <!-- verifyQROptionIsPresentWhenPayingFromSavedPaymentForTransfer -->
                   <span class="method-name">verifyQROptionIsPresentWhenPayingFromSavedPaymentForTransfer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">actions.SearchFieldTestSuite</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchFieldReturnsBillerListAfterSavedPaymentOptionsAreExausted">
+                  </a> <!-- verifySearchFieldReturnsBillerListAfterSavedPaymentOptionsAreExausted -->
+                  <span class="method-name">verifySearchFieldReturnsBillerListAfterSavedPaymentOptionsAreExausted</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchFieldReturnsSavedPaymentItemsFirst">
+                  </a> <!-- verifySearchFieldReturnsSavedPaymentItemsFirst -->
+                  <span class="method-name">verifySearchFieldReturnsSavedPaymentItemsFirst</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserReturnstoDashBoardScreenWhenSearchCriteiraIsRemovedFromSearchField">
+                  </a> <!-- verifyUserReturnstoDashBoardScreenWhenSearchCriteiraIsRemovedFromSearchField -->
+                  <span class="method-name">verifyUserReturnstoDashBoardScreenWhenSearchCriteiraIsRemovedFromSearchField</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">actions.OTPTestSuite</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="InvalidOTPTest">
+                  </a> <!-- InvalidOTPTest -->
+                  <span class="method-name">InvalidOTPTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NoOTPTest">
+                  </a> <!-- NoOTPTest -->
+                  <span class="method-name">NoOTPTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ResendOtp">
+                  </a> <!-- ResendOtp -->
+                  <span class="method-name">ResendOtp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyOTPScreenDisplays">
+                  </a> <!-- verifyOTPScreenDisplays -->
+                  <span class="method-name">verifyOTPScreenDisplays</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -442,6 +542,16 @@ Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
       &lt;class name=&quot;actions.SavedPaymentSuite&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test5 --&gt;
+  &lt;test name=&quot;Test6&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;actions.SearchFieldTestSuite&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test6 --&gt;
+  &lt;test name=&quot;Test7&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;actions.OTPTestSuite&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test7 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -467,6 +577,12 @@ Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
               <li>
                 <span class="test-name">Test5 (1 class)</span>
               </li>
+              <li>
+                <span class="test-name">Test6 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test7 (1 class)</span>
+              </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -491,60 +607,88 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(12);
+data.addRows(19);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'InvalidUsernameAndValidPassword')
-data.setCell(0, 2, 'actions.LoginTestSuite')
-data.setCell(0, 3, 58628);
+data.setCell(0, 1, 'verifyQROptionIsPresentWhenPayingFromSavedPaymentAirtime')
+data.setCell(0, 2, 'actions.SavedPaymentSuite')
+data.setCell(0, 3, 65099);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'changeFirstLastNameSuccessfully')
-data.setCell(1, 2, 'actions.ProfilePageTestSuite')
-data.setCell(1, 3, 13562);
+data.setCell(1, 1, 'InvalidUsernameAndValidPassword')
+data.setCell(1, 2, 'actions.LoginTestSuite')
+data.setCell(1, 3, 63040);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validEmailAndInvalidPassword')
-data.setCell(2, 2, 'actions.LoginTestSuite')
-data.setCell(2, 3, 11828);
+data.setCell(2, 1, 'changeFirstLastNameSuccessfully')
+data.setCell(2, 2, 'actions.ProfilePageTestSuite')
+data.setCell(2, 3, 29605);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'changePasswordInvalidOldPassword')
-data.setCell(3, 2, 'actions.ProfilePageTestSuite')
-data.setCell(3, 3, 11814);
+data.setCell(3, 1, 'verifyOTPScreenDisplays')
+data.setCell(3, 2, 'actions.OTPTestSuite')
+data.setCell(3, 3, 22589);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'changePasswordAllFieldsEmpty')
-data.setCell(4, 2, 'actions.ProfilePageTestSuite')
-data.setCell(4, 3, 11251);
+data.setCell(4, 1, 'verifySearchFieldReturnsSavedPaymentItemsFirst')
+data.setCell(4, 2, 'actions.SearchFieldTestSuite')
+data.setCell(4, 3, 12074);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'changePasswordNewPasswordAndReTypePasswordFieldsAreEmpty')
+data.setCell(5, 1, 'changePasswordInvalidOldPassword')
 data.setCell(5, 2, 'actions.ProfilePageTestSuite')
-data.setCell(5, 3, 10781);
+data.setCell(5, 3, 11923);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'changePasswordSuccessfully')
-data.setCell(6, 2, 'actions.ProfilePageTestSuite')
-data.setCell(6, 3, 10713);
+data.setCell(6, 1, 'validEmailAndInvalidPassword')
+data.setCell(6, 2, 'actions.LoginTestSuite')
+data.setCell(6, 3, 11727);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyQROptionIsPresentWhenPayingFromSavedPaymentAirtime')
-data.setCell(7, 2, 'actions.SavedPaymentSuite')
-data.setCell(7, 3, 8128);
+data.setCell(7, 1, 'changePasswordNewPasswordAndReTypePasswordFieldsAreEmpty')
+data.setCell(7, 2, 'actions.ProfilePageTestSuite')
+data.setCell(7, 3, 11118);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyQROptionIsPresentWhenPayingFromSavedPaymentForBills')
-data.setCell(8, 2, 'actions.SavedPaymentSuite')
-data.setCell(8, 3, 6658);
+data.setCell(8, 1, 'changePasswordAllFieldsEmpty')
+data.setCell(8, 2, 'actions.ProfilePageTestSuite')
+data.setCell(8, 3, 11080);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifyQROptionIsPresentWhenPayingFromSavedPaymentForTransfer')
-data.setCell(9, 2, 'actions.SavedPaymentSuite')
-data.setCell(9, 3, 5246);
+data.setCell(9, 1, 'changePasswordSuccessfully')
+data.setCell(9, 2, 'actions.ProfilePageTestSuite')
+data.setCell(9, 3, 10754);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'verifyHomeScreenElementsPresent')
-data.setCell(10, 2, 'actions.HomeScreenTestSuite')
-data.setCell(10, 3, 3658);
+data.setCell(10, 1, 'verifyQROptionIsPresentWhenPayingFromSavedPaymentForBills')
+data.setCell(10, 2, 'actions.SavedPaymentSuite')
+data.setCell(10, 3, 5040);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'successfulLogin')
-data.setCell(11, 2, 'actions.LoginTestSuite')
-data.setCell(11, 3, 2970);
+data.setCell(11, 1, 'verifyQROptionIsPresentWhenPayingFromSavedPaymentForTransfer')
+data.setCell(11, 2, 'actions.SavedPaymentSuite')
+data.setCell(11, 3, 3914);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyHomeScreenElementsPresent')
+data.setCell(12, 2, 'actions.HomeScreenTestSuite')
+data.setCell(12, 3, 3007);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'successfulLogin')
+data.setCell(13, 2, 'actions.LoginTestSuite')
+data.setCell(13, 3, 2866);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifySearchFieldReturnsBillerListAfterSavedPaymentOptionsAreExausted')
+data.setCell(14, 2, 'actions.SearchFieldTestSuite')
+data.setCell(14, 3, 1282);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'InvalidOTPTest')
+data.setCell(15, 2, 'actions.OTPTestSuite')
+data.setCell(15, 3, 529);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'ResendOtp')
+data.setCell(16, 2, 'actions.OTPTestSuite')
+data.setCell(16, 3, 486);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyUserReturnstoDashBoardScreenWhenSearchCriteiraIsRemovedFromSearchField')
+data.setCell(17, 2, 'actions.SearchFieldTestSuite')
+data.setCell(17, 3, 359);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'NoOTPTest')
+data.setCell(18, 2, 'actions.OTPTestSuite')
+data.setCell(18, 3, 308);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -577,98 +721,148 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">InvalidUsernameAndValidPassword</span>
-                <span class="method-start">34458 ms</span>
+                <span class="method-start">34465 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validEmailAndInvalidPassword</span>
-                <span class="method-start">93091 ms</span>
+                <span class="method-start">97507 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">successfulLogin</span>
-                <span class="method-start">104920 ms</span>
+                <span class="method-start">109234 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">107890 ms</span>
+                <span class="method-start">112101 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">actions.HomeScreenTestSuite</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">startUp</span>
-                <span class="method-start">112418 ms</span>
+                <span class="method-start">116028 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">verifyHomeScreenElementsPresent</span>
-                <span class="method-start">144317 ms</span>
+                <span class="method-start">146840 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">147975 ms</span>
+                <span class="method-start">149848 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">actions.ProfilePageTestSuite</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">startUp</span>
-                <span class="method-start">154668 ms</span>
+                <span class="method-start">156182 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">changeFirstLastNameSuccessfully</span>
-                <span class="method-start">186381 ms</span>
+                <span class="method-start">186184 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">changePasswordInvalidOldPassword</span>
-                <span class="method-start">199957 ms</span>
+                <span class="method-start">215802 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">changePasswordAllFieldsEmpty</span>
-                <span class="method-start">211772 ms</span>
+                <span class="method-start">227726 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">changePasswordNewPasswordAndReTypePasswordFieldsAreEmpty</span>
-                <span class="method-start">223026 ms</span>
+                <span class="method-start">238807 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">changePasswordSuccessfully</span>
-                <span class="method-start">233808 ms</span>
+                <span class="method-start">249928 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">244522 ms</span>
+                <span class="method-start">260683 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">actions.SavedPaymentSuite</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">startUp</span>
-                <span class="method-start">248447 ms</span>
+                <span class="method-start">264564 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">verifyQROptionIsPresentWhenPayingFromSavedPaymentAirtime</span>
-                <span class="method-start">280270 ms</span>
+                <span class="method-start">295799 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyQROptionIsPresentWhenPayingFromSavedPaymentForBills</span>
-                <span class="method-start">288398 ms</span>
+                <span class="method-start">360899 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyQROptionIsPresentWhenPayingFromSavedPaymentForTransfer</span>
-                <span class="method-start">295057 ms</span>
+                <span class="method-start">365939 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">300303 ms</span>
+                <span class="method-start">369853 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">actions.SearchFieldTestSuite</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">startUp</span>
+                <span class="method-start">373734 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchFieldReturnsSavedPaymentItemsFirst</span>
+                <span class="method-start">404155 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyUserReturnstoDashBoardScreenWhenSearchCriteiraIsRemovedFromSearchField</span>
+                <span class="method-start">416229 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySearchFieldReturnsBillerListAfterSavedPaymentOptionsAreExausted</span>
+                <span class="method-start">416589 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">417871 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">actions.OTPTestSuite</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">startUp</span>
+                <span class="method-start">424721 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">verifyOTPScreenDisplays</span>
+                <span class="method-start">455535 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">InvalidOTPTest</span>
+                <span class="method-start">478125 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">NoOTPTest</span>
+                <span class="method-start">478655 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ResendOtp</span>
+                <span class="method-start">478963 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">479449 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

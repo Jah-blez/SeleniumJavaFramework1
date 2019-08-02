@@ -4,7 +4,6 @@ pages\BuyAirtimePage.class
 pages\RecuringPageFlow.class
 pages\ProfilePage.class
 pages\URL.class
-actions\DashboardSearchTestSuite.class
 pages\PayBillsPage.class
 pages\SavedPaymentPage.class
 actions\ProfilePageTestSuite.class

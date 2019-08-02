@@ -1,78 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="5" ignored="0" total="12" passed="7">
+<testng-results skipped="0" failed="5" ignored="0" total="19" passed="14">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="307777" started-at="2019-07-31T12:06:09Z" finished-at="2019-07-31T12:11:16Z">
+  <suite name="Suite" duration-ms="486671" started-at="2019-08-02T15:39:27Z" finished-at="2019-08-02T15:47:33Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="5" started-at="2019-07-31T12:06:09Z" finished-at="2019-07-31T12:06:09Z">
+    <test name="Test1" duration-ms="5" started-at="2019-08-02T15:39:27Z" finished-at="2019-08-02T15:39:27Z">
     </test> <!-- Test1 -->
-    <test name="Test2" duration-ms="112395" started-at="2019-07-31T12:06:09Z" finished-at="2019-07-31T12:08:01Z">
+    <test name="Test2" duration-ms="115983" started-at="2019-08-02T15:39:27Z" finished-at="2019-08-02T15:41:23Z">
       <class name="actions.LoginTestSuite">
-        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.LoginTestSuite@366e2eef]" name="startUp" is-config="true" duration-ms="34436" started-at="2019-07-31T13:06:09Z" finished-at="2019-07-31T13:06:43Z">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.LoginTestSuite@366e2eef]" name="startUp" is-config="true" duration-ms="34445" started-at="2019-08-02T16:39:27Z" finished-at="2019-08-02T16:40:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="InvalidUsernameAndValidPassword()[pri:1, instance:actions.LoginTestSuite@366e2eef]" name="InvalidUsernameAndValidPassword" duration-ms="58628" started-at="2019-07-31T13:06:43Z" finished-at="2019-07-31T13:07:42Z">
+        <test-method status="PASS" signature="InvalidUsernameAndValidPassword()[pri:1, instance:actions.LoginTestSuite@366e2eef]" name="InvalidUsernameAndValidPassword" duration-ms="63040" started-at="2019-08-02T16:40:01Z" finished-at="2019-08-02T16:41:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvalidUsernameAndValidPassword -->
-        <test-method status="PASS" signature="validEmailAndInvalidPassword()[pri:2, instance:actions.LoginTestSuite@366e2eef]" name="validEmailAndInvalidPassword" duration-ms="11828" started-at="2019-07-31T13:07:42Z" finished-at="2019-07-31T13:07:54Z">
+        <test-method status="PASS" signature="validEmailAndInvalidPassword()[pri:2, instance:actions.LoginTestSuite@366e2eef]" name="validEmailAndInvalidPassword" duration-ms="11727" started-at="2019-08-02T16:41:04Z" finished-at="2019-08-02T16:41:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validEmailAndInvalidPassword -->
-        <test-method status="PASS" signature="successfulLogin()[pri:3, instance:actions.LoginTestSuite@366e2eef]" name="successfulLogin" duration-ms="2970" started-at="2019-07-31T13:07:54Z" finished-at="2019-07-31T13:07:57Z">
+        <test-method status="PASS" signature="successfulLogin()[pri:3, instance:actions.LoginTestSuite@366e2eef]" name="successfulLogin" duration-ms="2866" started-at="2019-08-02T16:41:16Z" finished-at="2019-08-02T16:41:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successfulLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.LoginTestSuite@366e2eef]" name="tearDown" is-config="true" duration-ms="4502" started-at="2019-07-31T13:07:57Z" finished-at="2019-07-31T13:08:01Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.LoginTestSuite@366e2eef]" name="tearDown" is-config="true" duration-ms="3880" started-at="2019-08-02T16:41:19Z" finished-at="2019-08-02T16:41:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- actions.LoginTestSuite -->
     </test> <!-- Test2 -->
-    <test name="Test3" duration-ms="42224" started-at="2019-07-31T12:08:01Z" finished-at="2019-07-31T12:08:43Z">
+    <test name="Test3" duration-ms="40106" started-at="2019-08-02T15:41:23Z" finished-at="2019-08-02T15:42:03Z">
       <class name="actions.HomeScreenTestSuite">
-        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.HomeScreenTestSuite@5a61f5df]" name="startUp" is-config="true" duration-ms="31898" started-at="2019-07-31T13:08:01Z" finished-at="2019-07-31T13:08:33Z">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.HomeScreenTestSuite@5a61f5df]" name="startUp" is-config="true" duration-ms="30811" started-at="2019-08-02T16:41:23Z" finished-at="2019-08-02T16:41:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="verifyHomeScreenElementsPresent()[pri:0, instance:actions.HomeScreenTestSuite@5a61f5df]" name="verifyHomeScreenElementsPresent" duration-ms="3658" started-at="2019-07-31T13:08:33Z" finished-at="2019-07-31T13:08:37Z">
+        <test-method status="PASS" signature="verifyHomeScreenElementsPresent()[pri:0, instance:actions.HomeScreenTestSuite@5a61f5df]" name="verifyHomeScreenElementsPresent" duration-ms="3007" started-at="2019-08-02T16:41:54Z" finished-at="2019-08-02T16:41:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomeScreenElementsPresent -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.HomeScreenTestSuite@5a61f5df]" name="tearDown" is-config="true" duration-ms="6667" started-at="2019-07-31T13:08:37Z" finished-at="2019-07-31T13:08:43Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.HomeScreenTestSuite@5a61f5df]" name="tearDown" is-config="true" duration-ms="6286" started-at="2019-08-02T16:41:57Z" finished-at="2019-08-02T16:42:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- actions.HomeScreenTestSuite -->
     </test> <!-- Test3 -->
-    <test name="Test4" duration-ms="93721" started-at="2019-07-31T12:08:43Z" finished-at="2019-07-31T12:10:17Z">
+    <test name="Test4" duration-ms="108302" started-at="2019-08-02T15:42:03Z" finished-at="2019-08-02T15:43:51Z">
       <class name="actions.ProfilePageTestSuite">
-        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.ProfilePageTestSuite@737996a0]" name="startUp" is-config="true" duration-ms="31713" started-at="2019-07-31T13:08:43Z" finished-at="2019-07-31T13:09:15Z">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.ProfilePageTestSuite@737996a0]" name="startUp" is-config="true" duration-ms="30001" started-at="2019-08-02T16:42:03Z" finished-at="2019-08-02T16:42:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="FAIL" signature="changeFirstLastNameSuccessfully()[pri:1, instance:actions.ProfilePageTestSuite@737996a0]" name="changeFirstLastNameSuccessfully" duration-ms="13562" started-at="2019-07-31T13:09:15Z" finished-at="2019-07-31T13:09:29Z">
+        <test-method status="FAIL" signature="changeFirstLastNameSuccessfully()[pri:1, instance:actions.ProfilePageTestSuite@737996a0]" name="changeFirstLastNameSuccessfully" duration-ms="29605" started-at="2019-08-02T16:42:33Z" finished-at="2019-08-02T16:43:03Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to locate element: //span[@id='ProfileDropDown']//*[@id='Capa_1']
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
-System info: host: 'ISW-GSIG-UO1', ip: '172.16.5.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+System info: host: 'ISW-GSIG-UO1', ip: '172.23.23.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 43652, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 17640, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a9326f39-28ef-455c-bc02-08f78856cc78
 *** Element info: {Using=xpath, value=//span[@id='ProfileDropDown']//*[@id='Capa_1']}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[@id='ProfileDropDown']//*[@id='Capa_1']
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
-System info: host: 'ISW-GSIG-UO1', ip: '172.16.5.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+System info: host: 'ISW-GSIG-UO1', ip: '172.23.23.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 43652, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 17640, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a9326f39-28ef-455c-bc02-08f78856cc78
 *** Element info: {Using=xpath, value=//span[@id='ProfileDropDown']//*[@id='Capa_1']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -125,26 +125,26 @@ Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changeFirstLastNameSuccessfully -->
-        <test-method status="FAIL" signature="changePasswordInvalidOldPassword()[pri:2, instance:actions.ProfilePageTestSuite@737996a0]" name="changePasswordInvalidOldPassword" duration-ms="11814" started-at="2019-07-31T13:09:29Z" finished-at="2019-07-31T13:09:41Z">
+        <test-method status="FAIL" signature="changePasswordInvalidOldPassword()[pri:2, instance:actions.ProfilePageTestSuite@737996a0]" name="changePasswordInvalidOldPassword" duration-ms="11923" started-at="2019-08-02T16:43:03Z" finished-at="2019-08-02T16:43:14Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to locate element: //span[@id='ProfileDropDown']//*[@id='Capa_1']
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
-System info: host: 'ISW-GSIG-UO1', ip: '172.16.5.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+System info: host: 'ISW-GSIG-UO1', ip: '172.23.23.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 43652, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 17640, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a9326f39-28ef-455c-bc02-08f78856cc78
 *** Element info: {Using=xpath, value=//span[@id='ProfileDropDown']//*[@id='Capa_1']}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[@id='ProfileDropDown']//*[@id='Capa_1']
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
-System info: host: 'ISW-GSIG-UO1', ip: '172.16.5.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+System info: host: 'ISW-GSIG-UO1', ip: '172.23.23.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 43652, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 17640, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a9326f39-28ef-455c-bc02-08f78856cc78
 *** Element info: {Using=xpath, value=//span[@id='ProfileDropDown']//*[@id='Capa_1']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -197,26 +197,26 @@ Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changePasswordInvalidOldPassword -->
-        <test-method status="FAIL" signature="changePasswordAllFieldsEmpty()[pri:3, instance:actions.ProfilePageTestSuite@737996a0]" name="changePasswordAllFieldsEmpty" duration-ms="11251" started-at="2019-07-31T13:09:41Z" finished-at="2019-07-31T13:09:52Z">
+        <test-method status="FAIL" signature="changePasswordAllFieldsEmpty()[pri:3, instance:actions.ProfilePageTestSuite@737996a0]" name="changePasswordAllFieldsEmpty" duration-ms="11080" started-at="2019-08-02T16:43:14Z" finished-at="2019-08-02T16:43:26Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to locate element: //span[@id='ProfileDropDown']//*[@id='Capa_1']
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
-System info: host: 'ISW-GSIG-UO1', ip: '172.16.5.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+System info: host: 'ISW-GSIG-UO1', ip: '172.23.23.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 43652, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 17640, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a9326f39-28ef-455c-bc02-08f78856cc78
 *** Element info: {Using=xpath, value=//span[@id='ProfileDropDown']//*[@id='Capa_1']}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[@id='ProfileDropDown']//*[@id='Capa_1']
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
-System info: host: 'ISW-GSIG-UO1', ip: '172.16.5.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+System info: host: 'ISW-GSIG-UO1', ip: '172.23.23.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 43652, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 17640, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a9326f39-28ef-455c-bc02-08f78856cc78
 *** Element info: {Using=xpath, value=//span[@id='ProfileDropDown']//*[@id='Capa_1']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -269,26 +269,26 @@ Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changePasswordAllFieldsEmpty -->
-        <test-method status="FAIL" signature="changePasswordNewPasswordAndReTypePasswordFieldsAreEmpty()[pri:4, instance:actions.ProfilePageTestSuite@737996a0]" name="changePasswordNewPasswordAndReTypePasswordFieldsAreEmpty" duration-ms="10781" started-at="2019-07-31T13:09:52Z" finished-at="2019-07-31T13:10:03Z">
+        <test-method status="FAIL" signature="changePasswordNewPasswordAndReTypePasswordFieldsAreEmpty()[pri:4, instance:actions.ProfilePageTestSuite@737996a0]" name="changePasswordNewPasswordAndReTypePasswordFieldsAreEmpty" duration-ms="11118" started-at="2019-08-02T16:43:26Z" finished-at="2019-08-02T16:43:37Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to locate element: //span[@id='ProfileDropDown']//*[@id='Capa_1']
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
-System info: host: 'ISW-GSIG-UO1', ip: '172.16.5.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+System info: host: 'ISW-GSIG-UO1', ip: '172.23.23.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 43652, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 17640, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a9326f39-28ef-455c-bc02-08f78856cc78
 *** Element info: {Using=xpath, value=//span[@id='ProfileDropDown']//*[@id='Capa_1']}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[@id='ProfileDropDown']//*[@id='Capa_1']
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
-System info: host: 'ISW-GSIG-UO1', ip: '172.16.5.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+System info: host: 'ISW-GSIG-UO1', ip: '172.23.23.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 43652, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 17640, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a9326f39-28ef-455c-bc02-08f78856cc78
 *** Element info: {Using=xpath, value=//span[@id='ProfileDropDown']//*[@id='Capa_1']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -341,26 +341,26 @@ Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changePasswordNewPasswordAndReTypePasswordFieldsAreEmpty -->
-        <test-method status="FAIL" signature="changePasswordSuccessfully()[pri:5, instance:actions.ProfilePageTestSuite@737996a0]" name="changePasswordSuccessfully" duration-ms="10713" started-at="2019-07-31T13:10:03Z" finished-at="2019-07-31T13:10:13Z">
+        <test-method status="FAIL" signature="changePasswordSuccessfully()[pri:5, instance:actions.ProfilePageTestSuite@737996a0]" name="changePasswordSuccessfully" duration-ms="10754" started-at="2019-08-02T16:43:37Z" finished-at="2019-08-02T16:43:47Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to locate element: //span[@id='ProfileDropDown']//*[@id='Capa_1']
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
-System info: host: 'ISW-GSIG-UO1', ip: '172.16.5.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+System info: host: 'ISW-GSIG-UO1', ip: '172.23.23.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 43652, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 17640, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a9326f39-28ef-455c-bc02-08f78856cc78
 *** Element info: {Using=xpath, value=//span[@id='ProfileDropDown']//*[@id='Capa_1']}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[@id='ProfileDropDown']//*[@id='Capa_1']
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
-System info: host: 'ISW-GSIG-UO1', ip: '172.16.5.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+System info: host: 'ISW-GSIG-UO1', ip: '172.23.23.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 43652, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 17640, moz:profile: C:\Users\efetobor.obominuru..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a9326f39-28ef-455c-bc02-08f78856cc78
 *** Element info: {Using=xpath, value=//span[@id='ProfileDropDown']//*[@id='Capa_1']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -413,35 +413,87 @@ Session ID: c88c6f95-ae11-477d-8084-0ebd098589bc
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changePasswordSuccessfully -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.ProfilePageTestSuite@737996a0]" name="tearDown" is-config="true" duration-ms="3867" started-at="2019-07-31T13:10:13Z" finished-at="2019-07-31T13:10:17Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.ProfilePageTestSuite@737996a0]" name="tearDown" is-config="true" duration-ms="3801" started-at="2019-08-02T16:43:47Z" finished-at="2019-08-02T16:43:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- actions.ProfilePageTestSuite -->
     </test> <!-- Test4 -->
-    <test name="Test5" duration-ms="59211" started-at="2019-07-31T12:10:17Z" finished-at="2019-07-31T12:11:16Z">
+    <test name="Test5" duration-ms="109120" started-at="2019-08-02T15:43:51Z" finished-at="2019-08-02T15:45:40Z">
       <class name="actions.SavedPaymentSuite">
-        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.SavedPaymentSuite@97e1986]" name="startUp" is-config="true" duration-ms="31821" started-at="2019-07-31T13:10:17Z" finished-at="2019-07-31T13:10:49Z">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.SavedPaymentSuite@97e1986]" name="startUp" is-config="true" duration-ms="31234" started-at="2019-08-02T16:43:51Z" finished-at="2019-08-02T16:44:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="verifyQROptionIsPresentWhenPayingFromSavedPaymentAirtime()[pri:1, instance:actions.SavedPaymentSuite@97e1986]" name="verifyQROptionIsPresentWhenPayingFromSavedPaymentAirtime" duration-ms="8128" started-at="2019-07-31T13:10:49Z" finished-at="2019-07-31T13:10:57Z">
+        <test-method status="PASS" signature="verifyQROptionIsPresentWhenPayingFromSavedPaymentAirtime()[pri:1, instance:actions.SavedPaymentSuite@97e1986]" name="verifyQROptionIsPresentWhenPayingFromSavedPaymentAirtime" duration-ms="65099" started-at="2019-08-02T16:44:23Z" finished-at="2019-08-02T16:45:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyQROptionIsPresentWhenPayingFromSavedPaymentAirtime -->
-        <test-method status="PASS" signature="verifyQROptionIsPresentWhenPayingFromSavedPaymentForBills()[pri:2, instance:actions.SavedPaymentSuite@97e1986]" name="verifyQROptionIsPresentWhenPayingFromSavedPaymentForBills" duration-ms="6658" started-at="2019-07-31T13:10:57Z" finished-at="2019-07-31T13:11:04Z">
+        <test-method status="PASS" signature="verifyQROptionIsPresentWhenPayingFromSavedPaymentForBills()[pri:2, instance:actions.SavedPaymentSuite@97e1986]" name="verifyQROptionIsPresentWhenPayingFromSavedPaymentForBills" duration-ms="5040" started-at="2019-08-02T16:45:28Z" finished-at="2019-08-02T16:45:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyQROptionIsPresentWhenPayingFromSavedPaymentForBills -->
-        <test-method status="PASS" signature="verifyQROptionIsPresentWhenPayingFromSavedPaymentForTransfer()[pri:3, instance:actions.SavedPaymentSuite@97e1986]" name="verifyQROptionIsPresentWhenPayingFromSavedPaymentForTransfer" duration-ms="5246" started-at="2019-07-31T13:11:04Z" finished-at="2019-07-31T13:11:09Z">
+        <test-method status="PASS" signature="verifyQROptionIsPresentWhenPayingFromSavedPaymentForTransfer()[pri:3, instance:actions.SavedPaymentSuite@97e1986]" name="verifyQROptionIsPresentWhenPayingFromSavedPaymentForTransfer" duration-ms="3914" started-at="2019-08-02T16:45:33Z" finished-at="2019-08-02T16:45:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyQROptionIsPresentWhenPayingFromSavedPaymentForTransfer -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.SavedPaymentSuite@97e1986]" name="tearDown" is-config="true" duration-ms="7355" started-at="2019-07-31T13:11:09Z" finished-at="2019-07-31T13:11:16Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.SavedPaymentSuite@97e1986]" name="tearDown" is-config="true" duration-ms="3831" started-at="2019-08-02T16:45:37Z" finished-at="2019-08-02T16:45:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- actions.SavedPaymentSuite -->
     </test> <!-- Test5 -->
+    <test name="Test6" duration-ms="50927" started-at="2019-08-02T15:45:40Z" finished-at="2019-08-02T15:46:31Z">
+      <class name="actions.SearchFieldTestSuite">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.SearchFieldTestSuite@337d0578]" name="startUp" is-config="true" duration-ms="30420" started-at="2019-08-02T16:45:40Z" finished-at="2019-08-02T16:46:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="verifySearchFieldReturnsSavedPaymentItemsFirst()[pri:1, instance:actions.SearchFieldTestSuite@337d0578]" name="verifySearchFieldReturnsSavedPaymentItemsFirst" duration-ms="12074" started-at="2019-08-02T16:46:11Z" finished-at="2019-08-02T16:46:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchFieldReturnsSavedPaymentItemsFirst -->
+        <test-method status="PASS" signature="verifyUserReturnstoDashBoardScreenWhenSearchCriteiraIsRemovedFromSearchField()[pri:2, instance:actions.SearchFieldTestSuite@337d0578]" name="verifyUserReturnstoDashBoardScreenWhenSearchCriteiraIsRemovedFromSearchField" duration-ms="359" started-at="2019-08-02T16:46:23Z" finished-at="2019-08-02T16:46:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserReturnstoDashBoardScreenWhenSearchCriteiraIsRemovedFromSearchField -->
+        <test-method status="PASS" signature="verifySearchFieldReturnsBillerListAfterSavedPaymentOptionsAreExausted()[pri:3, instance:actions.SearchFieldTestSuite@337d0578]" name="verifySearchFieldReturnsBillerListAfterSavedPaymentOptionsAreExausted" duration-ms="1282" started-at="2019-08-02T16:46:23Z" finished-at="2019-08-02T16:46:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchFieldReturnsBillerListAfterSavedPaymentOptionsAreExausted -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.SearchFieldTestSuite@337d0578]" name="tearDown" is-config="true" duration-ms="6789" started-at="2019-08-02T16:46:25Z" finished-at="2019-08-02T16:46:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- actions.SearchFieldTestSuite -->
+    </test> <!-- Test6 -->
+    <test name="Test7" duration-ms="61824" started-at="2019-08-02T15:46:31Z" finished-at="2019-08-02T15:47:33Z">
+      <class name="actions.OTPTestSuite">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.OTPTestSuite@5cc7c2a6]" name="startUp" is-config="true" duration-ms="30814" started-at="2019-08-02T16:46:31Z" finished-at="2019-08-02T16:47:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="verifyOTPScreenDisplays()[pri:1, instance:actions.OTPTestSuite@5cc7c2a6]" name="verifyOTPScreenDisplays" duration-ms="22589" started-at="2019-08-02T16:47:02Z" finished-at="2019-08-02T16:47:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOTPScreenDisplays -->
+        <test-method status="PASS" signature="InvalidOTPTest()[pri:2, instance:actions.OTPTestSuite@5cc7c2a6]" name="InvalidOTPTest" duration-ms="529" started-at="2019-08-02T16:47:25Z" finished-at="2019-08-02T16:47:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidOTPTest -->
+        <test-method status="PASS" signature="NoOTPTest()[pri:3, instance:actions.OTPTestSuite@5cc7c2a6]" name="NoOTPTest" duration-ms="308" started-at="2019-08-02T16:47:25Z" finished-at="2019-08-02T16:47:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NoOTPTest -->
+        <test-method status="PASS" signature="ResendOtp()[pri:4, instance:actions.OTPTestSuite@5cc7c2a6]" name="ResendOtp" duration-ms="486" started-at="2019-08-02T16:47:26Z" finished-at="2019-08-02T16:47:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ResendOtp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.OTPTestSuite@5cc7c2a6]" name="tearDown" is-config="true" duration-ms="7096" started-at="2019-08-02T16:47:26Z" finished-at="2019-08-02T16:47:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- actions.OTPTestSuite -->
+    </test> <!-- Test7 -->
   </suite> <!-- Suite -->
 </testng-results>

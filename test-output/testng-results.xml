@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="40954" started-at="2019-07-31T11:59:14Z" finished-at="2019-07-31T11:59:55Z">
+  <suite name="Default suite" duration-ms="73964" started-at="2019-08-02T15:05:15Z" finished-at="2019-08-02T15:06:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="40954" started-at="2019-07-31T11:59:14Z" finished-at="2019-07-31T11:59:55Z">
-      <class name="actions.HomeScreenTestSuite">
-        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.HomeScreenTestSuite@8bd1b6a]" name="startUp" is-config="true" duration-ms="30739" started-at="2019-07-31T12:59:14Z" finished-at="2019-07-31T12:59:45Z">
+    <test name="Default test" duration-ms="73964" started-at="2019-08-02T15:05:15Z" finished-at="2019-08-02T15:06:29Z">
+      <class name="actions.SearchFieldTestSuite">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.SearchFieldTestSuite@8bd1b6a]" name="startUp" is-config="true" duration-ms="46101" started-at="2019-08-02T16:05:15Z" finished-at="2019-08-02T16:06:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="verifyHomeScreenElementsPresent()[pri:0, instance:actions.HomeScreenTestSuite@8bd1b6a]" name="verifyHomeScreenElementsPresent" duration-ms="3049" started-at="2019-07-31T12:59:45Z" finished-at="2019-07-31T12:59:48Z">
+        <test-method status="PASS" signature="verifySearchFieldReturnsSavedPaymentItemsFirst()[pri:1, instance:actions.SearchFieldTestSuite@8bd1b6a]" name="verifySearchFieldReturnsSavedPaymentItemsFirst" duration-ms="18270" started-at="2019-08-02T16:06:01Z" finished-at="2019-08-02T16:06:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHomeScreenElementsPresent -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.HomeScreenTestSuite@8bd1b6a]" name="tearDown" is-config="true" duration-ms="7140" started-at="2019-07-31T12:59:48Z" finished-at="2019-07-31T12:59:55Z">
+        </test-method> <!-- verifySearchFieldReturnsSavedPaymentItemsFirst -->
+        <test-method status="PASS" signature="verifyUserReturnstoDashBoardScreenWhenSearchCriteiraIsRemovedFromSearchField()[pri:2, instance:actions.SearchFieldTestSuite@8bd1b6a]" name="verifyUserReturnstoDashBoardScreenWhenSearchCriteiraIsRemovedFromSearchField" duration-ms="466" started-at="2019-08-02T16:06:20Z" finished-at="2019-08-02T16:06:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserReturnstoDashBoardScreenWhenSearchCriteiraIsRemovedFromSearchField -->
+        <test-method status="PASS" signature="verifySearchFieldReturnsBillerListAfterSavedPaymentOptionsAreExausted()[pri:3, instance:actions.SearchFieldTestSuite@8bd1b6a]" name="verifySearchFieldReturnsBillerListAfterSavedPaymentOptionsAreExausted" duration-ms="1333" started-at="2019-08-02T16:06:20Z" finished-at="2019-08-02T16:06:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchFieldReturnsBillerListAfterSavedPaymentOptionsAreExausted -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.SearchFieldTestSuite@8bd1b6a]" name="tearDown" is-config="true" duration-ms="7675" started-at="2019-08-02T16:06:21Z" finished-at="2019-08-02T16:06:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- actions.HomeScreenTestSuite -->
+      </class> <!-- actions.SearchFieldTestSuite -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
