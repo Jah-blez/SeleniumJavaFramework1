@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Suite</th></tr><tr><td><a href="#t0">Test1</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">6</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t1">Test2</a></td><td class="num">0</td><td class="num attn">3</td><td class="num">0</td><td class="num">38,231</td><td></td><td></td></tr><tr><td><a href="#t2">Test3</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">84,724</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t3">Test4</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">89,988</td><td></td><td></td></tr><tr><td><a href="#t4">Test5</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">65,022</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t5">Test6</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">52,198</td><td></td><td></td></tr><tr><td><a href="#t6">Test7</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">77,800</td><td></td><td></td></tr><tr><th>Total</th><th class="num">15</th><th class="num attn">4</th><th class="num">0</th><th class="num">407,969</th><th colspan="2"></th></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"></tbody><tbody id="t1"><tr><th colspan="4">Test2 &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">actions.LoginTestSuite</td><td><a href="#m0">startUp</a></td><td rowspan="1">1565087634144</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test2 &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">actions.LoginTestSuite</td><td><a href="#m1">tearDown</a></td><td rowspan="1">1565087672372</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test2 &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="3">actions.LoginTestSuite</td><td><a href="#m2">InvalidUsernameAndValidPassword</a></td><td rowspan="1">1565087672368</td><td rowspan="1">1</td></tr><tr class="skippedeven"><td><a href="#m3">successfulLogin</a></td><td rowspan="1">1565087672371</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m4">validEmailAndInvalidPassword</a></td><td rowspan="1">1565087672371</td><td rowspan="1">0</td></tr></tbody><tbody id="t2"><tr><th colspan="4">Test3 &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">actions.HomeScreenTestSuite</td><td><a href="#m5">startUp</a></td><td rowspan="1">1565087672446</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test3 &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">actions.HomeScreenTestSuite</td><td><a href="#m6">tearDown</a></td><td rowspan="1">1565087757169</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test3 &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">actions.HomeScreenTestSuite</td><td><a href="#m7">verifyHomeScreenElementsPresent</a></td><td rowspan="1">1565087757169</td><td rowspan="1">0</td></tr></tbody><tbody id="t3"><tr><th colspan="4">Test4 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">actions.ProfilePageTestSuite</td><td><a href="#m8">changeFirstLastNameSuccessfully</a></td><td rowspan="1">1565087791723</td><td rowspan="1">26718</td></tr><tr class="passedeven"><td><a href="#m9">changePasswordAllFieldsEmpty</a></td><td rowspan="1">1565087825247</td><td rowspan="1">4788</td></tr><tr class="passedeven"><td><a href="#m10">changePasswordInvalidOldPassword</a></td><td rowspan="1">1565087818441</td><td rowspan="1">6805</td></tr><tr class="passedeven"><td><a href="#m11">changePasswordNewPasswordAndReTypePasswordFieldsAreEmpty</a></td><td rowspan="1">1565087830035</td><td rowspan="1">3188</td></tr><tr class="passedeven"><td><a href="#m12">changePasswordSuccessfully</a></td><td rowspan="1">1565087833223</td><td rowspan="1">4081</td></tr></tbody><tbody id="t4"><tr><th colspan="4">Test5 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">actions.SavedPaymentSuite</td><td><a href="#m13">verifyQROptionIsPresentWhenPayingFromSavedPaymentAirtime</a></td><td rowspan="1">1565087879775</td><td rowspan="1">14557</td></tr><tr class="passedeven"><td><a href="#m14">verifyQROptionIsPresentWhenPayingFromSavedPaymentForBills</a></td><td rowspan="1">1565087894332</td><td rowspan="1">5426</td></tr><tr class="passedeven"><td><a href="#m15">verifyQROptionIsPresentWhenPayingFromSavedPaymentForTransfer</a></td><td rowspan="1">1565087899759</td><td rowspan="1">5249</td></tr></tbody><tbody id="t5"><tr><th colspan="4">Test6 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">actions.SearchFieldTestSuite</td><td><a href="#m16">verifySearchFieldReturnsBillerListAfterSavedPaymentOptionsAreExausted</a></td><td rowspan="1">1565087956225</td><td rowspan="1">1728</td></tr><tr class="passedeven"><td><a href="#m17">verifySearchFieldReturnsSavedPaymentItemsFirst</a></td><td rowspan="1">1565087943539</td><td rowspan="1">12183</td></tr><tr class="passedeven"><td><a href="#m18">verifyUserReturnstoDashBoardScreenWhenSearchCriteiraIsRemovedFromSearchField</a></td><td rowspan="1">1565087955723</td><td rowspan="1">502</td></tr></tbody><tbody id="t6"><tr><th colspan="4">Test7 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">actions.OTPTestSuite</td><td><a href="#m19">InvalidOTPTest</a></td><td rowspan="1">1565088033773</td><td rowspan="1">1193</td></tr><tr class="passedeven"><td><a href="#m20">NoOTPTest</a></td><td rowspan="1">1565088034966</td><td rowspan="1">292</td></tr><tr class="passedeven"><td><a href="#m21">ResendOtp</a></td><td rowspan="1">1565088035259</td><td rowspan="1">668</td></tr><tr class="passedeven"><td><a href="#m22">verifyOTPScreenDisplays</a></td><td rowspan="1">1565087996205</td><td rowspan="1">37567</td></tr></tbody></table><h2>Test1</h2><h2>Test2</h2><h3 id="m0">actions.LoginTestSuite#startUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: permission denied
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;ISW-GSIG-UO1&apos;, ip: &apos;172.16.5.91&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: 
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:98)
+	at actions.LoginTestSuite.startUp(LoginTestSuite.java:36)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">actions.LoginTestSuite#tearDown</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">actions.LoginTestSuite#InvalidUsernameAndValidPassword</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: permission denied
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;ISW-GSIG-UO1&apos;, ip: &apos;172.16.5.91&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: 
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:98)
+	at actions.LoginTestSuite.startUp(LoginTestSuite.java:36)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">actions.LoginTestSuite#successfulLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: permission denied
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;ISW-GSIG-UO1&apos;, ip: &apos;172.16.5.91&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: 
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:98)
+	at actions.LoginTestSuite.startUp(LoginTestSuite.java:36)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">actions.LoginTestSuite#validEmailAndInvalidPassword</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: permission denied
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;ISW-GSIG-UO1&apos;, ip: &apos;172.16.5.91&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: 
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:98)
+	at actions.LoginTestSuite.startUp(LoginTestSuite.java:36)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Test3</h2><h3 id="m5">actions.HomeScreenTestSuite#startUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: connection refused
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;ISW-GSIG-UO1&apos;, ip: &apos;172.16.5.91&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: 
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:98)
+	at actions.HomeScreenTestSuite.startUp(HomeScreenTestSuite.java:33)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">actions.HomeScreenTestSuite#tearDown</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m7">actions.HomeScreenTestSuite#verifyHomeScreenElementsPresent</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: connection refused
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;ISW-GSIG-UO1&apos;, ip: &apos;172.16.5.91&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: 
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:98)
+	at actions.HomeScreenTestSuite.startUp(HomeScreenTestSuite.java:33)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Test4</h2><h3 id="m8">actions.ProfilePageTestSuite#changeFirstLastNameSuccessfully</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m9">actions.ProfilePageTestSuite#changePasswordAllFieldsEmpty</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m10">actions.ProfilePageTestSuite#changePasswordInvalidOldPassword</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m11">actions.ProfilePageTestSuite#changePasswordNewPasswordAndReTypePasswordFieldsAreEmpty</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m12">actions.ProfilePageTestSuite#changePasswordSuccessfully</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Test5</h2><h3 id="m13">actions.SavedPaymentSuite#verifyQROptionIsPresentWhenPayingFromSavedPaymentAirtime</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m14">actions.SavedPaymentSuite#verifyQROptionIsPresentWhenPayingFromSavedPaymentForBills</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m15">actions.SavedPaymentSuite#verifyQROptionIsPresentWhenPayingFromSavedPaymentForTransfer</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Test6</h2><h3 id="m16">actions.SearchFieldTestSuite#verifySearchFieldReturnsBillerListAfterSavedPaymentOptionsAreExausted</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m17">actions.SearchFieldTestSuite#verifySearchFieldReturnsSavedPaymentItemsFirst</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m18">actions.SearchFieldTestSuite#verifyUserReturnstoDashBoardScreenWhenSearchCriteiraIsRemovedFromSearchField</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Test7</h2><h3 id="m19">actions.OTPTestSuite#InvalidOTPTest</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m20">actions.OTPTestSuite#NoOTPTest</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m21">actions.OTPTestSuite#ResendOtp</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m22">actions.OTPTestSuite#verifyOTPScreenDisplays</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

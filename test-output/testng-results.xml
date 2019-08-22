@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="32053" started-at="2019-08-22T14:26:11Z" finished-at="2019-08-22T14:26:43Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="32053" started-at="2019-08-22T14:26:11Z" finished-at="2019-08-22T14:26:43Z">
+      <class name="actions.BuyAirtimeTestSuite">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.BuyAirtimeTestSuite@c038203]" name="startUp" is-config="true" duration-ms="9221" started-at="2019-08-22T15:26:11Z" finished-at="2019-08-22T15:26:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="buyAirtimeFlow()[pri:1, instance:actions.BuyAirtimeTestSuite@c038203]" name="buyAirtimeFlow" duration-ms="15769" started-at="2019-08-22T15:26:20Z" finished-at="2019-08-22T15:26:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyAirtimeFlow -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.BuyAirtimeTestSuite@c038203]" name="tearDown" is-config="true" duration-ms="7038" started-at="2019-08-22T15:26:36Z" finished-at="2019-08-22T15:26:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- actions.BuyAirtimeTestSuite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
