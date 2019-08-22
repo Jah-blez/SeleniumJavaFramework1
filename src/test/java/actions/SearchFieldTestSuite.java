@@ -2,6 +2,7 @@ package actions;
 
 import org.testng.annotations.Test;
 
+import Methods.StartBrowser;
 import Methods.SuccessfulLogin;
 
 import java.io.IOException;
@@ -19,7 +20,6 @@ import org.testng.annotations.BeforeTest;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.Dashboard;
 import pages.NavigateToURL;
-import pages.StartBrowser;
 /*import pages.QTHomePageScreen2;
 import pages.QtHomePageScreen;
 import pages.QtLoginPage;

@@ -2,6 +2,8 @@ package actions;
 
 import org.testng.annotations.Test;
 
+import Methods.StartBrowser;
+
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -26,7 +28,6 @@ import pages.QtHomePageScreen;
 import pages.QtLoginPage;
 import pages.QtLoginPage2;
 import pages.SavedPaymentPage;
-import pages.StartBrowser;
 import pages.URL;
 
 public class SavedPaymentSuite {

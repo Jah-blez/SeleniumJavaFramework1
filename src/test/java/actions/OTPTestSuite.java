@@ -1,6 +1,8 @@
 package actions;
 import org.testng.annotations.Test;
 
+import Methods.StartBrowser;
+
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
@@ -19,7 +21,6 @@ import pages.QTHomePageScreen2;
 import pages.QtHomePageScreen;
 import pages.QtLoginPage;
 import pages.QtLoginPage2;
-import pages.StartBrowser;
 import pages.URL;
 
 public class OTPTestSuite {
@@ -34,7 +35,7 @@ public class OTPTestSuite {
 	
 		@Test(priority = 1)
 		public void verifyOTPScreenDisplays() {
-			BuyAirtimeTestSuite buyAirtime = new BuyAirtimeTestSuite();
+			BuyAirtimeTestSuiteOTPRequired buyAirtime = new BuyAirtimeTestSuiteOTPRequired();
 			buyAirtime.buyAirtimeFlow();
 			
 			OTPScreen OTPObjects = new OTPScreen(driver);

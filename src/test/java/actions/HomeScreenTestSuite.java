@@ -2,6 +2,8 @@ package actions;
 
 import org.testng.annotations.Test;
 
+import Methods.StartBrowser;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -31,7 +33,6 @@ import pages.QtLoginPage;
 import pages.QtLoginPage2;
 import pages.TopBarHeader;
 import pages.URL;
-import pages.StartBrowser;
 
 public class HomeScreenTestSuite {
 		static WebDriver driver;

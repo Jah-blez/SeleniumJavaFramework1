@@ -2,6 +2,8 @@ package actions;
 
 import org.testng.annotations.Test;
 
+import Methods.StartBrowser;
+
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -24,7 +26,6 @@ import pages.QTHomePageScreen2;
 import pages.QtHomePageScreen;
 import pages.QtLoginPage;
 import pages.QtLoginPage2;
-import pages.StartBrowser;
 import pages.TopBarHeader;
 import pages.URL;
 
@@ -39,14 +40,14 @@ public class ProfilePageTestSuite {
 	}
 
 	@Test(priority = 1)
-	public static void changeFirstLastNameSuccessfully() {
+	public static void changeFirstNameAndLastNameSuccessfully() {
 		NavigateToURL startWebsite = new NavigateToURL(driver);
 		startWebsite.launchURL();
 		
 		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
 		HomeScreenObjects.clickOnLoginButton();
 		QtLoginPage2 LoginScreenObjects = new QtLoginPage2(driver);
-		LoginScreenObjects.EnterUserNameInUserNameField("for@gh.com");
+		LoginScreenObjects.EnterUserNameInUserNameField("fg@th.com");
 		LoginScreenObjects.EnterPasswordInUserPasswordField("password");
 		LoginScreenObjects.ClickOnLoginButton();
 		TopBarHeader TopBarHeaderObjects = new TopBarHeader(driver);
