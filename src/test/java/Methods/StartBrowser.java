@@ -1,4 +1,4 @@
-package pages;
+package Methods;
 
 import org.testng.annotations.Test;
 

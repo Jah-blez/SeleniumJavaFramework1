@@ -2,6 +2,8 @@ package actions;
 
 import org.testng.annotations.Test;
 
+import Methods.StartBrowser;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -31,7 +33,6 @@ import pages.QtLoginPage;
 import pages.QtLoginPage2;
 import pages.TopBarHeader;
 import pages.URL;
-import pages.StartBrowser;
 
 public class HomeScreenTestSuite {
 		static WebDriver driver;
@@ -49,7 +50,8 @@ public class HomeScreenTestSuite {
 			
 			NavigateToURL startWebsite = new NavigateToURL(driver);
 			startWebsite.launchURL();
-			driver.manage().window().setSize(new Dimension(375, 667));
+		//	Set the screenSize you prefer	
+		//	driver.manage().window().setSize(new Dimension(375, 667));
 				System.out.println("screen-resolution set successfully");
 				QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
 				HomeScreenObjects.verifySwitchToOldQuicktellerLinkIsPresent();
