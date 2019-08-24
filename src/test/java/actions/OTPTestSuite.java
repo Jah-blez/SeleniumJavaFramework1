@@ -31,7 +31,7 @@ public class OTPTestSuite {
 		@BeforeTest
 		public void startUp() throws IOException {
 			StartBrowser openConnection = new StartBrowser(driver);
-			this.driver = openConnection.initializeBrowser();
+			driver = openConnection.initializeBrowser();
 		}
 	
 		@Test(priority = 1)

@@ -33,9 +33,20 @@ public class BuyAirtimeCardRequiresOTP {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 
 		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
-		
-		SuccessfulLogin loginSuccessfully = new SuccessfulLogin(driver);
-		loginSuccessfully.successfulLogin("dadubiaro@interswitchng.com", "password");
+		HomeScreenObjects.clickOnLoginButton();
+		QtLoginPage2 LoginScreenObjects = new QtLoginPage2(driver);
+		LoginScreenObjects.EnterUserNameInUserNameField("dadubiaro@interswitch.com");
+		LoginScreenObjects.EnterPasswordInUserPasswordField("password");
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		//LoginScreenObjects.ClickOnLoginButton();
+		LoginScreenObjects.doubleClickOnLoginButton();
+	
+
 		
 		WebDriverWait wait = new WebDriverWait(driver, 60);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Buy Airtime')]")));
