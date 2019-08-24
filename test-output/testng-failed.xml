@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="actions.HomeScreenTestSuite">
+      <class name="methods.SuccessfulLogin">
         <methods>
-          <include name="startUp"/>
-          <include name="verifyHomeScreenElementsPresent"/>
-          <include name="tearDown"/>
+          <include name="successfulLogin"/>
         </methods>
-      </class> <!-- actions.HomeScreenTestSuite -->
+      </class> <!-- methods.SuccessfulLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

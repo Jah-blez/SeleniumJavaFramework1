@@ -21,7 +21,7 @@ public class NavigateToURL {
 			this.driver = driver;
 		}
 		public void launchURL() {
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			driver.get(baseUrl.qTBaseUrlUAT);
 			driver.manage().window().maximize();
 						
