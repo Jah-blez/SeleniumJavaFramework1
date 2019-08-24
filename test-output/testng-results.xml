@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="54098" started-at="2019-08-24T13:11:34Z" finished-at="2019-08-24T13:12:28Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="54098" started-at="2019-08-24T13:11:34Z" finished-at="2019-08-24T13:12:28Z">
+      <class name="actions.SearchFieldTestSuite">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.SearchFieldTestSuite@c038203]" name="startUp" is-config="true" duration-ms="26504" started-at="2019-08-24T14:11:34Z" finished-at="2019-08-24T14:12:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="verifySearchFieldReturnsSavedPaymentItemsFirst()[pri:1, instance:actions.SearchFieldTestSuite@c038203]" name="verifySearchFieldReturnsSavedPaymentItemsFirst" duration-ms="16717" started-at="2019-08-24T14:12:00Z" finished-at="2019-08-24T14:12:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchFieldReturnsSavedPaymentItemsFirst -->
+        <test-method status="PASS" signature="verifyUserReturnstoDashBoardScreenWhenSearchCriteiraIsRemovedFromSearchField()[pri:2, instance:actions.SearchFieldTestSuite@c038203]" name="verifyUserReturnstoDashBoardScreenWhenSearchCriteiraIsRemovedFromSearchField" duration-ms="400" started-at="2019-08-24T14:12:17Z" finished-at="2019-08-24T14:12:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserReturnstoDashBoardScreenWhenSearchCriteiraIsRemovedFromSearchField -->
+        <test-method status="PASS" signature="verifySearchFieldReturnsBillerListAfterSavedPaymentOptionsAreExausted()[pri:3, instance:actions.SearchFieldTestSuite@c038203]" name="verifySearchFieldReturnsBillerListAfterSavedPaymentOptionsAreExausted" duration-ms="1823" started-at="2019-08-24T14:12:17Z" finished-at="2019-08-24T14:12:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchFieldReturnsBillerListAfterSavedPaymentOptionsAreExausted -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.SearchFieldTestSuite@c038203]" name="tearDown" is-config="true" duration-ms="8602" started-at="2019-08-24T14:12:19Z" finished-at="2019-08-24T14:12:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- actions.SearchFieldTestSuite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
