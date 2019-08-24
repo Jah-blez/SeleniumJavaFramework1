@@ -31,10 +31,9 @@ public class SearchFieldTestSuite {
 
 		@BeforeTest
 		public void startUp() throws IOException {
-			StartBrowser openConnection = new StartBrowser();
-			driver = openConnection.initializeBrowser();
-	}
-
+			StartBrowser openConnection = new StartBrowser(driver);
+			this.driver = openConnection.initializeBrowser();
+		}
 		@Test(priority = 1)
 		public void verifySearchFieldReturnsSavedPaymentItemsFirst() {
 			NavigateToURL startWebsite = new NavigateToURL(driver);
