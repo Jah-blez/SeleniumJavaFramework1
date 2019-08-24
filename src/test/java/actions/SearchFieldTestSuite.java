@@ -2,9 +2,6 @@ package actions;
 
 import org.testng.annotations.Test;
 
-import Methods.StartBrowser;
-import Methods.SuccessfulLogin;
-
 import java.io.IOException;
 
 //import java.util.concurrent.TimeUnit;
@@ -18,6 +15,8 @@ import org.testng.annotations.BeforeTest;
 //import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import methods.StartBrowser;
+import methods.SuccessfulLogin;
 import pages.Dashboard;
 import pages.NavigateToURL;
 /*import pages.QTHomePageScreen2;

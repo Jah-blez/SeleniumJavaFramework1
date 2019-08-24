@@ -1,4 +1,4 @@
-package Methods;
+package methods;
 
 import org.testng.annotations.Test;
 
@@ -20,6 +20,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class StartBrowser {
 		WebDriver driver;
+		
 	
 		public WebDriver initializeBrowser() throws IOException {
 			Properties config = new Properties(); 

@@ -2,8 +2,6 @@ package actions;
 
 import org.testng.annotations.Test;
 
-import Methods.StartBrowser;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -25,6 +23,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import log4j.log4jLogging;
+import methods.StartBrowser;
 import pages.Dashboard;
 import pages.NavigateToURL;
 import pages.QTHomePageScreen2;
@@ -67,6 +66,7 @@ public class HomeScreenTestSuite {
 				HomeScreenObjects.verifyHomePageWrapperIsPresent();
 							
 			System.out.println("verifyHomeScreenElementsPresent. Test Passed");
+			
 		}
 
 		@AfterTest

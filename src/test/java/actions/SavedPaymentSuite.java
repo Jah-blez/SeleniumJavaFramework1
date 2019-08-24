@@ -2,8 +2,6 @@ package actions;
 
 import org.testng.annotations.Test;
 
-import Methods.StartBrowser;
-
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -19,6 +17,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import methods.StartBrowser;
 import pages.BuyAirtimePage;
 import pages.Dashboard;
 import pages.NavigateToURL;

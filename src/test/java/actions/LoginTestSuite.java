@@ -2,6 +2,7 @@ package actions;
 
 import org.testng.annotations.Test;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -14,6 +15,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import methods.StartBrowser;
 import pages.Dashboard;
 import pages.NavigateToURL;
 import pages.QTHomePageScreen2;
@@ -28,12 +30,9 @@ public class LoginTestSuite {
 	URL baseUrl = new URL();
 
 	@BeforeTest
-	public void startUp() {
-		/*
-		 * WebDriverManager.chromedriver().setup(); driver = new ChromeDriver();
-		 */
-		WebDriverManager.firefoxdriver().setup();
-		driver = new FirefoxDriver();
+	public void startUp() throws IOException {
+		StartBrowser openConnection = new StartBrowser();
+		driver = openConnection.initializeBrowser();
 	}
 
 	@Test(priority = 1)

@@ -5,12 +5,12 @@
     <classes>
       <class name="actions.OTPTestSuite">
         <methods>
+          <include name="doNotEnterOTPTest"/>
           <include name="tearDown"/>
           <include name="InvalidOTPTest"/>
           <include name="verifyOTPScreenDisplays"/>
-          <include name="ResendOtp"/>
           <include name="startUp"/>
-          <include name="NoOTPTest"/>
+          <include name="ResendOtpTest"/>
         </methods>
       </class> <!-- actions.OTPTestSuite -->
     </classes>

@@ -15,3 +15,4 @@ update [uat_quickteller].[dbo].[aspnet_Membership] set FailedPasswordAttemptCoun
 
 update [uat_quickteller].[dbo].[aspnet_Membership] set Password ='/L7YRlO31xK6z3VZtvADWN3QO/E=', PasswordSalt='Oi7hjWhTachda2mu28mL3A=='
   				where Email = 'abc@test.com'
+  				
