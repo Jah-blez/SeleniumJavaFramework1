@@ -77,9 +77,19 @@ public class LoginTestSuite {
 	public void successfulLogin() {
 		NavigateToURL startWebsite = new NavigateToURL(driver);
 		startWebsite.launchURL();
-		
-		SuccessfulLogin loginSuccessfully = new SuccessfulLogin(driver);
-		loginSuccessfully.successfulLogin();
+		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
+		HomeScreenObjects.clickOnLoginButton();
+		QtLoginPage2 LoginScreenObjects = new QtLoginPage2(driver);
+		LoginScreenObjects.EnterUserNameInUserNameField("dadubiaro@interswitch.com");
+		LoginScreenObjects.EnterPasswordInUserPasswordField("password");
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		//LoginScreenObjects.ClickOnLoginButton();
+		LoginScreenObjects.doubleClickOnLoginButton();
 	
 		
 		System.out.println("Test Passed");

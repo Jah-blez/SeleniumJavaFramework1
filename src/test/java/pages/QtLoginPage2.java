@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 public class QtLoginPage2 {
 	private WebDriver driver= null;
@@ -41,6 +42,13 @@ public class QtLoginPage2 {
 		driver.findElement(button_Login2).click();
 		System.out.println("Login Button Clicked On");
 	}
+	public void doubleClickOnLoginButton(){
+		Actions actions = new Actions(driver);
+		WebElement elementLocator = driver.findElement(button_Login2);
+		actions.doubleClick(elementLocator).perform();
+		System.out.println("Login Button Double Clicked On Successfully");
+	}
+	
 	public void VerifyfogotPassowrdLinkPresent(){
 		if( driver.findElement(forgotPassword_link2).isDisplayed())
 		{

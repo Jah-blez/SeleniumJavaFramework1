@@ -1,33 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="54098" started-at="2019-08-24T13:11:34Z" finished-at="2019-08-24T13:12:28Z">
+  <suite name="Default suite" duration-ms="61489" started-at="2019-08-24T14:44:29Z" finished-at="2019-08-24T14:45:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="54098" started-at="2019-08-24T13:11:34Z" finished-at="2019-08-24T13:12:28Z">
-      <class name="actions.SearchFieldTestSuite">
-        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.SearchFieldTestSuite@c038203]" name="startUp" is-config="true" duration-ms="26504" started-at="2019-08-24T14:11:34Z" finished-at="2019-08-24T14:12:00Z">
+    <test name="Default test" duration-ms="61489" started-at="2019-08-24T14:44:29Z" finished-at="2019-08-24T14:45:31Z">
+      <class name="actions.OTPTestSuite">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.OTPTestSuite@c038203]" name="startUp" is-config="true" duration-ms="26837" started-at="2019-08-24T15:44:29Z" finished-at="2019-08-24T15:44:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="verifySearchFieldReturnsSavedPaymentItemsFirst()[pri:1, instance:actions.SearchFieldTestSuite@c038203]" name="verifySearchFieldReturnsSavedPaymentItemsFirst" duration-ms="16717" started-at="2019-08-24T14:12:00Z" finished-at="2019-08-24T14:12:17Z">
+        <test-method status="PASS" signature="verifyOTPScreenDisplays()[pri:1, instance:actions.OTPTestSuite@c038203]" name="verifyOTPScreenDisplays" duration-ms="24875" started-at="2019-08-24T15:44:56Z" finished-at="2019-08-24T15:45:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySearchFieldReturnsSavedPaymentItemsFirst -->
-        <test-method status="PASS" signature="verifyUserReturnstoDashBoardScreenWhenSearchCriteiraIsRemovedFromSearchField()[pri:2, instance:actions.SearchFieldTestSuite@c038203]" name="verifyUserReturnstoDashBoardScreenWhenSearchCriteiraIsRemovedFromSearchField" duration-ms="400" started-at="2019-08-24T14:12:17Z" finished-at="2019-08-24T14:12:17Z">
+        </test-method> <!-- verifyOTPScreenDisplays -->
+        <test-method status="PASS" signature="InvalidOTPTest()[pri:2, instance:actions.OTPTestSuite@c038203]" name="InvalidOTPTest" duration-ms="460" started-at="2019-08-24T15:45:21Z" finished-at="2019-08-24T15:45:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserReturnstoDashBoardScreenWhenSearchCriteiraIsRemovedFromSearchField -->
-        <test-method status="PASS" signature="verifySearchFieldReturnsBillerListAfterSavedPaymentOptionsAreExausted()[pri:3, instance:actions.SearchFieldTestSuite@c038203]" name="verifySearchFieldReturnsBillerListAfterSavedPaymentOptionsAreExausted" duration-ms="1823" started-at="2019-08-24T14:12:17Z" finished-at="2019-08-24T14:12:19Z">
+        </test-method> <!-- InvalidOTPTest -->
+        <test-method status="PASS" signature="doNotEnterOTPTest()[pri:3, instance:actions.OTPTestSuite@c038203]" name="doNotEnterOTPTest" duration-ms="294" started-at="2019-08-24T15:45:21Z" finished-at="2019-08-24T15:45:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySearchFieldReturnsBillerListAfterSavedPaymentOptionsAreExausted -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.SearchFieldTestSuite@c038203]" name="tearDown" is-config="true" duration-ms="8602" started-at="2019-08-24T14:12:19Z" finished-at="2019-08-24T14:12:28Z">
+        </test-method> <!-- doNotEnterOTPTest -->
+        <test-method status="PASS" signature="ResendOtpTest()[pri:4, instance:actions.OTPTestSuite@c038203]" name="ResendOtpTest" duration-ms="441" started-at="2019-08-24T15:45:22Z" finished-at="2019-08-24T15:45:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ResendOtpTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.OTPTestSuite@c038203]" name="tearDown" is-config="true" duration-ms="8538" started-at="2019-08-24T15:45:22Z" finished-at="2019-08-24T15:45:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- actions.SearchFieldTestSuite -->
+      </class> <!-- actions.OTPTestSuite -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

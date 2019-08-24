@@ -17,6 +17,8 @@ import org.testng.annotations.BeforeTest;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.Dashboard;
 import pages.NavigateToURL;
+import pages.QTHomePageScreen2;
+import pages.QtLoginPage2;
 import pages.StartBrowser;
 import pages.SuccessfulLogin;
 /*import pages.QTHomePageScreen2;
@@ -32,15 +34,26 @@ public class SearchFieldTestSuite {
 		@BeforeTest
 		public void startUp() throws IOException {
 			StartBrowser openConnection = new StartBrowser(driver);
-			this.driver = openConnection.initializeBrowser();
+			driver = openConnection.initializeBrowser();
 		}
 		@Test(priority = 1)
 		public void verifySearchFieldReturnsSavedPaymentItemsFirst() {
 			NavigateToURL startWebsite = new NavigateToURL(driver);
 			startWebsite.launchURL();
 			
-			SuccessfulLogin LogIn = new SuccessfulLogin(driver);
-			LogIn.successfulLogin();
+			QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
+			HomeScreenObjects.clickOnLoginButton();
+			QtLoginPage2 LoginScreenObjects = new QtLoginPage2(driver);
+			LoginScreenObjects.EnterUserNameInUserNameField("dadubiaro@interswitch.com");
+			LoginScreenObjects.EnterPasswordInUserPasswordField("password");
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			//LoginScreenObjects.ClickOnLoginButton();
+			LoginScreenObjects.doubleClickOnLoginButton();
 			
 			Dashboard DashboardObjects = new Dashboard(driver);
 			DashboardObjects.clickDashboardSearchField();

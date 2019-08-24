@@ -4,8 +4,10 @@ pages\BuyAirtimePage.class
 pages\RecuringPageFlow.class
 pages\ProfilePage.class
 pages\URL.class
+pages\SuccessfulLogin.class
 actions\SearchFieldTestSuite.class
 pages\PayBillsPage.class
+pages\StartBrowser.class
 pages\SavedPaymentPage.class
 actions\ProfilePageTestSuite.class
 pages\OTPScreen.class
@@ -14,9 +16,7 @@ pages\PayPage.class
 actions\HomeScreenTestSuite.class
 pages\QtLoginPage2.class
 pages\QtLoginPage.class
-methods\SuccessfulLogin.class
 actions\practiseTest.class
-methods\StartBrowser.class
 pages\NavigateToURL.class
 actions\OTPTestSuite.class
 pages\TopBarHeader.class

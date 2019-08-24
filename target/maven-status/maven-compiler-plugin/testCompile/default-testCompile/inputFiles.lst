@@ -7,11 +7,11 @@ C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\src\te
 C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\src\test\java\actions\HomeScreenTestSuite.java
 C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\src\test\java\pages\BuyAirtimePage.java
 C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\src\test\java\actions\ProfilePageTestSuite.java
-C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\src\test\java\methods\StartBrowser.java
 C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\src\test\java\actions\RecurringTransactionFlow.java
 C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\src\test\java\pages\URL.java
 C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\src\test\java\actions\BuyAirtimeTestSuite.java
 C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\src\test\java\pages\ProfilePage.java
+C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\src\test\java\pages\StartBrowser.java
 C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\src\test\java\pages\PayBillsPage.java
 C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\src\test\java\actions\SearchFieldTestSuite.java
 C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\src\test\java\actions\TestNG_TestQT.java
@@ -22,9 +22,9 @@ C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\src\te
 C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\src\test\java\pages\QtLoginPage2.java
 C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\src\test\java\actions\practiseTest.java
 C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\src\test\java\methods\BuyAirtimeCardRequiresOTP.java
+C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\src\test\java\pages\SuccessfulLogin.java
 C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\src\test\java\pages\NavigateToURL.java
 C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\src\test\java\pages\PayPage.java
 C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\src\test\java\actions\SavedPaymentSuite.java
-C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\src\test\java\methods\SuccessfulLogin.java
 C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\src\test\java\actions\OTPTestSuite.java
 C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\src\test\java\pages\RecuringPageFlow.java

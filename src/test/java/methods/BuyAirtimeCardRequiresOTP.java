@@ -35,7 +35,7 @@ public class BuyAirtimeCardRequiresOTP {
 		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
 		
 		SuccessfulLogin loginSuccessfully = new SuccessfulLogin(driver);
-		loginSuccessfully.successfulLogin();
+		loginSuccessfully.successfulLogin("dadubiaro@interswitchng.com", "password");
 		
 		WebDriverWait wait = new WebDriverWait(driver, 60);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Buy Airtime')]")));
