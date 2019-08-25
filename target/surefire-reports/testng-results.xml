@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="19" passed="19">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="406993" started-at="2019-08-25T14:04:06Z" finished-at="2019-08-25T14:10:53Z">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="69378" started-at="2019-08-25T14:04:06Z" finished-at="2019-08-25T14:05:15Z">
+      <class name="actions.LoginTestSuite">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.LoginTestSuite@5d624da6]" name="startUp" is-config="true" duration-ms="27758" started-at="2019-08-25T15:04:06Z" finished-at="2019-08-25T15:04:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="InvalidUsernameAndValidPassword()[pri:1, instance:actions.LoginTestSuite@5d624da6]" name="InvalidUsernameAndValidPassword" duration-ms="16456" started-at="2019-08-25T15:04:34Z" finished-at="2019-08-25T15:04:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidUsernameAndValidPassword -->
+        <test-method status="PASS" signature="validEmailAndInvalidPassword()[pri:2, instance:actions.LoginTestSuite@5d624da6]" name="validEmailAndInvalidPassword" duration-ms="11885" started-at="2019-08-25T15:04:50Z" finished-at="2019-08-25T15:05:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validEmailAndInvalidPassword -->
+        <test-method status="PASS" signature="successfulLogin()[pri:3, instance:actions.LoginTestSuite@5d624da6]" name="successfulLogin" duration-ms="6894" started-at="2019-08-25T15:05:02Z" finished-at="2019-08-25T15:05:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.LoginTestSuite@5d624da6]" name="tearDown" is-config="true" duration-ms="6358" started-at="2019-08-25T15:05:09Z" finished-at="2019-08-25T15:05:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- actions.LoginTestSuite -->
+    </test> <!-- Test1 -->
+    <test name="Test2" duration-ms="62817" started-at="2019-08-25T14:05:15Z" finished-at="2019-08-25T14:06:18Z">
+      <class name="actions.HomeScreenTestSuite">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.HomeScreenTestSuite@67b6d4ae]" name="startUp" is-config="true" duration-ms="45577" started-at="2019-08-25T15:05:15Z" finished-at="2019-08-25T15:06:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="verifyHomeScreenElementsPresent()[pri:0, instance:actions.HomeScreenTestSuite@67b6d4ae]" name="verifyHomeScreenElementsPresent" duration-ms="9054" started-at="2019-08-25T15:06:01Z" finished-at="2019-08-25T15:06:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomeScreenElementsPresent -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.HomeScreenTestSuite@67b6d4ae]" name="tearDown" is-config="true" duration-ms="8184" started-at="2019-08-25T15:06:10Z" finished-at="2019-08-25T15:06:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- actions.HomeScreenTestSuite -->
+    </test> <!-- Test2 -->
+    <test name="Test3" duration-ms="73160" started-at="2019-08-25T14:06:18Z" finished-at="2019-08-25T14:07:31Z">
+      <class name="actions.ProfilePageTestSuite">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.ProfilePageTestSuite@5a61f5df]" name="startUp" is-config="true" duration-ms="33666" started-at="2019-08-25T15:06:18Z" finished-at="2019-08-25T15:06:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="changeFirstNameAndLastNameSuccessfully()[pri:1, instance:actions.ProfilePageTestSuite@5a61f5df]" name="changeFirstNameAndLastNameSuccessfully" duration-ms="10223" started-at="2019-08-25T15:06:52Z" finished-at="2019-08-25T15:07:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeFirstNameAndLastNameSuccessfully -->
+        <test-method status="PASS" signature="changePasswordInvalidOldPassword()[pri:2, instance:actions.ProfilePageTestSuite@5a61f5df]" name="changePasswordInvalidOldPassword" duration-ms="7036" started-at="2019-08-25T15:07:02Z" finished-at="2019-08-25T15:07:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changePasswordInvalidOldPassword -->
+        <test-method status="PASS" signature="changePasswordAllFieldsEmpty()[pri:3, instance:actions.ProfilePageTestSuite@5a61f5df]" name="changePasswordAllFieldsEmpty" duration-ms="4438" started-at="2019-08-25T15:07:09Z" finished-at="2019-08-25T15:07:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changePasswordAllFieldsEmpty -->
+        <test-method status="PASS" signature="changePasswordNewPasswordAndReTypePasswordFieldsAreEmpty()[pri:4, instance:actions.ProfilePageTestSuite@5a61f5df]" name="changePasswordNewPasswordAndReTypePasswordFieldsAreEmpty" duration-ms="3699" started-at="2019-08-25T15:07:14Z" finished-at="2019-08-25T15:07:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changePasswordNewPasswordAndReTypePasswordFieldsAreEmpty -->
+        <test-method status="PASS" signature="changePasswordSuccessfully()[pri:5, instance:actions.ProfilePageTestSuite@5a61f5df]" name="changePasswordSuccessfully" duration-ms="4365" started-at="2019-08-25T15:07:17Z" finished-at="2019-08-25T15:07:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changePasswordSuccessfully -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.ProfilePageTestSuite@5a61f5df]" name="tearDown" is-config="true" duration-ms="9730" started-at="2019-08-25T15:07:22Z" finished-at="2019-08-25T15:07:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- actions.ProfilePageTestSuite -->
+    </test> <!-- Test3 -->
+    <test name="Test4" duration-ms="60538" started-at="2019-08-25T14:07:31Z" finished-at="2019-08-25T14:08:32Z">
+      <class name="actions.SavedPaymentSuite">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.SavedPaymentSuite@9f70c54]" name="startUp" is-config="true" duration-ms="24604" started-at="2019-08-25T15:07:31Z" finished-at="2019-08-25T15:07:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="verifyQROptionIsPresentWhenPayingFromSavedPaymentAirtime()[pri:1, instance:actions.SavedPaymentSuite@9f70c54]" name="verifyQROptionIsPresentWhenPayingFromSavedPaymentAirtime" duration-ms="12892" started-at="2019-08-25T15:07:56Z" finished-at="2019-08-25T15:08:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyQROptionIsPresentWhenPayingFromSavedPaymentAirtime -->
+        <test-method status="PASS" signature="verifyQROptionIsPresentWhenPayingFromSavedPaymentForBills()[pri:2, instance:actions.SavedPaymentSuite@9f70c54]" name="verifyQROptionIsPresentWhenPayingFromSavedPaymentForBills" duration-ms="6489" started-at="2019-08-25T15:08:09Z" finished-at="2019-08-25T15:08:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyQROptionIsPresentWhenPayingFromSavedPaymentForBills -->
+        <test-method status="PASS" signature="verifyQROptionIsPresentWhenPayingFromSavedPaymentForTransfer()[pri:3, instance:actions.SavedPaymentSuite@9f70c54]" name="verifyQROptionIsPresentWhenPayingFromSavedPaymentForTransfer" duration-ms="6786" started-at="2019-08-25T15:08:15Z" finished-at="2019-08-25T15:08:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyQROptionIsPresentWhenPayingFromSavedPaymentForTransfer -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.SavedPaymentSuite@9f70c54]" name="tearDown" is-config="true" duration-ms="9765" started-at="2019-08-25T15:08:22Z" finished-at="2019-08-25T15:08:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- actions.SavedPaymentSuite -->
+    </test> <!-- Test4 -->
+    <test name="Test5" duration-ms="55805" started-at="2019-08-25T14:08:32Z" finished-at="2019-08-25T14:09:28Z">
+      <class name="actions.SearchFieldTestSuite">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.SearchFieldTestSuite@12843fce]" name="startUp" is-config="true" duration-ms="26688" started-at="2019-08-25T15:08:32Z" finished-at="2019-08-25T15:08:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="verifySearchFieldReturnsSavedPaymentItemsFirst()[pri:1, instance:actions.SearchFieldTestSuite@12843fce]" name="verifySearchFieldReturnsSavedPaymentItemsFirst" duration-ms="17309" started-at="2019-08-25T15:08:59Z" finished-at="2019-08-25T15:09:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchFieldReturnsSavedPaymentItemsFirst -->
+        <test-method status="PASS" signature="verifyUserReturnstoDashBoardScreenWhenSearchCriteiraIsRemovedFromSearchField()[pri:2, instance:actions.SearchFieldTestSuite@12843fce]" name="verifyUserReturnstoDashBoardScreenWhenSearchCriteiraIsRemovedFromSearchField" duration-ms="403" started-at="2019-08-25T15:09:16Z" finished-at="2019-08-25T15:09:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserReturnstoDashBoardScreenWhenSearchCriteiraIsRemovedFromSearchField -->
+        <test-method status="PASS" signature="verifySearchFieldReturnsBillerListAfterSavedPaymentOptionsAreExausted()[pri:3, instance:actions.SearchFieldTestSuite@12843fce]" name="verifySearchFieldReturnsBillerListAfterSavedPaymentOptionsAreExausted" duration-ms="1856" started-at="2019-08-25T15:09:16Z" finished-at="2019-08-25T15:09:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchFieldReturnsBillerListAfterSavedPaymentOptionsAreExausted -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.SearchFieldTestSuite@12843fce]" name="tearDown" is-config="true" duration-ms="9547" started-at="2019-08-25T15:09:18Z" finished-at="2019-08-25T15:09:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- actions.SearchFieldTestSuite -->
+    </test> <!-- Test5 -->
+    <test name="Test6" duration-ms="85089" started-at="2019-08-25T14:09:28Z" finished-at="2019-08-25T14:10:53Z">
+      <class name="actions.OTPTestSuite">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:actions.OTPTestSuite@13a57a3b]" name="startUp" is-config="true" duration-ms="44547" started-at="2019-08-25T15:09:28Z" finished-at="2019-08-25T15:10:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="verifyOTPScreenDisplays()[pri:1, instance:actions.OTPTestSuite@13a57a3b]" name="verifyOTPScreenDisplays" duration-ms="31046" started-at="2019-08-25T15:10:12Z" finished-at="2019-08-25T15:10:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOTPScreenDisplays -->
+        <test-method status="PASS" signature="InvalidOTPTest()[pri:2, instance:actions.OTPTestSuite@13a57a3b]" name="InvalidOTPTest" duration-ms="490" started-at="2019-08-25T15:10:43Z" finished-at="2019-08-25T15:10:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidOTPTest -->
+        <test-method status="PASS" signature="doNotEnterOTPTest()[pri:3, instance:actions.OTPTestSuite@13a57a3b]" name="doNotEnterOTPTest" duration-ms="341" started-at="2019-08-25T15:10:44Z" finished-at="2019-08-25T15:10:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doNotEnterOTPTest -->
+        <test-method status="PASS" signature="ResendOtpTest()[pri:4, instance:actions.OTPTestSuite@13a57a3b]" name="ResendOtpTest" duration-ms="465" started-at="2019-08-25T15:10:44Z" finished-at="2019-08-25T15:10:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ResendOtpTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.OTPTestSuite@13a57a3b]" name="tearDown" is-config="true" duration-ms="8196" started-at="2019-08-25T15:10:45Z" finished-at="2019-08-25T15:10:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- actions.OTPTestSuite -->
+    </test> <!-- Test6 -->
+  </suite> <!-- Suite -->
+</testng-results>
