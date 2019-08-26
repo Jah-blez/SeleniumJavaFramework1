@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="410.209" tests="23" errors="0" skipped="6" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="408.694" tests="19" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -7,7 +7,7 @@
     <property name="java.specification.version" value="1.8"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\target\test-classes;C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\target\classes;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-java\3.7.1\selenium-java-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-api\3.7.1\selenium-api-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.7.1\selenium-chrome-driver-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.7.1\selenium-edge-driver-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.7.1\selenium-firefox-driver-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.7.1\selenium-ie-driver-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.7.1\selenium-opera-driver-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.7.1\selenium-remote-driver-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.7.1\selenium-safari-driver-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-support\3.7.1\selenium-support-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\net\bytebuddy\byte-buddy\1.7.5\byte-buddy-1.7.5.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\efetobor.obominuru\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\efetobor.obominuru\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\efetobor.obominuru\.m2\repository\com\google\code\gson\gson\2.8.2\gson-2.8.2.jar;C:\Users\efetobor.obominuru\.m2\repository\com\google\guava\guava\23.0\guava-23.0.jar;C:\Users\efetobor.obominuru\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\efetobor.obominuru\.m2\repository\com\google\errorprone\error_prone_annotations\2.0.18\error_prone_annotations-2.0.18.jar;C:\Users\efetobor.obominuru\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\efetobor.obominuru\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\efetobor.obominuru\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\efetobor.obominuru\.m2\repository\io\github\bonigarcia\webdrivermanager\3.6.0\webdrivermanager-3.6.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\efetobor.obominuru\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\rauschig\jarchivelib\1.0.0\jarchivelib-1.0.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\jsoup\jsoup\1.11.3\jsoup-1.11.3.jar;C:\Users\efetobor.obominuru\.m2\repository\org\testng\testng\6.10\testng-6.10.jar;C:\Users\efetobor.obominuru\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\Users\efetobor.obominuru\.m2\repository\com\aventstack\extentreports\3.1.0\extentreports-3.1.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\efetobor.obominuru\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\logging\log4j\log4j-api\2.11.2\log4j-api-2.11.2.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\logging\log4j\log4j-core\2.11.2\log4j-core-2.11.2.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\poi\poi-ooxml\4.1.0\poi-ooxml-4.1.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\poi\poi\4.1.0\poi-4.1.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\commons\commons-collections4\4.3\commons-collections4-4.3.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.0\poi-ooxml-schemas-4.1.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\efetobor.obominuru\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;"/>
+    <property name="java.class.path" value="C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\target\test-classes;C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\target\classes;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-java\3.7.1\selenium-java-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-api\3.7.1\selenium-api-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.7.1\selenium-chrome-driver-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.7.1\selenium-edge-driver-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.7.1\selenium-firefox-driver-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.7.1\selenium-ie-driver-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.7.1\selenium-opera-driver-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.7.1\selenium-remote-driver-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.7.1\selenium-safari-driver-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-support\3.7.1\selenium-support-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\net\bytebuddy\byte-buddy\1.7.5\byte-buddy-1.7.5.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\efetobor.obominuru\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\efetobor.obominuru\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\efetobor.obominuru\.m2\repository\com\google\code\gson\gson\2.8.2\gson-2.8.2.jar;C:\Users\efetobor.obominuru\.m2\repository\com\google\guava\guava\23.0\guava-23.0.jar;C:\Users\efetobor.obominuru\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\efetobor.obominuru\.m2\repository\com\google\errorprone\error_prone_annotations\2.0.18\error_prone_annotations-2.0.18.jar;C:\Users\efetobor.obominuru\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\efetobor.obominuru\.m2\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar;C:\Users\efetobor.obominuru\.m2\repository\org\slf4j\slf4j-log4j12\1.7.5\slf4j-log4j12-1.7.5.jar;C:\Users\efetobor.obominuru\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\efetobor.obominuru\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\efetobor.obominuru\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\efetobor.obominuru\.m2\repository\io\github\bonigarcia\webdrivermanager\3.6.0\webdrivermanager-3.6.0.jar;C:\Users\efetobor.obominuru\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\rauschig\jarchivelib\1.0.0\jarchivelib-1.0.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\jsoup\jsoup\1.11.3\jsoup-1.11.3.jar;C:\Users\efetobor.obominuru\.m2\repository\org\testng\testng\6.10\testng-6.10.jar;C:\Users\efetobor.obominuru\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\Users\efetobor.obominuru\.m2\repository\com\aventstack\extentreports\3.1.0\extentreports-3.1.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\efetobor.obominuru\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\logging\log4j\log4j-api\2.11.2\log4j-api-2.11.2.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\logging\log4j\log4j-core\2.11.2\log4j-core-2.11.2.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\poi\poi-ooxml\4.1.0\poi-ooxml-4.1.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\poi\poi\4.1.0\poi-4.1.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\commons\commons-collections4\4.3\commons-collections4-4.3.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.0\poi-ooxml-schemas-4.1.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\efetobor.obominuru\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -18,8 +18,8 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\efetobor.obominuru\AppData\Local\Temp\surefire4063667295218828848\surefirebooter696938930974243303.jar C:\Users\efetobor.obominuru\AppData\Local\Temp\surefire4063667295218828848 2019-08-06T11-33-47_041-jvmRun1 surefire7237161852630248088tmp surefire_01607999299099791509tmp"/>
-    <property name="surefire.test.class.path" value="C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\target\test-classes;C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\target\classes;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-java\3.7.1\selenium-java-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-api\3.7.1\selenium-api-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.7.1\selenium-chrome-driver-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.7.1\selenium-edge-driver-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.7.1\selenium-firefox-driver-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.7.1\selenium-ie-driver-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.7.1\selenium-opera-driver-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.7.1\selenium-remote-driver-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.7.1\selenium-safari-driver-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-support\3.7.1\selenium-support-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\net\bytebuddy\byte-buddy\1.7.5\byte-buddy-1.7.5.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\efetobor.obominuru\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\efetobor.obominuru\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\efetobor.obominuru\.m2\repository\com\google\code\gson\gson\2.8.2\gson-2.8.2.jar;C:\Users\efetobor.obominuru\.m2\repository\com\google\guava\guava\23.0\guava-23.0.jar;C:\Users\efetobor.obominuru\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\efetobor.obominuru\.m2\repository\com\google\errorprone\error_prone_annotations\2.0.18\error_prone_annotations-2.0.18.jar;C:\Users\efetobor.obominuru\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\efetobor.obominuru\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\efetobor.obominuru\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\efetobor.obominuru\.m2\repository\io\github\bonigarcia\webdrivermanager\3.6.0\webdrivermanager-3.6.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\efetobor.obominuru\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\rauschig\jarchivelib\1.0.0\jarchivelib-1.0.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\jsoup\jsoup\1.11.3\jsoup-1.11.3.jar;C:\Users\efetobor.obominuru\.m2\repository\org\testng\testng\6.10\testng-6.10.jar;C:\Users\efetobor.obominuru\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\Users\efetobor.obominuru\.m2\repository\com\aventstack\extentreports\3.1.0\extentreports-3.1.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\efetobor.obominuru\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\logging\log4j\log4j-api\2.11.2\log4j-api-2.11.2.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\logging\log4j\log4j-core\2.11.2\log4j-core-2.11.2.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\poi\poi-ooxml\4.1.0\poi-ooxml-4.1.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\poi\poi\4.1.0\poi-4.1.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\commons\commons-collections4\4.3\commons-collections4-4.3.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.0\poi-ooxml-schemas-4.1.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\efetobor.obominuru\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;"/>
+    <property name="sun.java.command" value="C:\Users\efetobor.obominuru\AppData\Local\Temp\surefire6004206226657595242\surefirebooter886059337562709846.jar C:\Users\efetobor.obominuru\AppData\Local\Temp\surefire6004206226657595242 2019-08-25T15-04-03_259-jvmRun1 surefire7092537323633908751tmp surefire_02706990555461198041tmp"/>
+    <property name="surefire.test.class.path" value="C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\target\test-classes;C:\Users\efetobor.obominuru\workspace\quickteller-5.0-webdriver-testsuite\target\classes;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-java\3.7.1\selenium-java-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-api\3.7.1\selenium-api-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.7.1\selenium-chrome-driver-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.7.1\selenium-edge-driver-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.7.1\selenium-firefox-driver-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.7.1\selenium-ie-driver-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.7.1\selenium-opera-driver-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.7.1\selenium-remote-driver-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.7.1\selenium-safari-driver-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\seleniumhq\selenium\selenium-support\3.7.1\selenium-support-3.7.1.jar;C:\Users\efetobor.obominuru\.m2\repository\net\bytebuddy\byte-buddy\1.7.5\byte-buddy-1.7.5.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\efetobor.obominuru\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\efetobor.obominuru\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\efetobor.obominuru\.m2\repository\com\google\code\gson\gson\2.8.2\gson-2.8.2.jar;C:\Users\efetobor.obominuru\.m2\repository\com\google\guava\guava\23.0\guava-23.0.jar;C:\Users\efetobor.obominuru\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\efetobor.obominuru\.m2\repository\com\google\errorprone\error_prone_annotations\2.0.18\error_prone_annotations-2.0.18.jar;C:\Users\efetobor.obominuru\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\efetobor.obominuru\.m2\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar;C:\Users\efetobor.obominuru\.m2\repository\org\slf4j\slf4j-log4j12\1.7.5\slf4j-log4j12-1.7.5.jar;C:\Users\efetobor.obominuru\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\efetobor.obominuru\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\efetobor.obominuru\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\efetobor.obominuru\.m2\repository\io\github\bonigarcia\webdrivermanager\3.6.0\webdrivermanager-3.6.0.jar;C:\Users\efetobor.obominuru\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\rauschig\jarchivelib\1.0.0\jarchivelib-1.0.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\jsoup\jsoup\1.11.3\jsoup-1.11.3.jar;C:\Users\efetobor.obominuru\.m2\repository\org\testng\testng\6.10\testng-6.10.jar;C:\Users\efetobor.obominuru\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\Users\efetobor.obominuru\.m2\repository\com\aventstack\extentreports\3.1.0\extentreports-3.1.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\efetobor.obominuru\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\logging\log4j\log4j-api\2.11.2\log4j-api-2.11.2.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\logging\log4j\log4j-core\2.11.2\log4j-core-2.11.2.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\poi\poi-ooxml\4.1.0\poi-ooxml-4.1.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\poi\poi\4.1.0\poi-4.1.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\commons\commons-collections4\4.3\commons-collections4-4.3.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.0\poi-ooxml-schemas-4.1.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\efetobor.obominuru\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\efetobor.obominuru\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\efetobor.obominuru"/>
     <property name="user.language" value="en"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\efetobor.obominuru\AppData\Local\Temp\surefire4063667295218828848\surefirebooter696938930974243303.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\efetobor.obominuru\AppData\Local\Temp\surefire6004206226657595242\surefirebooter886059337562709846.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -60,184 +60,23 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="startUp" classname="actions.LoginTestSuite" time="39.607">
-    <failure message="permission denied&#10;Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;&#10;System info: host: &apos;ISW-GSIG-UO1&apos;, ip: &apos;172.16.5.91&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;&#10;Driver info: driver.version: FirefoxDriver&#10;remote stacktrace: " type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
-permission denied
-Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
-System info: host: 'ISW-GSIG-UO1', ip: '172.16.5.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: driver.version: FirefoxDriver
-remote stacktrace: 
-	at actions.LoginTestSuite.startUp(LoginTestSuite.java:36)
-</failure>
-    <system-out><![CDATA[[XmlSuite] [WARN] 'parallel' value 'false' is deprecated, default value will be used instead: 'none'.
-]]></system-out>
-    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Aug 06, 2019 11:33:54 AM java.util.prefs.WindowsPreferences <init>
-WARNING: Could not open/create prefs root node Software\JavaSoft\Prefs at root 0x80000002. Windows RegCreateKeyEx(...) returned error code 5.
-1565087664357	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\EFETOB~1.OBO\\AppData\\Local\\Temp\\rust_mozprofile.egN7cg1pcgsg"
-]]></system-err>
-  </testcase>
-  <testcase name="InvalidUsernameAndValidPassword" classname="actions.LoginTestSuite" time="0">
-    <skipped message="permission denied&#10;Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;&#10;System info: host: &apos;ISW-GSIG-UO1&apos;, ip: &apos;172.16.5.91&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;&#10;Driver info: driver.version: FirefoxDriver&#10;remote stacktrace: "/>
-  </testcase>
-  <testcase name="validEmailAndInvalidPassword" classname="actions.LoginTestSuite" time="0">
-    <skipped message="permission denied&#10;Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;&#10;System info: host: &apos;ISW-GSIG-UO1&apos;, ip: &apos;172.16.5.91&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;&#10;Driver info: driver.version: FirefoxDriver&#10;remote stacktrace: "/>
-  </testcase>
-  <testcase name="successfulLogin" classname="actions.LoginTestSuite" time="0">
-    <skipped message="permission denied&#10;Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;&#10;System info: host: &apos;ISW-GSIG-UO1&apos;, ip: &apos;172.16.5.91&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;&#10;Driver info: driver.version: FirefoxDriver&#10;remote stacktrace: "/>
-  </testcase>
-  <testcase name="tearDown" classname="actions.LoginTestSuite" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="startUp" classname="actions.HomeScreenTestSuite" time="84.798">
-    <failure message="connection refused&#10;Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;&#10;System info: host: &apos;ISW-GSIG-UO1&apos;, ip: &apos;172.16.5.91&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;&#10;Driver info: driver.version: FirefoxDriver&#10;remote stacktrace: " type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
-connection refused
-Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
-System info: host: 'ISW-GSIG-UO1', ip: '172.16.5.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: driver.version: FirefoxDriver
-remote stacktrace: 
-	at actions.HomeScreenTestSuite.startUp(HomeScreenTestSuite.java:33)
-</failure>
-    <system-err><![CDATA[1565087696374	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\EFETOB~1.OBO\\AppData\\Local\\Temp\\rust_mozprofile.RVK4dW41ak0D"
-1565087711336	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
-1565087711359	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
-1565087711374	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1565087711376	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
-[Parent 23468, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1563383129/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-
-###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
-
-
-###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
-
-
-###!!! [Parent][MessageChannel] Error: (msgtype=0x350119,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
-
-A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
-[Child 25628, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1563383129/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-[Child 25628, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1563383129/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-[Parent 23468, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1563383129/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-[Child 29124, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1563383129/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-[Child 29124, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1563383129/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-1565087745750	addons.xpi-utils	WARN	Error: XPI database modified after shutdown began(resource://gre/modules/addons/XPIDatabase.jsm:1326:17) JS Stack trace: saveChanges@XPIDatabase.jsm:1326:17
-makeAddonVisible@XPIDatabase.jsm:2067:10
-addToDatabase@XPIDatabase.jsm:1996:12
-install@XPIInstall.jsm:3857:27
-_activateAddon@XPIInstall.jsm:3876:7
-1565087745750	addons.xpi-utils	WARN	Error: XPI database modified after shutdown began(resource://gre/modules/addons/XPIDatabase.jsm:1326:17) JS Stack trace: saveChanges@XPIDatabase.jsm:1326:17
-addToDatabase@XPIDatabase.jsm:1999:10
-install@XPIInstall.jsm:3857:27
-_activateAddon@XPIInstall.jsm:3876:7
-1565087745753	addons.xpi-utils	WARN	Error: XPI database modified after shutdown began(resource://gre/modules/addons/XPIDatabase.jsm:1326:17) JS Stack trace: saveChanges@XPIDatabase.jsm:1326:17
-syncWithDB@XPIProvider.jsm:640:25
-addAddon@XPIProvider.jsm:773:14
-addAddon@XPIProvider.jsm:1546:21
-install@XPIInstall.jsm:3859:17
-_activateAddon@XPIInstall.jsm:3876:7
-[Parent 23468, Gecko_IOThread] WARNING: file z:/task_1563383129/build/src/ipc/chromium/src/base/process_util_win.cc, line 160
-1565087746252	addons.xpi-utils	WARN	Error: XPI database modified after shutdown began(resource://gre/modules/addons/XPIDatabase.jsm:1326:17) JS Stack trace: saveChanges@XPIDatabase.jsm:1326:17
-makeAddonVisible@XPIDatabase.jsm:2067:10
-addToDatabase@XPIDatabase.jsm:1996:12
-install@XPIInstall.jsm:3857:27
-_activateAddon@XPIInstall.jsm:3876:7
-1565087746253	addons.xpi-utils	WARN	Error: XPI database modified after shutdown began(resource://gre/modules/addons/XPIDatabase.jsm:1326:17) JS Stack trace: saveChanges@XPIDatabase.jsm:1326:17
-addToDatabase@XPIDatabase.jsm:1999:10
-install@XPIInstall.jsm:3857:27
-_activateAddon@XPIInstall.jsm:3876:7
-1565087746275	addons.xpi-utils	WARN	Error: XPI database modified after shutdown began(resource://gre/modules/addons/XPIDatabase.jsm:1326:17) JS Stack trace: saveChanges@XPIDatabase.jsm:1326:17
-syncWithDB@XPIProvider.jsm:640:25
-addAddon@XPIProvider.jsm:773:14
-addAddon@XPIProvider.jsm:1546:21
-install@XPIInstall.jsm:3859:17
-_activateAddon@XPIInstall.jsm:3876:7
-1565087746307	addons.xpi-utils	WARN	Error: XPI database modified after shutdown began(resource://gre/modules/addons/XPIDatabase.jsm:1326:17) JS Stack trace: saveChanges@XPIDatabase.jsm:1326:17
-makeAddonVisible@XPIDatabase.jsm:2067:10
-addToDatabase@XPIDatabase.jsm:1996:12
-install@XPIInstall.jsm:3857:27
-_activateAddon@XPIInstall.jsm:3876:7
-1565087746307	addons.xpi-utils	WARN	Error: XPI database modified after shutdown began(resource://gre/modules/addons/XPIDatabase.jsm:1326:17) JS Stack trace: saveChanges@XPIDatabase.jsm:1326:17
-addToDatabase@XPIDatabase.jsm:1999:10
-install@XPIInstall.jsm:3857:27
-_activateAddon@XPIInstall.jsm:3876:7
-1565087746308	addons.xpi-utils	WARN	Error: XPI database modified after shutdown began(resource://gre/modules/addons/XPIDatabase.jsm:1326:17) JS Stack trace: saveChanges@XPIDatabase.jsm:1326:17
-syncWithDB@XPIProvider.jsm:640:25
-addAddon@XPIProvider.jsm:773:14
-addAddon@XPIProvider.jsm:1546:21
-install@XPIInstall.jsm:3859:17
-_activateAddon@XPIInstall.jsm:3876:7
-1565087746473	addons.xpi-utils	WARN	Error: XPI database modified after shutdown began(resource://gre/modules/addons/XPIDatabase.jsm:1326:17) JS Stack trace: saveChanges@XPIDatabase.jsm:1326:17
-makeAddonVisible@XPIDatabase.jsm:2067:10
-addToDatabase@XPIDatabase.jsm:1996:12
-install@XPIInstall.jsm:3857:27
-_activateAddon@XPIInstall.jsm:3876:7
-1565087746479	addons.xpi-utils	WARN	Error: XPI database modified after shutdown began(resource://gre/modules/addons/XPIDatabase.jsm:1326:17) JS Stack trace: saveChanges@XPIDatabase.jsm:1326:17
-addToDatabase@XPIDatabase.jsm:1999:10
-install@XPIInstall.jsm:3857:27
-_activateAddon@XPIInstall.jsm:3876:7
-1565087746483	addons.xpi-utils	WARN	Error: XPI database modified after shutdown began(resource://gre/modules/addons/XPIDatabase.jsm:1326:17) JS Stack trace: saveChanges@XPIDatabase.jsm:1326:17
-syncWithDB@XPIProvider.jsm:640:25
-addAddon@XPIProvider.jsm:773:14
-addAddon@XPIProvider.jsm:1546:21
-install@XPIInstall.jsm:3859:17
-_activateAddon@XPIInstall.jsm:3876:7
-1565087746789	addons.xpi-utils	WARN	Error: XPI database modified after shutdown began(resource://gre/modules/addons/XPIDatabase.jsm:1326:17) JS Stack trace: saveChanges@XPIDatabase.jsm:1326:17
-makeAddonVisible@XPIDatabase.jsm:2067:10
-addToDatabase@XPIDatabase.jsm:1996:12
-install@XPIInstall.jsm:3857:27
-_activateAddon@XPIInstall.jsm:3876:7
-1565087746793	addons.xpi-utils	WARN	Error: XPI database modified after shutdown began(resource://gre/modules/addons/XPIDatabase.jsm:1326:17) JS Stack trace: saveChanges@XPIDatabase.jsm:1326:17
-addToDatabase@XPIDatabase.jsm:1999:10
-install@XPIInstall.jsm:3857:27
-_activateAddon@XPIInstall.jsm:3876:7
-1565087746796	addons.xpi-utils	WARN	Error: XPI database modified after shutdown began(resource://gre/modules/addons/XPIDatabase.jsm:1326:17) JS Stack trace: saveChanges@XPIDatabase.jsm:1326:17
-syncWithDB@XPIProvider.jsm:640:25
-addAddon@XPIProvider.jsm:773:14
-addAddon@XPIProvider.jsm:1546:21
-install@XPIInstall.jsm:3859:17
-_activateAddon@XPIInstall.jsm:3876:7
-1565087746916	addons.xpi-utils	WARN	Error: XPI database modified after shutdown began(resource://gre/modules/addons/XPIDatabase.jsm:1326:17) JS Stack trace: saveChanges@XPIDatabase.jsm:1326:17
-makeAddonVisible@XPIDatabase.jsm:2067:10
-addToDatabase@XPIDatabase.jsm:1996:12
-install@XPIInstall.jsm:3857:27
-_activateAddon@XPIInstall.jsm:3876:7
-1565087746916	addons.xpi-utils	WARN	Error: XPI database modified after shutdown began(resource://gre/modules/addons/XPIDatabase.jsm:1326:17) JS Stack trace: saveChanges@XPIDatabase.jsm:1326:17
-addToDatabase@XPIDatabase.jsm:1999:10
-install@XPIInstall.jsm:3857:27
-_activateAddon@XPIInstall.jsm:3876:7
-1565087746917	addons.xpi-utils	WARN	Error: XPI database modified after shutdown began(resource://gre/modules/addons/XPIDatabase.jsm:1326:17) JS Stack trace: saveChanges@XPIDatabase.jsm:1326:17
-syncWithDB@XPIProvider.jsm:640:25
-addAddon@XPIProvider.jsm:773:14
-addAddon@XPIProvider.jsm:1546:21
-install@XPIInstall.jsm:3859:17
-_activateAddon@XPIInstall.jsm:3876:7
-[Child 33916, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1563383129/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-[Child 33916, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1563383129/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-
-###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-[GPU 30672, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1563383129/build/src/ipc/chromium/src/chrome/common/i]]></system-err>
-  </testcase>
-  <testcase name="verifyHomeScreenElementsPresent" classname="actions.HomeScreenTestSuite" time="0">
-    <skipped message="connection refused&#10;Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;&#10;System info: host: &apos;ISW-GSIG-UO1&apos;, ip: &apos;172.16.5.91&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;&#10;Driver info: driver.version: FirefoxDriver&#10;remote stacktrace: "/>
-  </testcase>
-  <testcase name="tearDown" classname="actions.HomeScreenTestSuite" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="changeFirstLastNameSuccessfully" classname="actions.ProfilePageTestSuite" time="26.72"/>
-  <testcase name="changePasswordInvalidOldPassword" classname="actions.ProfilePageTestSuite" time="6.804"/>
-  <testcase name="changePasswordAllFieldsEmpty" classname="actions.ProfilePageTestSuite" time="4.787"/>
-  <testcase name="changePasswordNewPasswordAndReTypePasswordFieldsAreEmpty" classname="actions.ProfilePageTestSuite" time="3.189"/>
-  <testcase name="changePasswordSuccessfully" classname="actions.ProfilePageTestSuite" time="4.081"/>
-  <testcase name="verifyQROptionIsPresentWhenPayingFromSavedPaymentAirtime" classname="actions.SavedPaymentSuite" time="14.519"/>
-  <testcase name="verifyQROptionIsPresentWhenPayingFromSavedPaymentForBills" classname="actions.SavedPaymentSuite" time="5.428"/>
-  <testcase name="verifyQROptionIsPresentWhenPayingFromSavedPaymentForTransfer" classname="actions.SavedPaymentSuite" time="5.248"/>
-  <testcase name="verifySearchFieldReturnsSavedPaymentItemsFirst" classname="actions.SearchFieldTestSuite" time="12.186"/>
-  <testcase name="verifyUserReturnstoDashBoardScreenWhenSearchCriteiraIsRemovedFromSearchField" classname="actions.SearchFieldTestSuite" time="0.503"/>
-  <testcase name="verifySearchFieldReturnsBillerListAfterSavedPaymentOptionsAreExausted" classname="actions.SearchFieldTestSuite" time="1.728"/>
-  <testcase name="verifyOTPScreenDisplays" classname="actions.OTPTestSuite" time="37.56"/>
-  <testcase name="InvalidOTPTest" classname="actions.OTPTestSuite" time="1.194"/>
-  <testcase name="NoOTPTest" classname="actions.OTPTestSuite" time="0.298"/>
-  <testcase name="ResendOtp" classname="actions.OTPTestSuite" time="0.664"/>
+  <testcase name="InvalidUsernameAndValidPassword" classname="actions.LoginTestSuite" time="16.46"/>
+  <testcase name="validEmailAndInvalidPassword" classname="actions.LoginTestSuite" time="11.882"/>
+  <testcase name="successfulLogin" classname="actions.LoginTestSuite" time="6.897"/>
+  <testcase name="verifyHomeScreenElementsPresent" classname="actions.HomeScreenTestSuite" time="9.031"/>
+  <testcase name="changeFirstNameAndLastNameSuccessfully" classname="actions.ProfilePageTestSuite" time="10.216"/>
+  <testcase name="changePasswordInvalidOldPassword" classname="actions.ProfilePageTestSuite" time="7.02"/>
+  <testcase name="changePasswordAllFieldsEmpty" classname="actions.ProfilePageTestSuite" time="4.436"/>
+  <testcase name="changePasswordNewPasswordAndReTypePasswordFieldsAreEmpty" classname="actions.ProfilePageTestSuite" time="3.709"/>
+  <testcase name="changePasswordSuccessfully" classname="actions.ProfilePageTestSuite" time="4.357"/>
+  <testcase name="verifyQROptionIsPresentWhenPayingFromSavedPaymentAirtime" classname="actions.SavedPaymentSuite" time="12.878"/>
+  <testcase name="verifyQROptionIsPresentWhenPayingFromSavedPaymentForBills" classname="actions.SavedPaymentSuite" time="6.495"/>
+  <testcase name="verifyQROptionIsPresentWhenPayingFromSavedPaymentForTransfer" classname="actions.SavedPaymentSuite" time="6.78"/>
+  <testcase name="verifySearchFieldReturnsSavedPaymentItemsFirst" classname="actions.SearchFieldTestSuite" time="17.289"/>
+  <testcase name="verifyUserReturnstoDashBoardScreenWhenSearchCriteiraIsRemovedFromSearchField" classname="actions.SearchFieldTestSuite" time="0.404"/>
+  <testcase name="verifySearchFieldReturnsBillerListAfterSavedPaymentOptionsAreExausted" classname="actions.SearchFieldTestSuite" time="1.859"/>
+  <testcase name="verifyOTPScreenDisplays" classname="actions.OTPTestSuite" time="31.02"/>
+  <testcase name="InvalidOTPTest" classname="actions.OTPTestSuite" time="0.489"/>
+  <testcase name="doNotEnterOTPTest" classname="actions.OTPTestSuite" time="0.344"/>
+  <testcase name="ResendOtpTest" classname="actions.OTPTestSuite" time="0.464"/>
 </testsuite>

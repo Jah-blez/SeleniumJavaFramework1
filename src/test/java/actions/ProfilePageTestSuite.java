@@ -2,8 +2,6 @@ package actions;
 
 import org.testng.annotations.Test;
 
-import Methods.StartBrowser;
-
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -26,6 +24,7 @@ import pages.QTHomePageScreen2;
 import pages.QtHomePageScreen;
 import pages.QtLoginPage;
 import pages.QtLoginPage2;
+import pages.StartBrowser;
 import pages.TopBarHeader;
 import pages.URL;
 
@@ -35,8 +34,8 @@ public class ProfilePageTestSuite {
 
 	@BeforeTest
 		public void startUp() throws IOException {
-			StartBrowser openConnection = new StartBrowser();
-			driver = openConnection.initializeBrowser();
+		StartBrowser openConnection = new StartBrowser(driver);
+		driver = openConnection.initializeBrowser();
 	}
 
 	@Test(priority = 1)

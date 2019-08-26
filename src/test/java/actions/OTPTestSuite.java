@@ -1,8 +1,6 @@
 package actions;
 import org.testng.annotations.Test;
 
-import Methods.StartBrowser;
-
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
@@ -15,12 +13,15 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import methods.BuyAirtimeCardRequiresOTP;
+import pages.BuyAirtimePage;
 import pages.Dashboard;
 import pages.OTPScreen;
 import pages.QTHomePageScreen2;
 import pages.QtHomePageScreen;
 import pages.QtLoginPage;
 import pages.QtLoginPage2;
+import pages.StartBrowser;
 import pages.URL;
 
 public class OTPTestSuite {
@@ -29,14 +30,14 @@ public class OTPTestSuite {
 
 		@BeforeTest
 		public void startUp() throws IOException {
-			StartBrowser openConnection = new StartBrowser();
+			StartBrowser openConnection = new StartBrowser(driver);
 			driver = openConnection.initializeBrowser();
 		}
 	
 		@Test(priority = 1)
 		public void verifyOTPScreenDisplays() {
-			BuyAirtimeTestSuiteOTPRequired buyAirtime = new BuyAirtimeTestSuiteOTPRequired(driver);
-			buyAirtime.buyAirtimeFlow();
+			BuyAirtimeCardRequiresOTP buyAirtime = new BuyAirtimeCardRequiresOTP(driver);
+			buyAirtime.BuyAirtime7499CardRequiresOTP();
 			
 			OTPScreen OTPObjects = new OTPScreen(driver);
 			OTPObjects.VerifyOtpFieldIsPresent();
@@ -59,7 +60,7 @@ public class OTPTestSuite {
 		}
 		
 		@Test(priority = 3)
-		public void NoOTPTest() {
+		public void doNotEnterOTPTest() {
 			OTPScreen OTPObjects = new OTPScreen(driver);
 			OTPObjects.clickOnPayButtonOnOtpScreen();
 			OTPObjects.VerifyErrMsgNoOtpEnteredIsPresent();
@@ -68,7 +69,7 @@ public class OTPTestSuite {
 		}
 		
 		@Test(priority = 4)
-		public void ResendOtp() {
+		public void ResendOtpTest() {
 			OTPScreen OTPObjects = new OTPScreen(driver);
 			OTPObjects.VerifyResendOtpLinkIsPresent();
 			OTPObjects.clickOnResendOtpLink();

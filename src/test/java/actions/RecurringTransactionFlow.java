@@ -2,8 +2,6 @@ package actions;
 
 import org.testng.annotations.Test;
 
-import Methods.StartBrowser;
-
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
@@ -26,6 +24,7 @@ import pages.QtHomePageScreen;
 import pages.QtLoginPage;
 import pages.QtLoginPage2;
 import pages.RecuringPageFlow;
+import pages.StartBrowser;
 import pages.URL;
 
 public class RecurringTransactionFlow {
@@ -34,16 +33,16 @@ public class RecurringTransactionFlow {
 
 	@BeforeTest
 	public void startUp() throws IOException {
-		StartBrowser openConnection = new StartBrowser();
+		StartBrowser openConnection = new StartBrowser(driver);
 		driver = openConnection.initializeBrowser();
-}
+	}
 
 	@Test(priority = 1)
 	public void verifyRecurringElements() {
 		NavigateToURL startWebsite = new NavigateToURL(driver);
 		startWebsite.launchURL();
-		driver.manage().window().setSize(new Dimension(375, 667));
-		System.out.println("screen-resolution set successfully");
+	//	driver.manage().window().setSize(new Dimension(375, 667));
+	//	System.out.println("screen-resolution set successfully");
 
 		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
 		HomeScreenObjects.clickOnLoginButton();

@@ -1,52 +1,32 @@
-package actions;
-import org.testng.annotations.Test;
-
-import Methods.StartBrowser;
-
-import java.io.IOException;
-import java.util.concurrent.TimeUnit;
+package methods;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.Assert;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.BuyAirtimePage;
 import pages.Dashboard;
 import pages.NavigateToURL;
 import pages.PayPage;
 import pages.QTHomePageScreen2;
-import pages.QtHomePageScreen;
-import pages.QtLoginPage;
 import pages.QtLoginPage2;
+import pages.SuccessfulLogin;
 import pages.Toggle;
-import pages.URL;
 
-public class BuyAirtimeTestSuiteOTPRequired {
-	WebDriver driver = null;
 
-	@BeforeTest
-	public void startUp() throws IOException {
-		StartBrowser openConnection = new StartBrowser();
-		driver = openConnection.initializeBrowser();
-	}
-
-	public BuyAirtimeTestSuiteOTPRequired(WebDriver driver){
-		this.driver = driver;
+public class BuyAirtimeCardRequiresOTP {
+	private WebDriver driver = null;
+	
+	public BuyAirtimeCardRequiresOTP(WebDriver driver) {
+		
+		this.driver  = driver;
 	}
 	
-	@Test(priority = 1)
-	public void buyAirtimeFlow() {
+	public void BuyAirtime7499CardRequiresOTP() {
 		NavigateToURL startWebsite = new NavigateToURL(driver);
 		startWebsite.launchURL();
 		
@@ -54,11 +34,19 @@ public class BuyAirtimeTestSuiteOTPRequired {
 
 		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
 		HomeScreenObjects.clickOnLoginButton();
-
 		QtLoginPage2 LoginScreenObjects = new QtLoginPage2(driver);
 		LoginScreenObjects.EnterUserNameInUserNameField("dadubiaro@interswitch.com");
 		LoginScreenObjects.EnterPasswordInUserPasswordField("password");
-		LoginScreenObjects.ClickOnLoginButton();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		//LoginScreenObjects.ClickOnLoginButton();
+		LoginScreenObjects.doubleClickOnLoginButton();
+	
+
 		
 		WebDriverWait wait = new WebDriverWait(driver, 60);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Buy Airtime')]")));
@@ -67,14 +55,14 @@ public class BuyAirtimeTestSuiteOTPRequired {
 		HomeScreenObjects.clickOnBuyAirtimeIcon();
 		
 		BuyAirtimePage BuyAirtimePageObjects = new BuyAirtimePage(driver);
-	/*	BuyAirtimePageObjects.clickOnArrowNetworkFieldDropDownSelfRecharge();
+	//	BuyAirtimePageObjects.clickOnArrowNetworkFieldDropDownSelfRecharge();
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		BuyAirtimePageObjects.selectAirtelRechargePinOptionFromDropDown();*/
+		//BuyAirtimePageObjects.selectAirtelRechargePinOptionFromDropDown();
 		BuyAirtimePageObjects.clickOnArrowToTopUpOthersDropDown();
 		try {
 			Thread.sleep(2000);
@@ -96,9 +84,33 @@ public class BuyAirtimeTestSuiteOTPRequired {
 		PayPage PayPageObjects = new PayPage(driver);
 		PayPageObjects.EnterCardNumberInTextField("5060990580000217499");
 		PayPageObjects.EnterExpiryDate("0");
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		PayPageObjects.EnterExpiryDate("3");
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		PayPageObjects.EnterExpiryDate("5");
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		PayPageObjects.EnterExpiryDate("0");
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		PayPageObjects.EnterCvv("111");
 		
 		try {
@@ -118,26 +130,8 @@ public class BuyAirtimeTestSuiteOTPRequired {
 		js.executeScript("arguments[0].scrollIntoView();", payButton);
 		PayPageObjects.VerifyPayButtonIsPresent();
 		PayPageObjects.clickOnPayButton();
-		/*try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		PayPageObjects.VerifyOtpTextFieldIsPresent();
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}*/
+	
 		System.out.println("Test Passed");
 		}
-
-	@AfterTest
-	public void tearDown() {
-
-		driver.quit();
-	}
-
+	
 }

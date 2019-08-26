@@ -2,6 +2,7 @@ package actions;
 
 import org.testng.annotations.Test;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -20,6 +21,8 @@ import pages.QTHomePageScreen2;
 import pages.QtHomePageScreen;
 import pages.QtLoginPage;
 import pages.QtLoginPage2;
+import pages.StartBrowser;
+import pages.SuccessfulLogin;
 import pages.TopBarHeader;
 import pages.URL;
 
@@ -28,12 +31,9 @@ public class LoginTestSuite {
 	URL baseUrl = new URL();
 
 	@BeforeTest
-	public void startUp() {
-		/*
-		 * WebDriverManager.chromedriver().setup(); driver = new ChromeDriver();
-		 */
-		WebDriverManager.firefoxdriver().setup();
-		driver = new FirefoxDriver();
+	public void startUp() throws IOException {
+		StartBrowser openConnection = new StartBrowser(driver);
+		driver = openConnection.initializeBrowser();
 	}
 
 	@Test(priority = 1)
@@ -77,15 +77,20 @@ public class LoginTestSuite {
 	public void successfulLogin() {
 		NavigateToURL startWebsite = new NavigateToURL(driver);
 		startWebsite.launchURL();
-		
 		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
 		HomeScreenObjects.clickOnLoginButton();
 		QtLoginPage2 LoginScreenObjects = new QtLoginPage2(driver);
-		LoginScreenObjects.EnterUserNameInUserNameField("fg@th.com");
+		LoginScreenObjects.EnterUserNameInUserNameField("dadubiaro@interswitch.com");
 		LoginScreenObjects.EnterPasswordInUserPasswordField("password");
-		LoginScreenObjects.ClickOnLoginButton();
-		Dashboard DashboardObjects = new Dashboard(driver);
-		DashboardObjects.VerifyRecurringAirtimeIconIsPresent();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		//LoginScreenObjects.ClickOnLoginButton();
+		LoginScreenObjects.doubleClickOnLoginButton();
+	
 		
 		System.out.println("Test Passed");
 	}

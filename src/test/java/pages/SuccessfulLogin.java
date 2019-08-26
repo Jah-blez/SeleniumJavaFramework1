@@ -1,30 +1,30 @@
-package Methods;
+package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-import pages.Dashboard;
-import pages.NavigateToURL;
-import pages.QTHomePageScreen2;
-import pages.QtLoginPage2;
-
-
 public class SuccessfulLogin {
 	private WebDriver driver = null;
 	
-	public SuccessfulLogin(WebDriver driver) {
-		
+	public SuccessfulLogin(WebDriver driver) {	
 		this.driver  = driver;
 	}
 	
-	public void successfulLogin() {
+	public void successfulLogin(String username, String password) {
 		QTHomePageScreen2 HomeScreenObjects = new QTHomePageScreen2(driver);
 		HomeScreenObjects.clickOnLoginButton();
 		QtLoginPage2 LoginScreenObjects = new QtLoginPage2(driver);
-		LoginScreenObjects.EnterUserNameInUserNameField("dadubiaro@interswitch.com");
-		LoginScreenObjects.EnterPasswordInUserPasswordField("password");
-		LoginScreenObjects.ClickOnLoginButton();
+		LoginScreenObjects.EnterUserNameInUserNameField(username);
+		LoginScreenObjects.EnterPasswordInUserPasswordField(password);
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		//LoginScreenObjects.ClickOnLoginButton();
+		LoginScreenObjects.doubleClickOnLoginButton();
 		Dashboard DashboardObjects = new Dashboard(driver);
 		DashboardObjects.VerifyRecurringAirtimeIconIsPresent();
 		

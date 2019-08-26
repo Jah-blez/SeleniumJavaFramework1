@@ -33,6 +33,6 @@
 		</classes>
 	</test>
 </suite> <!-- Suite -->
-<!-- <class name="actions.LoginTestSuite" /> <class name="actions.BuyAirtimeTestSuiteOTPRequired" 
+<!-- <class name="actions.LoginTestSuite" /> <class name="actions.BuyAirtimeTestSuite" 
 	/> <class name="actions.SavedPaymentSuite" /> <class name="actions.HomeScreenTestSuite" 
 	/> <class name="actions.RecurringTransactionFlow" /> -->

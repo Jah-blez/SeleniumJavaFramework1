@@ -1,4 +1,4 @@
-package Methods;
+package pages;
 
 import org.testng.annotations.Test;
 
@@ -19,9 +19,14 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class StartBrowser {
-		WebDriver driver;
+	private WebDriver driver = null;
+		
+	public StartBrowser(WebDriver driver) {
+		
+		this.driver  = driver;
+	}
 	
-		public WebDriver initializeBrowser() throws IOException {
+	public WebDriver initializeBrowser() throws IOException {
 			Properties config = new Properties(); 
 			FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\config\\config.properties");
 			config.load(fis);
@@ -43,6 +48,7 @@ public class StartBrowser {
 						
 			System.out.println("Browser Initialize. Test Passed");
 			return driver;
+
 		}
 		
 

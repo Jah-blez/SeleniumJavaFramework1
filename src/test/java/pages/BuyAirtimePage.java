@@ -1,7 +1,11 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 
@@ -19,7 +23,7 @@ public class BuyAirtimePage {
 	By gloQuickChargeOption = By.xpath("//*[contains(@class, 'Select-menu-outer')]//*[contains(@class, 'Select-menu')]//*[contains(@class, 'Select-option') and contains(@title, 'Glo QuickCharge')]");
 	By rechargeSelfAmountField = By.id("RechargeSelfAmount");
 	By selfRechargeECashButton = By.id("selfRechargeECashButton");
-	By useOtherPaymentMethodsLink = By.xpath("//span[contains(text(),'Use Other Payment Methods')]");
+	By useOtherPaymentMethodsLink = By.xpath("//span[contains(text(),'Use Other Payment methods')]");
 	By arrowTopUpOthersDropDown = By.xpath("//section[@id='rechageOthers']//span[@class='accordion__arrow']");
 	By mobileNumberFieldInTopOtherNumbersSection = By.xpath("//*[contains(@id, 'mobileNumber')]//*[contains(@class, 'Select-input') and contains(@role, 'combobox')]");
 	By arrowtoDropdownMobileNumberInTopUpOtherNumberSection = By.xpath("//section[@id='mobileNumber']//span[@class='Select-arrow']");
@@ -154,8 +158,6 @@ public class BuyAirtimePage {
 		driver.findElement(arrowNetworkFieldDropDownSelfRecharge).click();
 		System.out.println("arrowNetworkFieldDropDownSelfRecharge click successfully");
 	}
-
 	
-
 }
 
