@@ -41,13 +41,13 @@ public class BuyAirtimeTestSuite {
 	}
 
 	@Test(priority = 1)
-	//Yet to be implemeted as the flow to get Otp from ESB and pass it here is still in progress
+	//Yet to be implemented as the flow to get OTP from ESB and pass it here is still in progress
 	public void buyAirtimeFlowEnterOTPAndMakePaymentSuccessfully() {
 		
 		}
 	
 	@Test(priority = 2)
-	//Yet to be implemeted as the flow to get Otp from ESB and pass it here is still in progress
+	//Yet to be implemented as the flow to get OTP from ESB and pass it here is still in progress
 	public void buyAirtimeFlowCardDoesNotRequireOTPAndMakePaymentSuccessfully() {
 		
 		}

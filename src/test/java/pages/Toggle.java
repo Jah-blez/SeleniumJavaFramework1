@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+
 public class Toggle {
 
 	private WebDriver driver = null;
@@ -16,6 +17,7 @@ public class Toggle {
 	}
 
 	public void clickOntoggleBackward(){
+		
 		driver.findElement(toggleButton).click();
 	}
 	/*public void VerifyRecurringAirtimeIconIsPresent(){

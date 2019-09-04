@@ -37,7 +37,7 @@ public class SearchFieldTestSuite {
 			driver = openConnection.initializeBrowser();
 		}
 		@Test(priority = 1)
-		public void verifySearchFieldReturnsSavedPaymentItemsFirst() {
+		public void verifySearchFieldReturnsSavedPaymentItemsFirst() throws InterruptedException {
 			NavigateToURL startWebsite = new NavigateToURL(driver);
 			startWebsite.launchURL();
 			
@@ -65,6 +65,8 @@ public class SearchFieldTestSuite {
 			}
 			DashboardObjects.EnterTextInDashboardSearchField("ai");
 			DashboardObjects.VerifyBuNGN890AirtelSavedPaymentIsPresent();
+			
+			Thread.sleep(3000);
 			
 			System.out.println("verifySearchFieldReturnsSavedPaymentItemsFirst Test Passed");
 		}

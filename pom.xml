@@ -1,11 +1,12 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>SeleniumFramework</groupId>
 	<artifactId>SeleniumFramework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
-	
+
+
 
 	<dependencies>
 		<dependency>
@@ -14,15 +15,15 @@
 			<version>3.7.1</version>
 		</dependency>
 		<dependency>
-       <groupId>org.slf4j</groupId>
-       <artifactId>slf4j-api</artifactId>
-       <version>1.7.5</version>
-   </dependency>
-   <dependency>
-       <groupId>org.slf4j</groupId>
-       <artifactId>slf4j-log4j12</artifactId>
-       <version>1.7.5</version>
-   </dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.5</version>
+		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -61,30 +62,48 @@
 			<artifactId>poi-ooxml</artifactId>
 			<version>4.1.0</version>
 		</dependency>
-
-	</dependencies>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>4.1.0</version>
+		</dependency>
 		
+		<dependency>
+    <groupId>com.microsoft.sqlserver</groupId>
+    <artifactId>mssql-jdbc</artifactId>
+    <version>7.4.1.jre11</version>
+</dependency>
+
+<dependency>
+    <groupId>javax.xml.bind</groupId>
+    <artifactId>jaxb-api</artifactId>
+    <version>2.2.11</version>
+</dependency>
+<dependency>
+    <groupId>com.sun.xml.bind</groupId>
+    <artifactId>jaxb-core</artifactId>
+    <version>2.2.11</version>
+</dependency>
+<dependency>
+    <groupId>com.sun.xml.bind</groupId>
+    <artifactId>jaxb-impl</artifactId>
+    <version>2.2.11</version>
+</dependency>
+<dependency>
+    <groupId>javax.activation</groupId>
+    <artifactId>activation</artifactId>
+    <version>1.1.1</version>
+</dependency>
+		
+	</dependencies>
+
 	<build>
 		<plugins>
-		<!-- <plugin>
-		<groupId>org.apache.maven.plugins</groupId>
-		<artifactId>maven-assembly-plugin</artifactId>
-		<executions>
-		<execution>
-			<phase>package</phase>
-			<goals>
-				<goal>single</goal>
-			</goals>
-		</execution>
-		</executions>
-		<configuration>
-			<finalName>${artifactId}</finalName>
-			<appendAssemblyId>false</appendAssemblyId>
-			<descriptors>
-				<descriptor>src/main/assembly/bin.xml</descriptor>
-			</descriptors>
-		</configuration>
-		</plugin> -->
+			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-assembly-plugin</artifactId> 
+				<executions> <execution> <phase>package</phase> <goals> <goal>single</goal> 
+				</goals> </execution> </executions> <configuration> <finalName>${artifactId}</finalName> 
+				<appendAssemblyId>false</appendAssemblyId> <descriptors> <descriptor>src/main/assembly/bin.xml</descriptor> 
+				</descriptors> </configuration> </plugin> -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -95,22 +114,13 @@
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
-	<!-- 	<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-compiler-plugin</artifactId>
-			<version>3.6.1</version>
-			<configuration>
-				<fork>true</fork>
-				<source>1.7</source>
-				<target>1.7</target>
-				
-					<executable>C:\Program Files\Java\jre1.8.0_171\bin\javac.exe</executable> 
-				
-			</configuration>
-		</plugin> -->
+			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-compiler-plugin</artifactId> 
+				<version>3.6.1</version> <configuration> <fork>true</fork> <source>1.7</source> 
+				<target>1.7</target> <executable>C:\Program Files\Java\jre1.8.0_171\bin\javac.exe</executable> 
+				</configuration> </plugin> -->
 		</plugins>
 	</build>
-	
+
 	<repositories>
 		<!-- list of other repositories -->
 		<repository>
@@ -138,46 +148,46 @@
 		</repository>
 	</repositories>
 
-    <pluginRepositories>
+	<pluginRepositories>
 
-        <pluginRepository>
-            <id>archiva.repo</id>
-            <name>Archiva Repository</name>
-            <url>http://172.25.20.29/repository/internal/</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-        </pluginRepository>
+		<pluginRepository>
+			<id>archiva.repo</id>
+			<name>Archiva Repository</name>
+			<url>http://172.25.20.29/repository/internal/</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</pluginRepository>
 
-        <pluginRepository>
-            <id>archiva.snapshot</id>
-            <name>Archiva Snapshots</name>
-            <url>http://172.25.20.29/repository/snapshots/</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-        </pluginRepository>
-    </pluginRepositories>
+		<pluginRepository>
+			<id>archiva.snapshot</id>
+			<name>Archiva Snapshots</name>
+			<url>http://172.25.20.29/repository/snapshots/</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</pluginRepository>
+	</pluginRepositories>
 
-    <distributionManagement>
-        <repository>
-            <id>archiva.internal</id>
-            <name>Internal Release Repository</name>
-            <url>http://172.25.20.29/repository/internal/</url>
-        </repository>
-        <snapshotRepository>
-            <id>archiva.snapshots</id>
-            <name>Internal Snapshot Repository</name>
-            <url>http://172.25.20.29/repository/snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
- 
+	<distributionManagement>
+		<repository>
+			<id>archiva.internal</id>
+			<name>Internal Release Repository</name>
+			<url>http://172.25.20.29/repository/internal/</url>
+		</repository>
+		<snapshotRepository>
+			<id>archiva.snapshots</id>
+			<name>Internal Snapshot Repository</name>
+			<url>http://172.25.20.29/repository/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 </project>
 
 

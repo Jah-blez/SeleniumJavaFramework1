@@ -43,8 +43,12 @@ public class BuyAirtimeCardRequiresOTP {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		//this was previously used for login
+		//LoginScreenObjects.doubleClickOnLoginButton();
+		
 		//LoginScreenObjects.ClickOnLoginButton();
-		LoginScreenObjects.doubleClickOnLoginButton();
+		LoginScreenObjects.ClickOnLoginButton();
 	
 
 		

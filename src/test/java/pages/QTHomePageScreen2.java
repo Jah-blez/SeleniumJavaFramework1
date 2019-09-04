@@ -20,6 +20,7 @@ public class QTHomePageScreen2 {
 	By qTLogo = By.xpath("//a[@id='qtLogo']");
 	By homePageWrapper = By.xpath("//body/section[@id='root']/div[@id='wrapper']/section/section/section[2]/section[1]");
 	By switchToOldQuicktellerLink = By.id("oldQtLink");
+	
 
 	public static void main(String[] args) {
 

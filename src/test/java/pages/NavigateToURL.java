@@ -22,11 +22,11 @@ public class NavigateToURL {
 		}
 		public void launchURL() {
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-			driver.get(baseUrl.qTBaseUrlUAT);
+			driver.get(baseUrl.qTBaseUrlUAT());
 			driver.manage().window().maximize();
 						
 			System.out.println("Test Passed");
 		}
-
+		
 	}
 
