@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-09-04T08:31:36Z" name="Default suite" finished-at="2019-09-04T08:32:27Z" duration-ms="51233">
+  <suite started-at="2019-09-06T13:37:52Z" name="Default suite" finished-at="2019-09-06T13:38:24Z" duration-ms="31864">
     <groups>
     </groups>
-    <test started-at="2019-09-04T08:31:36Z" name="Default test" finished-at="2019-09-04T08:32:27Z" duration-ms="51233">
-      <class name="actions.SignUpWithReferral">
-        <test-method is-config="true" signature="startUp()[pri:0, instance:actions.SignUpWithReferral@3c153a1]" started-at="2019-09-04T09:31:36Z" name="startUp" finished-at="2019-09-04T09:31:51Z" duration-ms="15208" status="PASS">
+    <test started-at="2019-09-06T13:37:52Z" name="Default test" finished-at="2019-09-06T13:38:24Z" duration-ms="31864">
+      <class name="actions.SignUpWithoutReferral">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:actions.SignUpWithoutReferral@13acb0d1]" started-at="2019-09-06T14:37:52Z" name="startUp" finished-at="2019-09-06T14:38:02Z" duration-ms="9741" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method signature="userregisterationDetailswithreferral()[pri:0, instance:actions.SignUpWithReferral@3c153a1]" started-at="2019-09-04T09:31:51Z" name="userregisterationDetailswithreferral" finished-at="2019-09-04T09:32:23Z" duration-ms="31572" status="PASS">
+        <test-method signature="userregisterationDetailswithoutreferral()[pri:0, instance:actions.SignUpWithoutReferral@13acb0d1]" started-at="2019-09-06T14:38:02Z" name="userregisterationDetailswithoutreferral" finished-at="2019-09-06T14:38:21Z" duration-ms="18410" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userregisterationDetailswithreferral -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:actions.SignUpWithReferral@3c153a1]" started-at="2019-09-04T09:32:23Z" name="tearDown" finished-at="2019-09-04T09:32:27Z" duration-ms="4416" status="PASS">
+        </test-method> <!-- userregisterationDetailswithoutreferral -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:actions.SignUpWithoutReferral@13acb0d1]" started-at="2019-09-06T14:38:21Z" name="tearDown" finished-at="2019-09-06T14:38:24Z" duration-ms="3682" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- actions.SignUpWithReferral -->
+      </class> <!-- actions.SignUpWithoutReferral -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -15,6 +15,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pages.NavigateToURL;
 import pages.QTHomePageScreen2;
+import pages.SignUpPage;
 import pages.StartBrowser;
 import pages.URL;
 
@@ -28,7 +29,7 @@ public class SignUpWithReferral {
 
 
 
-
+	public static String emailfordatabase2;
 
 	private static CharSequence code = null;
 	static WebDriver driver = null;
@@ -53,13 +54,10 @@ public class SignUpWithReferral {
 
 	public void userregisterationDetailswithreferral () throws Exception{
 
-		DecimalFormat df = new DecimalFormat("###.##");
-		String Fname = "Wande";
-		String Lname ="Coal";
-		String email = "wc"; 
-		String mobilenumber = "09078989900";
+		
+		
 
-		email= email + df.format(Math.random()*37898) + "@gmail.com";
+		SignUpPage SignUpRep= new SignUpPage(driver);
 
 		NavigateToURL startWebsite = new NavigateToURL(driver);
 		startWebsite.launchURL();
@@ -71,40 +69,12 @@ public class SignUpWithReferral {
 
 
 		Thread.sleep(5000);
-
-
-		driver.findElement(By.xpath("//input[@id='accountRegisterFormFirstname']")).click();
-		driver.findElement(By.xpath("//input[@id='accountRegisterFormFirstname']")).clear();
-		driver.findElement(By.xpath("//input[@id='accountRegisterFormFirstname']")).sendKeys(Fname);
-
-		driver.findElement(By.xpath("//input[@id='accountRegisterFormLastname']")).click();
-		driver.findElement(By.xpath("//input[@id='accountRegisterFormLastname']")).clear();
-		driver.findElement(By.xpath("//input[@id='accountRegisterFormLastname']")).sendKeys(Lname);
-
-
-		driver.findElement(By.xpath("//input[@id='accountRegisterFormEmail']")).click();
-		driver.findElement(By.xpath("//input[@id='accountRegisterFormEmail']")).clear();
-		driver.findElement(By.xpath("//input[@id='accountRegisterFormEmail']")).sendKeys(email);
-
-		driver.findElement(By.xpath("//input[@id='mobileNumber']")).click();
-		driver.findElement(By.xpath("//input[@id='mobileNumber']")).clear();
-		driver.findElement(By.xpath("//input[@id='mobileNumber']")).sendKeys(mobilenumber);
-
-		driver.findElement(By.xpath("//input[@id='accountRegisterFormPassword']")).click();
-		driver.findElement(By.xpath("//input[@id='accountRegisterFormPassword']")).clear();
-		driver.findElement(By.xpath("//input[@id='accountRegisterFormPassword']")).sendKeys("password");
 		
-		driver.findElement(By.xpath("//input[@id='accountRegisterFormReferral']")).sendKeys("08124888436");
 		
-		Thread.sleep(3000);
-		
+		SignUpRep.VerifySignUpfieldsArePresent();
+		SignUpRep.FillSignUpwithReferralfields();
 
-		driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Referred By (Email or Mobile Number)'])[1]/following::span[1]")).click();
-		
-		Thread.sleep(4000);
-		
-		driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Referred By (Email or Mobile Number)'])[1]/following::span[1]")).click();
-		
+	
 		
 		
 		Thread.sleep(4000);		
@@ -119,7 +89,7 @@ public class SignUpWithReferral {
 		String sql_activation_code;
 		String sql_delete;
 
-		sql_activation_code= "SELECT *  FROM [uat_quickteller].[dbo].[UsersExtraData] where Username='"+email+"'";
+		sql_activation_code= "SELECT *  FROM [uat_quickteller].[dbo].[UsersExtraData] where Username='"+emailfordatabase2+"'";
 		ResultSet rs = stmt.executeQuery(sql_activation_code);
 
 
@@ -130,36 +100,14 @@ public class SignUpWithReferral {
 		}
 		
 		
-		//input activation code
-		driver.findElement(By.xpath("//*[@id=\"accountActivateCodeFormCode\"]")).click();
-		driver.findElement(By.xpath("//*[@id=\"accountActivateCodeFormCode\"]")).clear();
-		driver.findElement(By.xpath("//*[@id=\"accountActivateCodeFormCode\"]")).sendKeys(code);
-		
-		driver.findElement(By.xpath("//*[@id=\"accountActivateCodeFormButton\"]/span[1]")).click();
-		
+	//input activation code
 
-
-
-
-		WebElement element = driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Quickteller Paypoint'])[1]/following::span[3]"));
-		String text= element.getText();
-		if (text.contains(Fname)){
-
-			System.out.println("Expected registered name is obtained");
-
-		}
-		else{
-
-			System.out.println("Expected registered name is not obtained");
-
-		}
-
-
+		SignUpRep.activation(code);
 		System.out.println("account has been successfully created and activated");
 
 		Thread.sleep(5000);
 
-		sql_delete= "Delete FROM [uat_quickteller].[dbo].[UsersExtraData] where Username='"+email+"'";
+		sql_delete= "Delete FROM [uat_quickteller].[dbo].[UsersExtraData] where Username='"+emailfordatabase2+"'";
 		stmt.executeUpdate(sql_delete);
 		System.out.println("email is deleted");
 

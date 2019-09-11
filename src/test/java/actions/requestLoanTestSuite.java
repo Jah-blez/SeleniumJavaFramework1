@@ -45,17 +45,17 @@ public class requestLoanTestSuite {
 	
 	credential.ClickOnLoginButton();
 	
-    Thread.sleep(10000);
+    Thread.sleep(4000);
 	
 	icon.clickOnMoreIcon();
 	
 	MoreIconSubLink clickloanlink = new MoreIconSubLink(driver);
 	
-	String loan_amount = "34000";
-	String acct = "6170399804";
-	String bank= "Fidelity Bank Plc";
 	
-	clickloanlink.clickOnRequestLoanLink(loan_amount,acct,bank);
+	
+	clickloanlink.clickOnRequestLoanLink("34000","6170399804","Fidelity Bank Plc");
+	
+	
 	
 	
 	

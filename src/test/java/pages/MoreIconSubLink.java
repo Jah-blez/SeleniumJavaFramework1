@@ -9,13 +9,12 @@ public class MoreIconSubLink {
 
 	private WebDriver driver = null;
 	By bookFlight = By.xpath("//span[contains(text(),'Book Flight')]");
-	By requestLoan = By.xpath("//*[@id=\"wrapper\"]/section/section[2]/section/section/section[1]/section/section/section/section[1]/div/section[2]/section/section[2]");
+	By requestLoan = By.xpath("//span[contains(text(),'Request Loan')]");
 	By shoppingMall = By.xpath("//span[contains(text(),'Shopping Mall')]");
 	By eventTicketing = By.xpath("//span[contains(text(),'Event Ticketing')]");
 	By requestLoan_loanamount = By.xpath("//input[@id='amount']");
-	By requestLoan_acctNumber = By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Enter Account Number'])[1]/following::div[3]");
-	By requestLoan_acctNumber_drop = By.xpath("//section[@id='accountNumber']//span[@class='Select-arrow']");
-	By requestLoan_acctNumber_list = By.id("loansForm");  
+	By requestLoan_acctNumber = By.xpath("//*[contains(@id, 'accountNumber')]//*[contains(@class, 'Select-input') and contains(@role, 'combobox')] ");
+	
 	By requestLoan_selectbank = By.xpath("//div[contains(text(),'Select Bank')]");
 	By requestLoan_continue = By.xpath("//button[@id='transferButton']");
 	
@@ -63,11 +62,13 @@ public class MoreIconSubLink {
 		}
 	}
 	
-	/**
-	 * 
-	 */
-	public void clickOnRequestLoanLink(String loan_amount, String acct, String Sel_Bank ) {
+	
+	public void clickOnRequestLoanLink(String loan_amount, String acct, String Sel_Bank ) throws InterruptedException {
+		
+		Thread.sleep(3000);
+		
 		driver.findElement(requestLoan).click();
+		
 		System.out.println("RequestLoanLink clickOn successfully");
 		
 		if (driver.findElement(requestLoan_acctNumber).isDisplayed()) {
@@ -103,19 +104,11 @@ public class MoreIconSubLink {
 	driver.findElement(requestLoan_loanamount).sendKeys(loan_amount);
 	System.out.println("loan amount entered successfully");
 	
-	driver.findElement(requestLoan_acctNumber_drop).click();
+		
+	
+	driver.findElement(requestLoan_acctNumber).sendKeys(acct);
 	
 	
-	
-	//driver.findElement(requestLoan_acctNumber_drop).sendKeys("61");
-	try {
-		Thread.sleep(3000);
-	} catch (InterruptedException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
-	new Select(driver.findElement(requestLoan_acctNumber_list)).selectByVisibleText("0011284865");
-	//driver.findElement(requestLoan_acctNumber).sendKeys(acct);
 	System.out.println("account number entered successfully");
 	
 	driver.findElement(requestLoan_selectbank).sendKeys(Sel_Bank);

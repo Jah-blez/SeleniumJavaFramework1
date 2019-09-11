@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="actions.SignUpWithReferral">
+      <class name="actions.SignUpWithoutReferral">
         <methods>
           <include name="startUp"/>
-          <include name="userregisterationDetailswithreferral"/>
+          <include name="userregisterationDetailswithoutreferral"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- actions.SignUpWithReferral -->
+      </class> <!-- actions.SignUpWithoutReferral -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
